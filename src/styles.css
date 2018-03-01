@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+input {
+    margin-bottom: 5px;
+    /*opacity: 0.5;*/
+}
+
+body {
+    padding-top: 80px;
+    background-image: url("https://gamewright.com/images/ten/GAMEWRIGHT-249.jpg");
+}
+/*ji*/
+.navbar {
+    background-color: #337ab7;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.jga-widget .jga-toolbar {
+    position: absolute;
+    right: 0px;
+    background-color: grey;
+    padding: 7px;
+    border-bottom-left-radius: 10px;
+    opacity: 0.5;
+}
+
+.jga-widget .jga-content {
+    width: 100%;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}

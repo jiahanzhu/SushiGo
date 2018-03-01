@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header navbar-brand">
+      Profile
+    </div>
+    <a class="navbar-right navbar-brand pull-right" [routerLink]="['/user/123']">
+      <span class="glyphicon glyphicon-ok"></span>
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <label for="username">Username</label>
+  <input placeholder="jannunzi"
+         type="text"
+         id="username"
+         class="form-control"/>
+
+  <label for="email">Email</label>
+  <input placeholder="jannunzi@gmail.com"
+         type="email"
+         id="email"
+         class="form-control"/>
+
+  <label for="first">First Name</label>
+  <input placeholder="Jose"
+         type="text"
+         id="first"
+         class="form-control"/>
+
+  <label for="last">Last Name</label>
+  <input placeholder="Annunziato"
+         type="text"
+         id="last"
+         class="form-control"/>
+
+  <a [routerLink]="['/user/123/website']" class="btn btn-primary btn-block">
+    Websites
+  </a>
+  <a [routerLink]="['/login']" class="btn btn-danger btn-block">
+    Logout
+  </a>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <a class="navbar-right navbar-brand pull-right" [routerLink]="['/user/123']">
+      <span class="glyphicon glyphicon-user"></span>
+    </a>
+  </div>
+</nav>
