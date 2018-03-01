@@ -1,19 +1,107 @@
-input {
-    margin-bottom: 5px;
-    /*opacity: 0.5;*/
-}
+/*input {*/
+    /*margin-bottom: 5px;*/
+/*}*/
 
 body {
     padding-top: 80px;
-    background-image: url("https://gamewright.com/images/ten/GAMEWRIGHT-249.jpg");
+    /*background-image: url("https://www.w3schools.com/css/mountain.jpg");*/
+    background-image: url("assets/img/Background.jpg");
+    /*background-color: rgba(255, 0, 0, 0.2);*/
 }
+
 /*ji*/
 .navbar {
-    background-color: #337ab7;
+    /*background-color: #337ab7;*/
 }
 
 .navbar-default .navbar-brand {
     color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-text {
+    color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: white;
+}
+
+.navbar-collapse .nav .navbar-brand {
+    color: white;
+}
+
+.navbar-collapse .nav .glyphicon {
+    color: white;
+}
+
+.glyphicon {
+    color: white;
+}
+
+.input-number-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.input-number-group input[type=number]::-webkit-inner-spin-button,
+.input-number-group input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.input-number-group .input-group-button {
+    line-height: calc(80px/2 - 5px);
+}
+
+.input-number-group .input-number {
+    width: 80px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 0;
+}
+
+.input-number-group .input-number,
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+    border: 1px solid #cacaca;
+    height: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 0;
+}
+
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+    display: inline-block;
+    width: 40px;
+    background: #e6e6e6;
+    color: #0a0a0a;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.input-number-group .input-number-decrement {
+    margin-right: 0.3rem;
+}
+
+.input-number-group .input-number-increment {
+    margin-left: 0.3rem;
 }
 
 .jga-widget .jga-toolbar {
