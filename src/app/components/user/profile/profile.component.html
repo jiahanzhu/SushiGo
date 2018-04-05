@@ -1,87 +1,174 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#navbar"
-                    aria-expanded="false"
-                    aria-controls="navbar">
-                <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
-            <a class="navbar-brand" href="">Sushi Go!</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="navbar-brand">Hi user</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="glyphicon glyphicon-knight"></a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <a class="navbar-brand" href="">Sushi Go!</a>
     </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <form class="navbar-form navbar-right">
+        <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="navbar-brand">Hi {{username}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="glyphicon glyphicon-knight"></a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<div class="row">
-    <div class="col-sm-6">
-        <div class="card text-center">
-            <img class="card-img-top" src="../../../../assets/img/sushigo_tempura.jpg" alt="Card image cap">
-            <div class="card-block">
-                <br/>
-                <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#gamestart">
-                    PvE
-                </button>
+<!--<div class="container-fluid">-->
+  <!--<div class="row">-->
+    <!--<div class="col-sm-6">-->
+      <!--<div class="card text-center">-->
+        <!--<img class="card-img-top" src="../../../../assets/img/sushigo_profile.png" alt="Card image cap">-->
+        <!--<div class="card-body">-->
+          <!--<h3 class="card-title text-center">-->
+            <!--<div class="label">Username: </div>-->
+            <!--<input name="username"-->
+                   <!--[(ngModel)]="user.username"-->
+                   <!--class="form-control input field"-->
+                   <!--type="text"-->
+                   <!--id="username"-->
+                   <!--placeholder="{{user.username}}">-->
+          <!--</h3>-->
+          <!--<ul class="list-group list-group-flush">-->
+            <!--<li class="list-group-item form-group">-->
+              <!--<label>Email</label>-->
+              <!--<input [(ngModel)]="user.email" class="form-control" type="text"-->
+            <!--id="email" placeholder="{{user.email}}">-->
+            <!--&lt;!&ndash;<label>Fisrt Name</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input [(ngModel)]="user.firstName" class="form-control" type="text"&ndash;&gt;-->
+            <!--&lt;!&ndash;id="first-name" placeholder="{{user.firstName}}">&ndash;&gt;-->
+            <!--&lt;!&ndash;<label>Last Name</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input [(ngModel)]="user.lastName" class="form-control" type="text"&ndash;&gt;-->
+            <!--&lt;!&ndash;id="last-name" placeholder="{{user.lastName}}">&ndash;&gt;-->
+            <!--<li class="list-group-item">Cras justo odio</li>-->
+            <!--<li class="list-group-item">Dapibus ac facilisis in</li>-->
+            <!--<li class="list-group-item">Vestibulum at eros</li>-->
+          <!--</ul>-->
+          <!--<a (click)="updateUser()" class="btn btn-primary">Update</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm-6">-->
+      <!--<div class="card text-white bg-info mb-3 text-center">-->
+        <!--<div class="card-header">Header</div>-->
+        <!--<div class="card-body">-->
+          <!--<h5 class="card-title">Primary card title</h5>-->
+          <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="card text-white bg-warning mb-3 text-center">-->
+        <!--<div class="card-header">Header</div>-->
+        <!--<div class="card-body">-->
+          <!--<h5 class="card-title">Secondary card title</h5>-->
+          <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+    <!--&lt;!&ndash;<div class="card text-center">&ndash;&gt;-->
+      <!--&lt;!&ndash;<img class="card-img-top" src="../../../../assets/img/sushigo_tempura.jpg" alt="Card image cap">&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class="card-block">&ndash;&gt;-->
+        <!--&lt;!&ndash;<br/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#gamestart">&ndash;&gt;-->
+          <!--&lt;!&ndash;PvE&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
 
-                <!-- Modal -->
-                <div class="modal fade"
-                     id="gamestart"
-                     tabindex="-1"
-                     role="dialog"
-                     aria-labelledby="gamestartLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog modal-sm" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="gamestartLabel">How many players?</h5>
-                            </div>
-                            <div class="modal-body">
-                                <div class="input-group input-number-group">
-                                    <div class="input-group-button">
-                                        <span class="input-number-decrement">-</span>
-                                    </div>
-                                    <input class="input-number" type="number" value="2" min="2" max="5">
-                                    <div class="input-group-button">
-                                        <span class="input-number-increment">+</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success">Game Start</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="card text-center">
-            <img class="card-img-top" src="../../../../assets/img/sushigo_sashimi.jpg" alt="Card image cap">
-            <div class="card-block">
-                <br/>
-                <button type="button"
-                        class="btn btn-lg btn-warning"
-                        data-toggle="popover"
-                        data-placement="left"
-                        title="Uh-oh!"
-                        data-content="We're still working on PvP. Please try later!">
-                    PvP
-                </button>
-            </div>
-        </div>
-    </div>
+        <!--&lt;!&ndash;&lt;!&ndash; Modal &ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="modal fade"&ndash;&gt;-->
+             <!--&lt;!&ndash;id="gamestart"&ndash;&gt;-->
+             <!--&lt;!&ndash;tabindex="-1"&ndash;&gt;-->
+             <!--&lt;!&ndash;role="dialog"&ndash;&gt;-->
+             <!--&lt;!&ndash;aria-labelledby="gamestartLabel"&ndash;&gt;-->
+             <!--&lt;!&ndash;aria-hidden="true">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="modal-dialog modal-sm" role="document">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="modal-content">&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="modal-header">&ndash;&gt;-->
+                <!--&lt;!&ndash;<h5 class="modal-title" id="gamestartLabel">How many players?</h5>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="modal-body">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="input-group input-number-group">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="input-group-button">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="input-number-decrement">-</span>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input class="input-number" type="number" value="4" min="2" max="6">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="input-group-button">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="input-number-increment">+</span>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="modal-footer">&ndash;&gt;-->
+                <!--&lt;!&ndash;<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>&ndash;&gt;-->
+                <!--&lt;!&ndash;<button type="button" class="btn btn-success">Game Start</button>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;<div class="col-sm-6">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="card text-center">&ndash;&gt;-->
+      <!--&lt;!&ndash;<img class="card-img-top" src="../../../../assets/img/sushigo_sashimi.jpg" alt="Card image cap">&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class="card-block">&ndash;&gt;-->
+        <!--&lt;!&ndash;<br/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button type="button"&ndash;&gt;-->
+                <!--&lt;!&ndash;class="btn btn-lg btn-warning"&ndash;&gt;-->
+                <!--&lt;!&ndash;data-toggle="popover"&ndash;&gt;-->
+                <!--&lt;!&ndash;data-placement="left"&ndash;&gt;-->
+                <!--&lt;!&ndash;title="Uh-oh!"&ndash;&gt;-->
+                <!--&lt;!&ndash;data-content="We're still working on PvP. Please try later!">&ndash;&gt;-->
+          <!--&lt;!&ndash;PvP&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<nav class="navbar navbar-default navbar-fixed-top">&ndash;&gt;-->
+  <!--&lt;!&ndash;<div class="container-fluid">&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="navbar-left navbar-brand pull-left" routerLink="/login">&ndash;&gt;-->
+      <!--&lt;!&ndash;<span class="glyphicon glyphicon-chevron-left"></span>&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="navbar-header navbar-brand">&ndash;&gt;-->
+      <!--&lt;!&ndash;Profile&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="navbar-right navbar-brand pull-right" (click)="updateUser()">&ndash;&gt;-->
+      <!--&lt;!&ndash;<span class="glyphicon glyphicon-ok"></span>&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</nav>&ndash;&gt;-->
+
+<div class="container-fluid myBody">
+  <div *ngIf="message" class="alert alert-info">
+    {{message}}
+  </div>
+  <label>Username</label>
+  <input [(ngModel)]="user.username" class="form-control" type="text"
+         id="username" placeholder="{{user.username}}">
+  <label>Email</label>
+  <input [(ngModel)]="user.email" class="form-control" type="text"
+         id="email" placeholder="{{user.email}}">
+  <label>Fisrt Name</label>
+  <input [(ngModel)]="user.firstName" class="form-control" type="text"
+         id="first-name" placeholder="{{user.firstName}}">
+  <label>Last Name</label>
+  <input [(ngModel)]="user.lastName" class="form-control" type="text"
+         id="last-name" placeholder="{{user.lastName}}">
+  <a [routerLink]="['/user', user._id, 'website']" class="btn btn-primary btn-block">Website</a>
+  <a (click)="removeUser()" class="btn btn-warning btn-block">Delete User</a>
+  <a (click)="logout()" class="btn btn-danger btn-block">Logout</a>
 </div>

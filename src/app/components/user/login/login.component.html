@@ -1,39 +1,56 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar"
-              aria-expanded="false"
-              aria-controls="navbar">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
-      </button>
-      <a class="navbar-brand" href="">Sushi Go!</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text"
-                 placeholder="Email"
-                 id="username"
-                 class="form-control"/>
-          <!--[(ngModel)]="username"-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <a class="navbar-brand">Sushi Go!</a>
         </div>
-        <div class="form-group">
-          <input type="password"
-                 placeholder="Password"
-                 id="password"
-                 class="form-control"/>
-          <!--[(ngModel)]="password"-->
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-nav navbar-brand navbar-header">
+                <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
+                <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
+                <a class="nav-item nav-link" routerLink="/game">Start Game</a>
+            </div>
+
+            <form (ngSubmit)="login()" #f="ngForm" class="navbar-form navbar-right">
+                <input placeholder="username"
+                       name="username"
+                       type="text"
+                       class="form-control"
+                       [(ngModel)]="username" required #name="ngModel"/>
+                <span class="help-block" *ngIf="name.invalid && name.touched">
+                  Please enter username!
+                </span>
+
+                <input placeholder="password"
+                       name="password"
+                       type="password"
+                       class="form-control"
+                       [(ngModel)]="password" required #pass="ngModel"/>
+                <span class="help-block" *ngIf="pass.invalid && pass.touched">
+                  Please enter password!
+                </span>
+
+                <button type="submit"
+                        class="btn btn-success"
+                        [disabled]="f.invalid">
+                    Sign in
+                </button>
+
+                <button routerLink="/register"
+                        class="btn btn-primary">
+                    Register
+                </button>
+            </form>
         </div>
-        <!--<a (click)="login(username, password)" routerLink="['/user/123']" class="btn btn-success">-->
-        <a [routerLink]="['/user/123']" class="btn btn-success">Sign in</a>
-        <a [routerLink]="['/register']" class="btn btn-primary">Register</a>
-      </form>
     </div>
-  </div>
 </nav>
 
-<div class="container" id="login">
-</div>
+<div class="background" id="login"></div>

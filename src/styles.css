@@ -1,12 +1,11 @@
-/*input {*/
-    /*margin-bottom: 5px;*/
-/*}*/
+input {
+    margin-bottom: 5px;
+}
 
 body {
     padding-top: 80px;
-    /*background-image: url("https://www.w3schools.com/css/mountain.jpg");*/
-    background-image: url("assets/img/Background.jpg");
-    /*background-color: rgba(255, 0, 0, 0.2);*/
+    /*background-image: url("assets/img/Background.jpg");*/
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 /*ji*/
@@ -35,6 +34,10 @@ body {
 }
 
 .navbar-collapse .nav .glyphicon {
+    color: white;
+}
+
+.navbar .navbar-brand .nav-link {
     color: white;
 }
 

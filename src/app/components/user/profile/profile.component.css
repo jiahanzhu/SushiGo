@@ -1,0 +1,12 @@
+.label {
+    float: left;
+    width: 200px;
+}
+
+.field {
+    margin-left: 200px;
+}
+
+.field input {
+    width: 100%;
+}

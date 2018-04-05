@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { UserService } from '../../../services/user.service.client';
-import { User } from '../../../models/user.model.client';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {UserService} from '../../../services/user.service.client';
+import {User} from '../../../models/user.model.client';
 
 @Component({
   selector: 'app-profile',
@@ -9,17 +9,53 @@ import { User } from '../../../models/user.model.client';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  uid: String;
+  userId: string;
   user: User;
-  constructor(private userService: UserService,
-              private route: ActivatedRoute) { }
+  username: string;
+  message: string;
 
-  ngOnInit() {
-    this.route.params.subscribe(params => {
-      this.uid = params['uid'];
-      this.user = this.userService.findUserById(this.uid);
-      // alert('userID: ' + this.uid);
-    });
+  constructor(private userService: UserService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
   }
 
+  ngOnInit() {
+    this.activatedRoute.params.subscribe(
+      (params: any) => {
+        this.userId = params['userId'];
+      }
+    );
+    this.userService.checkLoggedIn().subscribe(
+      response => {
+        this.user = response;
+        this.username = this.user.username;
+      },
+      err => {
+        this.router.navigate(['/login']);
+      }
+    );
+  }
+
+  updateUser() {
+    this.userService.updateUser(this.user._id, this.user).subscribe(
+      response => {
+          this.message = 'Profile changes saved';
+        },
+      err => {
+        this.message = 'Failed to update';
+      }
+    );
+  }
+
+  removeUser() {
+    this.userService.deleteUser(this.user._id).subscribe();
+    this.message = 'User deleted';
+    this.router.navigate(['/login']);
+  }
+
+  logout() {
+    this.userService.logout().subscribe(
+      res => this.router.navigate(['/login'])
+    );
+  }
 }

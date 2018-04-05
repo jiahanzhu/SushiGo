@@ -1,29 +1,37 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { UserService } from '../../../services/user.service.client';
-import { User } from '../../../models/user.model.client';
+import {Component, Injectable, OnInit, ViewChild} from '@angular/core';
+import {Router} from '@angular/router';
+import {NgForm} from '@angular/forms';
+import {UserService} from '../../../services/user.service.client';
+import {User} from '../../../models/user.model.client';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+@Injectable()
 export class LoginComponent implements OnInit {
-  username: String;
-  password: String;
+  @ViewChild('f') loginForm: NgForm;
+  // properties
+  username: string;
+  password: string;
+  user: User;
 
-  constructor(private userService: UserService,
-              private router: Router) { }
-
-  login (username: String, password: String) {
-    // alert('username: ' + username);
-    const user: User = this.userService.findUserByCredentials(username, this.password);
-    if (user) {
-      this.router.navigate(['/user', user._id]);
-    }
+  constructor(private userService: UserService, private router: Router) {
   }
 
   ngOnInit() {
   }
 
+  login() {
+    this.userService.login(this.username, this.password)
+      .subscribe(
+        response => {
+          this.user = response;
+          this.router.navigate(['/user', this.user._id]);
+        },
+        err => {
+          alert('Invalid Password!');
+        });
+  }
 }
