@@ -12,9 +12,15 @@
       <a class="navbar-brand" href="">Sushi Go!</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right">
+      <div class="navbar-nav navbar-brand navbar-header">
+        <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
+        <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
+        <a class="nav-item nav-link" routerLink="/user/{{username}}/game">Start Game</a>
+      </div>
+
+      <div class="navbar-form navbar-right">
         <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
-      </form>
+      </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a class="navbar-brand">Hi {{username}}</a>
@@ -153,9 +159,9 @@
 <!--&lt;!&ndash;</nav>&ndash;&gt;-->
 
 <div class="container-fluid myBody">
-  <div *ngIf="message" class="alert alert-info">
-    {{message}}
-  </div>
+  <!--<div *ngIf="message" class="alert alert-info">-->
+    <!--{{message}}-->
+  <!--</div>-->
   <label>Username</label>
   <input [(ngModel)]="user.username" class="form-control" type="text"
          id="username" placeholder="{{user.username}}">
@@ -168,7 +174,6 @@
   <label>Last Name</label>
   <input [(ngModel)]="user.lastName" class="form-control" type="text"
          id="last-name" placeholder="{{user.lastName}}">
-  <a [routerLink]="['/user', user._id, 'website']" class="btn btn-primary btn-block">Website</a>
   <a (click)="removeUser()" class="btn btn-warning btn-block">Delete User</a>
   <a (click)="logout()" class="btn btn-danger btn-block">Logout</a>
 </div>

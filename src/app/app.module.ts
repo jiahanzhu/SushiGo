@@ -10,13 +10,18 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {UserService} from './services/user.service.client';
 import {HttpClientModule} from '@angular/common/http';
+import { GameNewComponent } from './components/game/game-new/game-new.component';
+import { GamePlayComponent } from './components/game/game-play/game-play.component';
+import {GameService} from './services/game.service.client';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    GameNewComponent,
+    GamePlayComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [UserService],
+  providers: [UserService, GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

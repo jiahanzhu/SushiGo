@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       .subscribe(
         response => {
           this.user = response;
-          this.router.navigate(['/user', this.user._id]);
+          this.router.navigate(['/user', this.username]);
         },
         err => {
           alert('Invalid Password!');

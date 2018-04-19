@@ -1,0 +1,92 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <a class="navbar-brand" href="">Sushi Go!</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="navbar-nav navbar-brand navbar-header">
+        <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
+        <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
+        <a class="nav-item nav-link" routerLink="/user/{{username}}/game">Start Game</a>
+      </div>
+      <form class="navbar-form navbar-right">
+        <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="navbar-brand">Hi {{username}}</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="glyphicon glyphicon-knight"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card text-center">
+      <img class="card-img-top" src="../../../../assets/img/sushigo_tempura.jpg" alt="Card image cap">
+      <div class="card-block">
+        <br/>
+        <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#gamestart">
+          PvE
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade"
+             id="gamestart"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="gamestartLabel"
+             aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="gamestartLabel">How many players?</h5>
+              </div>
+              <div class="modal-body">
+                <div class="input-group input-number-group">
+                  <div class="input-group-button">
+                    <span class="input-number-decrement">-</span>
+                  </div>
+                  <input class="input-number" type="number" value="4" min="2" max="6">
+                  <div class="input-group-button">
+                    <span class="input-number-increment">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="newGame()">Game Start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card text-center">
+      <img class="card-img-top" src="../../../../assets/img/sushigo_sashimi.jpg" alt="Card image cap">
+      <div class="card-block">
+        <br/>
+        <button type="button"
+                class="btn btn-lg btn-warning"
+                data-toggle="popover"
+                data-placement="left"
+                title="Uh-oh!"
+                data-content="We're still working on PvP. Please try later!">
+          PvP
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
