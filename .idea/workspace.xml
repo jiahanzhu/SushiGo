@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c653746-387a-45c8-b447-fc9160091386" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/models/card.model.client.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/models/game.model.client.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/services/card.service.client.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/dist/inline.bundle.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
       <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/dist/main.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js" afterPath="$PROJECT_DIR$/dist/styles.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js.map" afterPath="$PROJECT_DIR$/dist/styles.bundle.js.map" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.css" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game-play.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game-play.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="214" column="39" lean-forward="true" selection-start-line="214" selection-start-column="39" selection-end-line="214" selection-end-column="39" />
+            <state relative-caret-position="-226">
+              <caret line="278" column="25" lean-forward="false" selection-start-line="278" selection-start-column="25" selection-end-line="278" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-play.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game-play.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="163" column="46" lean-forward="true" selection-start-line="163" selection-start-column="46" selection-end-line="163" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -58,8 +48,8 @@
       <file leaf-file-name="game.model.client.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/models/game.model.client.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="360">
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -114,9 +104,7 @@
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-        <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/models/card.model.client.ts" />
         <option value="$PROJECT_DIR$/src/app/services/card.service.client.ts" />
@@ -124,8 +112,12 @@
         <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/src/styles.css" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
         <option value="$PROJECT_DIR$/src/app/models/game.model.client.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
       </list>
     </option>
@@ -238,7 +230,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="game-play" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
@@ -246,17 +239,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="game-stats" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="sushigo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,6 +269,9 @@
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/game/game-stats" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$" />
@@ -316,35 +310,36 @@
       <workItem from="1522818232860" duration="13310000" />
       <workItem from="1522833983366" duration="13133000" />
       <workItem from="1524101556522" duration="6760000" />
-      <workItem from="1524119733815" duration="10926000" />
+      <workItem from="1524119733815" duration="10970000" />
+      <workItem from="1524159011505" duration="3924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65388000" />
+    <option name="totallyTimeSpent" value="69356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27647868" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -354,9 +349,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27647868" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -365,8 +360,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,15 +377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/js.js" />
-    <entry file="file://$PROJECT_DIR$/src/assets/script.js" />
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -536,25 +522,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -569,22 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -640,22 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/img/sushigo_maki1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -669,14 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -685,45 +617,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        <state relative-caret-position="174">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="23" />
+        <state relative-caret-position="298">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-stats/.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="79" lean-forward="false" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" column="77" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="41" column="20" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="41" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/models/game.model.client.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="360">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="278" column="25" lean-forward="false" selection-start-line="278" selection-start-column="25" selection-end-line="278" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="163" column="46" lean-forward="true" selection-start-line="163" selection-start-column="46" selection-end-line="163" selection-end-column="46" />
+        <state relative-caret-position="315">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="214" column="39" lean-forward="true" selection-start-line="214" selection-start-column="39" selection-end-line="214" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -16,6 +16,8 @@ export class GamePlayComponent implements OnInit {
     game: Game = new Game(Math.floor(Math.random() * 100), this.user);
     decks = this.game.decks;
     cards = this.game.cards;
+    points = this.game.points;
+    message: string;
     constructor(private userService: UserService,
                 private gameService: GameService,
                 private activatedRoute: ActivatedRoute,
@@ -87,9 +89,9 @@ export class GamePlayComponent implements OnInit {
 
     total(cards) {
         for (let i = 0; i < 4; i++) {
-            let pts;
+            let pts = 0;
             for (let j = 0; j < 8; j++) {
-                const card = cards[j];
+                const card = cards[i][j];
                 if (card < 5) {
                     pts++;
                 } else if (card < 15) {
@@ -173,6 +175,11 @@ export class GamePlayComponent implements OnInit {
             if (this.game.pudding[i] === puddingmin) {
                 this.game.points[i] -= 6;
             }
+        }
+        if (Math.max.apply(null, this.game.points) === this.game.points[3]) {
+            this.message = 'You win!';
+        } else {
+            this.message = 'You lose!';
         }
     }
 }
