@@ -449,6 +449,8 @@ var GamePlayComponent = /** @class */ (function () {
                 else {
                     continue;
                 }
+                console.log('Card: ' + card);
+                console.log('Current score: ' + pts);
             }
             switch (this.game.dumpling[i]) {
                 case 0:
@@ -468,12 +470,18 @@ var GamePlayComponent = /** @class */ (function () {
                 default:
                     pts += 15;
             }
+            console.log('Dumplings: ' + this.game.dumpling[i]);
+            console.log('Current score: ' + pts);
             if (this.game.tempura[i] === 2) {
                 pts += 5;
             }
+            console.log('Tempuras: ' + this.game.tempura[i]);
+            console.log('Current score: ' + pts);
             if (this.game.sashimi[i] === 3) {
                 pts += 10;
             }
+            console.log('Sashimis: ' + this.game.sashimi[i]);
+            console.log('Current score: ' + pts);
             this.game.points[i] = pts;
         }
         var maki1 = 0, maki2 = 0, puddingmax = 0, puddingmin = 10;
@@ -506,6 +514,10 @@ var GamePlayComponent = /** @class */ (function () {
             if (this.game.pudding[i] === puddingmin) {
                 this.game.points[i] -= 6;
             }
+            console.log('Maki: ' + this.game.maki[i]);
+            console.log('Current score: ' + this.game.points[i]);
+            console.log('Pudding: ' + this.game.pudding[i]);
+            console.log('Current score: ' + this.game.points[i]);
         }
         if (Math.max.apply(null, this.game.points) === this.game.points[3]) {
             this.message = 'You win!';
@@ -931,12 +943,12 @@ var Game = /** @class */ (function () {
         for (var i = 0; i < 4; i++) {
             this.cards[i] = [];
         }
-        this.points = [];
-        this.maki = [];
-        this.dumpling = [];
-        this.tempura = [];
-        this.sashimi = [];
-        this.pudding = [];
+        this.points = [0, 0, 0, 0];
+        this.maki = [0, 0, 0, 0];
+        this.dumpling = [0, 0, 0, 0];
+        this.tempura = [0, 0, 0, 0];
+        this.sashimi = [0, 0, 0, 0];
+        this.pudding = [0, 0, 0, 0];
     }
     return Game;
 }());

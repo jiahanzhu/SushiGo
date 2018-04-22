@@ -33,11 +33,11 @@ export class Game {
         for (let i = 0; i < 4; i++) {
             this.cards[i] = [];
         }
-        this.points = [];
-        this.maki = [];
-        this.dumpling = [];
-        this.tempura = [];
-        this.sashimi = [];
-        this.pudding = [];
+        this.points = [0, 0, 0, 0];
+        this.maki = [0, 0, 0, 0];
+        this.dumpling = [0, 0, 0, 0];
+        this.tempura = [0, 0, 0, 0];
+        this.sashimi = [0, 0, 0, 0];
+        this.pudding = [0, 0, 0, 0];
     }
 }

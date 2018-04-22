@@ -119,6 +119,9 @@ export class GamePlayComponent implements OnInit {
                 } else {
                     continue;
                 }
+
+                console.log('Card: ' + card);
+                console.log('Current score: ' + pts);
             }
             switch (this.game.dumpling[i]) {
                 case 0:
@@ -138,12 +141,19 @@ export class GamePlayComponent implements OnInit {
                 default:
                     pts += 15;
             }
+
+            console.log('Dumplings: ' + this.game.dumpling[i]);
+            console.log('Current score: ' + pts);
             if (this.game.tempura[i] === 2) {
                 pts += 5;
             }
+            console.log('Tempuras: ' + this.game.tempura[i]);
+            console.log('Current score: ' + pts);
             if (this.game.sashimi[i] === 3) {
                 pts += 10;
             }
+            console.log('Sashimis: ' + this.game.sashimi[i]);
+            console.log('Current score: ' + pts);
             this.game.points[i] = pts;
         }
         let maki1 = 0, maki2 = 0, puddingmax = 0, puddingmin = 10;
@@ -175,6 +185,10 @@ export class GamePlayComponent implements OnInit {
             if (this.game.pudding[i] === puddingmin) {
                 this.game.points[i] -= 6;
             }
+            console.log('Maki: ' + this.game.maki[i]);
+            console.log('Current score: ' + this.game.points[i]);
+            console.log('Pudding: ' + this.game.pudding[i]);
+            console.log('Current score: ' + this.game.points[i]);
         }
         if (Math.max.apply(null, this.game.points) === this.game.points[3]) {
             this.message = 'You win!';
