@@ -1,3 +1,4 @@
+// server/model/models.server.js
 module.exports = function() {
     var connectionString =  null;
     var dbuser = process.env.DB_USER;
@@ -5,7 +6,7 @@ module.exports = function() {
     var dburl = process.env.MONGODB_URI;
 
     if (process.env.MONGODB_URI) {
-        connectionString = 'mongodb://' + dbuser + ':' + dbpass + '@' + dburl;
+        connectionString = 'mongodb://heroku_sp1xbzrb:l3abf5iurua3qekpq4dcbs6igh@ds153869.mlab.com:53869/heroku_sp1xbzrb';
     }
     else {
         connectionString = 'mongodb://localhost:27017/SushiGo';
@@ -24,3 +25,4 @@ module.exports = function() {
     return models;
 
 };
+
