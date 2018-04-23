@@ -1,10 +1,8 @@
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var FacebookStrategy = require('passport-facebook').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 
 module.exports = function (app, models) {
-  var users = [];
 
   // GET Calls.
   app.get('/api/user', findUserAllUser);
@@ -37,75 +35,12 @@ module.exports = function (app, models) {
       .findUserByUsername(username)
       .then(
         function (user) {
-          // if(user.username === username && user.password === password) {
           if (user && bcrypt.compareSync(password, user.password)) {
             return done(null, user);
           }
           else {
             return done(null, false);
           }
-        },
-        function (err) {
-          if (err) {
-            return done(err);
-          }
-        }
-      );
-  }
-
-  app.get('/auth/facebook', passport.authenticate('facebook', {scope: 'email'}));
-
-  app.get('/auth/facebook/callback', passport.authenticate('facebook', {
-    successRedirect: '/user',
-    failureRedirect: '/login'
-  }));
-
-
-  //FacebookStrategy
-  var facebookConfig = {
-    clientID: process.env.FACEBOOK_CLIENT_ID || '559131524442517',
-    clientSecret: process.env.FACEBOOK_CLIENT_SECRET || '596a598cee336efa6908cbac1bb4b75e',
-
-    //Use for local:
-    //callbackURL  : process.env.FACEBOOK_CALLBACK_URL || 'http://localhost:3000/auth/facebook/callback'
-
-    //Use for heroku:
-    callbackURL: process.env.FACEBOOK_CALLBACK_URL || 'https://serene-fortress-94809.herokuapp.com/auth/facebook/callback'
-  };
-
-  passport.use(new FacebookStrategy(facebookConfig, facebookStrategy));
-
-  function facebookStrategy(token, refreshToken, profile, done) {
-    models
-      .userModel
-      .findUserByFacebookId(profile.id)
-      .then(
-        function (user) {
-          if (user) {
-            return done(null, user);
-          } else {
-            var newFacebookUser = {
-              username: profile.displayName,
-              password: "password",
-              facebook: {
-                id: profile.id,
-                token: token
-              }
-            };
-            return models
-              .userModel
-              .createUser(newFacebookUser);
-          }
-        },
-        function (err) {
-          if (err) {
-            return done(err);
-          }
-        }
-      )
-      .then(
-        function (user) {
-          return done(null, user);
         },
         function (err) {
           if (err) {
@@ -134,13 +69,6 @@ module.exports = function (app, models) {
       );
   }
 
-  // function facebookLogin(req, res) {
-  //     if(req.user) {
-  //         res.redirect('/assignment/#!/profile');
-  //     } else {
-  //         res.sendStatus(404);
-  //     }
-  // }
 
   function login(req, res) {
     var user = req.user;

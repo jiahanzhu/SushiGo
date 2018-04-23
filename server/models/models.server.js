@@ -16,10 +16,18 @@ module.exports = function() {
     mongoose.connect(connectionString);
     mongoose.Promise = require('q').Promise;
 
+
     var userModel = require("./user/user.model.server.js")(mongoose);
+    var playerModel = require("./player/player.model.server.js")(mongoose, userModel);
+    var gameModel = require("./game/game.model.server.js")(mongoose, playerModel);
+    var cardModel = require("./card/card.model.server.js")(mongoose);
+
 
     var models = {
         'userModel' : userModel,
+        'playerModel' : playerModel,
+        'gameModel' : gameModel,
+        'cardModel' : cardModel
     };
 
     return models;
