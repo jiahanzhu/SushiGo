@@ -1,29 +1,21 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#navbar"
-                    aria-expanded="false"
-                    aria-controls="navbar">
-                <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
-            <a class="navbar-brand" [routerLink]="['/user', username]">Sushi Go!</a>
+            <a class="navbar-brand active" [routerLink]="['/user', username]">Sushi Go!</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <div class="navbar-nav navbar-brand navbar-header">
-                <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
-                <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
-                <a class="nav-item nav-link" routerLink="/user/{{username}}/game">Start Game</a>
-            </div>
-            <form class="navbar-form navbar-right">
-                <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="navbar-brand">Hi {{username}}</a></li>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-brand" [routerLink]="['/user', username, 'profile']">{{username}}</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right disabled knight-icon">
                 <li><a class="glyphicon glyphicon-knight"></a></li>
             </ul>
         </div>
