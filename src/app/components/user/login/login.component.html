@@ -1,23 +1,14 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#navbar"
-                    aria-expanded="false"
-                    aria-controls="navbar">
-                <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
-            <a class="navbar-brand" href="">Sushi Go!</a>
+            <a class="navbar-brand active" [routerLink]="['/login']">Sushi Go!</a>
         </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-            <div class="navbar-nav navbar-brand navbar-header">
-                <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
-                <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
-                <!--<a class="nav-item nav-link" routerLink="user/game">Start Game</a>-->
-            </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
+            </ul>
 
             <form (ngSubmit)="login()" #f="ngForm" class="navbar-form navbar-right">
                 <input placeholder="username"
@@ -25,18 +16,12 @@
                        type="text"
                        class="form-control"
                        [(ngModel)]="username" required #name="ngModel"/>
-                <span class="help-block" *ngIf="name.invalid && name.touched">
-                  Please enter username!
-                </span>
 
                 <input placeholder="password"
                        name="password"
                        type="password"
                        class="form-control"
                        [(ngModel)]="password" required #pass="ngModel"/>
-                <span class="help-block" *ngIf="pass.invalid && pass.touched">
-                  Please enter password!
-                </span>
 
                 <button type="submit"
                         class="btn btn-success"
@@ -53,29 +38,27 @@
     </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="row">
-        <div align="center" class="col-xs-1">
-        </div>
-        <div align="center" class="col-xs-2">
-            <img src="../../../../assets/img/sushis/Tempura.png" width="75%" class="images" />
-            <img src="../../../../assets/img/sushis/EggNigiri.png" width="90%" class="images" />
-            <img src="../../../../assets/img/sushis/Dumpling.png" width="75%" class="images" />
-            <img src="../../../../assets/img/sushis/Maki.png" width="75%" class="images" />
-            <!--<img src="../../../../assets/img/sushis/Chopsticks.png" width="70%" class="images" />-->
-        </div>
-        <div class="col-xs-6">
-            <img src="../../../../assets/img/logo.png" width="100%" class="images" />
-        </div>
-        <div align="center" class="col-xs-2">
-            <img src="../../../../assets/img/sushis/Wasabi.png" width="75%" class="images" />
-            <img src="../../../../assets/img/sushis/Pudding.png" width="75%" class="images" />
-            <!--<img src="../../../../assets/img/sushis/SalmonNigiri.png" width="70%" class="images" />-->
-            <img src="../../../../assets/img/sushis/Sashimi.png" width="75%" class="images" />
-            <img src="../../../../assets/img/sushis/SquidNigiri.png" width="75%" class="images" />
-        </div>
-        <div align="center" class="col-xs-1">
-        </div>
-
+<div class="row myBody">
+    <div align="center" class="col-xs-1">
     </div>
+    <div align="center" class="col-xs-2">
+        <img src="../../../../assets/img/sushis/Tempura.png" width="75%" class="sushi-icon" />
+        <img src="../../../../assets/img/sushis/EggNigiri.png" width="90%" class="sushi-icon" />
+        <img src="../../../../assets/img/sushis/Dumpling.png" width="75%" class="sushi-icon" />
+        <img src="../../../../assets/img/sushis/Maki.png" width="75%" class="sushi-icon" />
+        <!--<img src="../../../../assets/img/sushis/Chopsticks.png" width="70%" class="images" />-->
+    </div>
+    <div class="col-xs-6">
+        <img src="../../../../assets/img/logo.png" width="100%" class="logo" />
+    </div>
+    <div align="center" class="col-xs-2">
+        <img src="../../../../assets/img/sushis/Wasabi.png" width="75%" class="sushi-icon" />
+        <img src="../../../../assets/img/sushis/Pudding.png" width="75%" class="sushi-icon" />
+        <!--<img src="../../../../assets/img/sushis/SalmonNigiri.png" width="70%" class="images" />-->
+        <img src="../../../../assets/img/sushis/Sashimi.png" width="75%" class="sushi-icon" />
+        <img src="../../../../assets/img/sushis/SquidNigiri.png" width="75%" class="sushi-icon" />
+    </div>
+    <div align="center" class="col-xs-1">
+    </div>
+
 </div>

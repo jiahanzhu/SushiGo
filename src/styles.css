@@ -3,47 +3,15 @@ input {
 }
 
 body {
-    padding-top: 80px;
     /*background-image: url("assets/img/Background.jpg");*/
     background-color: rgba(255, 0, 0, 0.2);
 }
 
-/*ji*/
-.navbar {
-    /*background-color: #337ab7;*/
+.myBody {
+    margin-top: 80px;
 }
 
-.navbar-default .navbar-brand {
-    color: white;
-}
 
-.navbar-inverse .navbar-brand {
-    color: white;
-}
-
-.navbar-inverse .navbar-text {
-    color: white;
-}
-
-.navbar-inverse .navbar-toggle {
-    color: white;
-}
-
-.navbar-collapse .nav .navbar-brand {
-    color: white;
-}
-
-.navbar-collapse .nav .glyphicon {
-    color: white;
-}
-
-.navbar .navbar-brand .nav-link {
-    color: white;
-}
-
-.glyphicon {
-    color: white;
-}
 
 .input-number-group {
     display: -webkit-flex;
@@ -107,18 +75,6 @@ body {
     margin-left: 0.3rem;
 }
 
-.jga-widget .jga-toolbar {
-    position: absolute;
-    right: 0px;
-    background-color: grey;
-    padding: 7px;
-    border-bottom-left-radius: 10px;
-    opacity: 0.5;
-}
-
-.jga-widget .jga-content {
-    width: 100%;
-}
 
 .list-group-item.active,
 .list-group-item.active:focus,
@@ -132,7 +88,7 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -161,4 +117,44 @@ body {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+a {
+    color: #D7C4BB;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.sushi-icon:hover {
+    transform: scale(1.1, 1.1);
+}
+/*.logo:hover {*/
+/*transform: scale(1.1, 1.1);*/
+/*}*/
+
+.zjh-nav {
+    background-color: #734338;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #D7C4BB;
+}
+
+.navbar-default .navbar-header>a {
+    color: #D7C4BB;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-default .knight-icon>li>a:hover {
+    color: #D7C4BB;
+}
+
+.navbar-default .navbar-header>a:hover {
+    color: white;
 }

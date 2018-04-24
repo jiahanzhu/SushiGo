@@ -21,7 +21,7 @@ export class GameNewComponent implements OnInit {
     ngOnInit() {
         this.activatedRoute.params.subscribe(
             (params: any) => {
-                this.username = params['userId'];
+                this.username = params['username'];
             }
         );
         this.userService.checkLoggedIn().subscribe(

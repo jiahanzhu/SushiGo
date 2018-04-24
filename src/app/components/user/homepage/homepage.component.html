@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" [routerLink]="['/user', username]">Sushi Go!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
+            </ul>
+
+            <div class="navbar-form navbar-right">
+                <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-brand" [routerLink]="['/user', username, 'profile']">{{username}}</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right disabled knight-icon">
+                <li><a class="glyphicon glyphicon-knight"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="myBody">
+    <div class="row">
+        <div align="center" class="col-xs-1"></div>
+        <div align="center" class="col-xs-2">
+            <img src="../../../../assets/img/sushis/Tempura.png" width="75%" class="sushi-icon" />
+            <img src="../../../../assets/img/sushis/SquidNigiri.png" width="75%" class="sushi-icon" />
+            <img src="../../../../assets/img/sushis/Dumpling.png" width="75%" class="sushi-icon" />
+            <img src="../../../../assets/img/sushis/Maki.png" width="75%" class="sushi-icon" />
+            <!--<img src="../../../../assets/img/sushis/Chopsticks.png" width="70%" class="images" />-->
+        </div>
+        <div align="center" class="col-xs-6">
+            <img src="../../../../assets/img/logo.png" width="80%" class="logo" />
+            <div align="center" class="startButton">
+                <img src="../../../../assets/img/PlayNow.png" width="40%" (click)="startGame()" />
+            </div>
+        </div>
+        <div align="center" class="col-xs-2">
+            <img src="../../../../assets/img/sushis/Wasabi.png" width="75%" class="sushi-icon" />
+            <img src="../../../../assets/img/sushis/Pudding.png" width="75%" class="sushi-icon" />
+            <!--<img src="../../../../assets/img/sushis/SalmonNigiri.png" width="70%" class="images" />-->
+            <img src="../../../../assets/img/sushis/Sashimi.png" width="75%" class="sushi-icon" />
+            <img src="../../../../assets/img/sushis/EggNigiri.png" width="90%" class="sushi-icon" />
+        </div>
+        <div align="center" class="col-xs-1"></div>
+    </div>
+</div>
+
+

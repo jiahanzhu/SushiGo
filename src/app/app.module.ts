@@ -14,6 +14,8 @@ import { GameNewComponent } from './components/game/game-new/game-new.component'
 import { GamePlayComponent } from './components/game/game-play/game-play.component';
 import {GameService} from './services/game.service.client';
 import { GameStatsComponent } from './components/game/game-stats/game-stats.component';
+import { HomepageComponent } from './components/user/homepage/homepage.component';
+import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { GameStatsComponent } from './components/game/game-stats/game-stats.comp
     ProfileComponent,
     GameNewComponent,
     GamePlayComponent,
-    GameStatsComponent
+    GameStatsComponent,
+    HomepageComponent,
+    HowToPlayComponent
   ],
   imports: [
     BrowserModule,

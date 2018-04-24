@@ -26,7 +26,7 @@ export class GameStatsComponent implements OnInit {
   ngOnInit() {
       this.activatedRoute.params.subscribe(
           (params: any) => {
-              this.username = params['userId'];
+              this.username = params['username'];
               this.gameId = params['gameId'];
           }
       );

@@ -9,7 +9,7 @@
                     aria-controls="navbar">
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </button>
-            <a class="navbar-brand" href="">Sushi Go!</a>
+            <a class="navbar-brand" [routerLink]="['/user', username]">Sushi Go!</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <div class="navbar-nav navbar-brand navbar-header">
@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<div class="container">
+<div class="container myBody">
     <p>Alice</p>
     <div class="row">
         <div class="col">

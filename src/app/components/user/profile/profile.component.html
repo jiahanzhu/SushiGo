@@ -1,56 +1,50 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar"
-              aria-expanded="false"
-              aria-controls="navbar">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
-      </button>
-      <a class="navbar-brand" href="">Sushi Go!</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <div class="navbar-nav navbar-brand navbar-header">
-        <a class="nav-item nav-link" href="https://boardgamegeek.com/boardgame/133473/sushi-go">Intro</a>
-        <a class="nav-item nav-link" href="https://github.ccs.neu.edu/phoebe0607/sushigo">About</a>
-        <a class="nav-item nav-link" routerLink="/user/{{username}}/game">Start Game</a>
-      </div>
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" [routerLink]="['/user', username]">Sushi Go!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
+            </ul>
 
-      <div class="navbar-form navbar-right">
-        <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="navbar-brand">Hi {{username}}</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="glyphicon glyphicon-knight"></a></li>
-      </ul>
+            <div class="navbar-form navbar-right">
+                <a [routerLink]="['/login']" class="btn btn-danger">Logout</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-brand" [routerLink]="['/user', username, 'profile']">Hi {{username}}!</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right disabled knight-icon">
+                <li><a class="glyphicon glyphicon-knight"></a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 
 
-<div class="container-fluid myBody">
-  <!--<div *ngIf="message" class="alert alert-info">-->
-    <!--{{message}}-->
-  <!--</div>-->
-  <label>Username</label>
-  <input [(ngModel)]="user.username" class="form-control" type="text"
-         id="username" placeholder="{{user.username}}">
-  <label>Email</label>
-  <input [(ngModel)]="user.email" class="form-control" type="text"
-         id="email" placeholder="{{user.email}}">
-  <label>Fisrt Name</label>
-  <input [(ngModel)]="user.firstName" class="form-control" type="text"
-         id="first-name" placeholder="{{user.firstName}}">
-  <label>Last Name</label>
-  <input [(ngModel)]="user.lastName" class="form-control" type="text"
-         id="last-name" placeholder="{{user.lastName}}">
-  <a (click)="removeUser()" class="btn btn-warning btn-block">Delete User</a>
-  <a (click)="logout()" class="btn btn-danger btn-block">Logout</a>
+<div class="container-fluid myProfile myBody">
+    <div *ngIf="successFlag"
+         class="alert alert-info">
+        {{successMsg}}
+    </div>
+    <div *ngIf="errorFlag"
+         class="alert alert-danger">
+        {{errorMsg}}
+    </div>
+    <label>Username</label>
+    <input [(ngModel)]="username" class="form-control" type="text"
+           id="username" placeholder="{{username}}">
+    <label>Email</label>
+    <input [(ngModel)]="email" class="form-control" type="text"
+           id="email" placeholder="{{email}}">
+
+    <a (click)="updateUser()" class="btn btn-success btn-block">Update</a>
+    <a [routerLink]="['/user', username]" class="btn btn-primary btn-block">Back to Homepage</a>
+    <a (click)="logout()" class="btn btn-warning btn-block">Logout</a>
+    <a (click)="removeUser()" class="btn btn-danger btn-block">Delete User</a>
 </div>

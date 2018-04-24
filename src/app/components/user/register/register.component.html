@@ -1,4 +1,19 @@
-<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" [routerLink]="['/login']">Sushi Go!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid myRegister myBody">
   <div *ngIf="errorFlag" class="alert alert-danger">
     {{errorMsg}}
   </div>
