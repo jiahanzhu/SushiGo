@@ -3,3 +3,8 @@ img {max-width: 100%;}
 .card-display {
     padding: 0;
 }
+
+.cards-on-hand:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}

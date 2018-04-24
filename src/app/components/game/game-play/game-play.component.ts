@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {GameService} from '../../../services/game.service.client';
 import {Game} from '../../../models/game.model.client';
 import {UserService} from '../../../services/user.service.client';
+import * as io from 'socket.io-client';
 
 @Component({
     selector: 'app-game-play',
@@ -18,11 +19,17 @@ export class GamePlayComponent implements OnInit {
     cards = this.game.cards;
     points = this.game.points;
     message: string;
+    socket;
     constructor(private userService: UserService,
                 private gameService: GameService,
                 private activatedRoute: ActivatedRoute,
                 private router: Router) {}
     ngOnInit() {
+        this.socket = io();
+        this.socket.on('hello', function(data) {
+            console.log('socket received greeting from server:');
+            console.log(data);
+        });
         this.activatedRoute.params.subscribe(
             (params: any) => {
                 this.username = params['username'];

@@ -4,6 +4,13 @@ var express = require('express');
 //initialize app as an express application
 var app = express();
 
+app.set('port', (process.env.PORT || 3000));
+var server = app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
+
+var io = require('socket.io').listen(server);
+
 
 var passport      = require('passport');
 var cookieParser  = require('cookie-parser');
@@ -23,7 +30,7 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.set('port', (process.env.PORT || 3000));
+
 app.use(express.static(__dirname + '/dist'));
 require("./server/app.js")(app);
 app.use(function(req, res) {
@@ -31,15 +38,15 @@ app.use(function(req, res) {
     res.sendFile(__dirname + '/dist/index.html');
 });
 
-var server = app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
+
+
+io.on('connection', function (socket) {
+    socket.emit('hello', { greeting: 'hello world!' });
+    console.log( 'User ' + socket.id + ' connected!' );
+    socket.on('disconnect', function() {
+        console.log('User ' + this.id + ' disconnected!');
+    });
+    socket.on('my other event', function (data) {
+        console.log(data);
+    });
 });
-
-// var io = require('socket.io').listen(server);
-// io.sockets.on('connection', function (socket) {
-//     console.log('a user connected');
-//     socket.on('disconnect', function(){
-//         console.log('a user disconnected');
-//     });
-// });
-

@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {UserService} from '../../../services/user.service.client';
 import {User} from '../../../models/user.model.client';
-
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -26,13 +25,20 @@ export class HomepageComponent implements OnInit {
         );
         this.userService.checkLoggedIn().subscribe(
             response => {
-                this.user = response;
-                this.username = this.user.username;
+                if (response['loggedIn'] === false) {
+                    console.log('User not logged in!');
+                    this.router.navigate(['/login']);
+                } else {
+                    console.log('User is logged in!');
+                    this.user = response;
+                    this.username = this.user['username'];
+                }
             },
             err => {
                 this.router.navigate(['/login']);
             }
         );
+
     }
     startGame() {
         this.router.navigate(['/user', this.username, 'game']);

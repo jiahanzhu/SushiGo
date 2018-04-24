@@ -14,6 +14,7 @@ export class GameNewComponent implements OnInit {
     user: User;
     username: string;
     game: Game = new Game(Math.floor(Math.random() * 100), this.user);
+    tmp;
     constructor(private userService: UserService,
                 private gameService: GameService,
                 private activatedRoute: ActivatedRoute,
@@ -33,6 +34,7 @@ export class GameNewComponent implements OnInit {
                 this.router.navigate(['/login']);
             }
         );
+        this.tmp = document.getElementById('gamestart');
     }
     newGame() {
         // this.gameService.createGame(this.username, this.game).subscribe(

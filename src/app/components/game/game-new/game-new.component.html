@@ -21,17 +21,31 @@
         </div>
     </div>
 </nav>
+<div class="container-fluid myBody">
+    <audio controls autoplay hidden loop>
+        <source src="../../../../assets/music/bgm_menu.mp3" type="audio/mpeg">
+        audio unsupported !!
+    </audio>
+    <!--<embed src="../../../../assets/music/bgm_menu.mp3" loop="true" width="0" height="0" autostart="true">-->
+    <div align="center">
+        <img src="../../../../assets/img/game_mode.png"/>
+    </div>
+</div>
+<div class="row">
 
-<div class="row myBody">
-    <embed src="../../../../assets/music/bgm_ddz.mp3" loop="true" width="0" height="0" autostart="true">
     <div class="col-sm-6">
         <div class="card text-center">
-            <img class="sushi-icon" src="../../../../assets/img/sushis/Wasabi.png" width="50%" alt="Card image cap">
+            <div align="center">
+                <img class="sushi-icon" src="../../../../assets/img/sushis/Wasabi.png" width="53%" alt="Card image cap" data-toggle="modal" data-target="#gamestart">
+            </div>
+            <div align="center">
+                <img src="../../../../assets/img/pve.png" width="40%"/>
+            </div>
             <div class="card-block">
-                <br/>
-                <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#gamestart">
-                    PvE
-                </button>
+                <!--<br/>-->
+                <!--<button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#gamestart">-->
+                <!--PvE-->
+                <!--</button>-->
 
                 <!-- Modal -->
                 <div class="modal fade"
@@ -56,9 +70,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer" align="center">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="newGame()">Game Start</button>
+                                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="newGame()">Start</button>
                             </div>
                         </div>
                     </div>
@@ -68,18 +82,23 @@
     </div>
     <div class="col-sm-6">
         <div class="card text-center">
-            <img class="sushi-icon" src="../../../../assets/img/sushis/Tempura.png" width="50%" alt="Card image cap">
-            <div class="card-block">
-                <br/>
-                <button type="button"
-                        class="btn btn-lg btn-warning"
-                        data-toggle="popover"
-                        data-placement="left"
-                        title="Uh-oh!"
-                        data-content="We're still working on PvP. Please try later!">
-                    PvP
-                </button>
+            <div align="center">
+                <img class="sushi-icon" src="../../../../assets/img/sushis/Tempura.png" width="50%" alt="Card image cap">
             </div>
+            <div align="center">
+                <img src="../../../../assets/img/pvp.png" width="40%"/>
+            </div>
+            <!--<div class="card-block">-->
+            <!--<br/>-->
+            <!--<button type="button"-->
+            <!--class="btn btn-lg btn-warning"-->
+            <!--data-toggle="popover"-->
+            <!--data-placement="left"-->
+            <!--title="Uh-oh!"-->
+            <!--data-content="We're still working on PvP. Please try later!">-->
+            <!--PvP-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
-</div>

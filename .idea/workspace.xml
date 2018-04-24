@@ -2,123 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c653746-387a-45c8-b447-fc9160091386" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_chopsticks.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_dumpling.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_maki_2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_maki_3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_pudding.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_sashimi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_tempura.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/cards/sushigo_wasabi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/dumped/maki3.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/dist/inline.bundle.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
       <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/dist/main.bundle.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js" afterPath="$PROJECT_DIR$/dist/polyfills.bundle.js" />
       <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js" afterPath="$PROJECT_DIR$/dist/styles.bundle.js" />
       <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js.map" afterPath="$PROJECT_DIR$/dist/styles.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/README.md" afterPath="$PROJECT_DIR$/node_modules/engine.io/README.md" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/accepts/HISTORY.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/accepts/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/accepts/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/accepts/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/accepts/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/package.json" afterPath="$PROJECT_DIR$/node_modules/engine.io/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js" afterPath="$PROJECT_DIR$/dist/vendor.bundle.js" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/dist/vendor.bundle.js.map" />
       <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/History.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" afterPath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" afterPath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" />
       <change beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/action_after_build.stamp.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Extensions.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Group.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/HTTPSocket.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Hub.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Networking.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Node.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Socket.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/WebSocket.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/addon.o.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/Release/uws.node.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/.deps/uws.d" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/action_after_build.stamp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Extensions.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Group.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/HTTPSocket.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Hub.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Networking.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Node.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/Socket.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/WebSocket.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/obj.target/uws/src/addon.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/Release/uws.node" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/action_after_build.target.mk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/binding.Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/config.gypi" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/gyp-mac-tool" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build/uws.target.mk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/build_log.txt" afterPath="$PROJECT_DIR$/node_modules/uws/build_log.txt" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/package.json" afterPath="$PROJECT_DIR$/node_modules/uws/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Asio.h" afterPath="$PROJECT_DIR$/node_modules/uws/src/Asio.h" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Epoll.cpp" afterPath="$PROJECT_DIR$/node_modules/uws/src/Epoll.cpp" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Epoll.h" afterPath="$PROJECT_DIR$/node_modules/uws/src/Epoll.h" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Group.cpp" afterPath="$PROJECT_DIR$/node_modules/uws/src/Group.cpp" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Group.h" afterPath="$PROJECT_DIR$/node_modules/uws/src/Group.h" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Hub.cpp" afterPath="$PROJECT_DIR$/node_modules/uws/src/Hub.cpp" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Hub.h" afterPath="$PROJECT_DIR$/node_modules/uws/src/Hub.h" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/src/Libuv.h" afterPath="$PROJECT_DIR$/node_modules/uws/src/Libuv.h" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_darwin_46.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_darwin_46.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_darwin_47.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_darwin_47.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_darwin_48.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_darwin_48.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_darwin_51.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_darwin_51.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_darwin_57.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_darwin_57.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_linux_46.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_linux_46.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_linux_47.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_linux_47.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_linux_48.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_linux_48.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_linux_51.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_linux_51.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_win32_48.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_win32_48.node" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uws/uws_win32_51.node" afterPath="$PROJECT_DIR$/node_modules/uws/uws_win32_51.node" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change beforePath="$PROJECT_DIR$/server/services/user.service.server.js" afterPath="$PROJECT_DIR$/server/services/user.service.server.js" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" />
       <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" />
       <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css" afterPath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css" />
       <change beforePath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/logo.png" afterPath="$PROJECT_DIR$/src/assets/img/logo.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_chopsticks.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_chopsticks.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_dumpling.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_dumpling.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_egg.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_egg.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_maki1.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_maki1.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_maki2.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_maki2.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_maki3.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_maki3.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_pudding.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_pudding.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_salmon.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_salmon.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_sashimi.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_sashimi.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_squid.png" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_squid.png" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_tempura.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_tempura.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sushigo_wasabi.jpg" afterPath="$PROJECT_DIR$/src/assets/img/dumped/sushigo_wasabi.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/user.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -135,18 +45,48 @@
       <file leaf-file-name="homepage.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="250">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-play.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game-play.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3240">
-              <caret line="216" column="14" lean-forward="false" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
+            <state relative-caret-position="248">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-new.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-new.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-new.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -155,28 +95,20 @@
       <file leaf-file-name="game-play.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="540">
+              <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.model.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/models/game.model.client.ts">
+      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-412">
-              <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="155">
+              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -185,39 +117,31 @@
       <file leaf-file-name="game-play.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <file leaf-file-name="homepage.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
+      <file leaf-file-name="homepage.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.schema.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/card/card.schema.server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="145" lean-forward="false" selection-start-line="7" selection-start-column="145" selection-end-line="7" selection-end-column="145" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,6 +165,7 @@
       <find>deck</find>
       <find>text</find>
       <find>prim</find>
+      <find>value</find>
     </findStrings>
     <replaceStrings>
       <replace>game</replace>
@@ -259,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/assets/script.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/src/app/models/user.model.client.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" />
         <option value="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/models/card.model.client.ts" />
@@ -273,16 +197,13 @@
         <option value="$PROJECT_DIR$/server/models/game/game.schema.server.js" />
         <option value="$PROJECT_DIR$/server/models/card/card.schema.server.js" />
         <option value="$PROJECT_DIR$/server/models/user/user.model.server.js" />
-        <option value="$PROJECT_DIR$/server/services/user.service.server.js" />
         <option value="$PROJECT_DIR$/server/models/models.server.js" />
         <option value="$PROJECT_DIR$/server/models/card/card.model.server.js" />
         <option value="$PROJECT_DIR$/server/models/game/game.model.server.js" />
         <option value="$PROJECT_DIR$/server/models/player/player.model.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.css" />
@@ -294,15 +215,21 @@
         <option value="$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.html" />
-        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/styles.css" />
+        <option value="$PROJECT_DIR$/server/services/user.service.server.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
-        <option value="$PROJECT_DIR$/src/styles.css" />
       </list>
     </option>
   </component>
@@ -324,8 +251,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -400,19 +328,6 @@
               <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="sushigo" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sushigo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sushigo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +410,9 @@
               <item name="sushigo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sushigo" type="b2602c69:ProjectViewProjectNode" />
@@ -508,8 +425,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -569,16 +486,16 @@
       <workItem from="1524159011505" duration="3924000" />
       <workItem from="1524348619367" duration="1577000" />
       <workItem from="1524379881969" duration="14656000" />
-      <workItem from="1524516273137" duration="32017000" />
+      <workItem from="1524516273137" duration="32655000" />
+      <workItem from="1524598233411" duration="9338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117606000" />
+    <option name="totallyTimeSpent" value="127582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22128259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -589,7 +506,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22974607" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22974607" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,13 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/models/game/game.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/player/player.schema.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -646,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="14" lean-forward="false" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,25 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,17 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,19 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,17 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,19 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/user.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,55 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,16 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
+        <state relative-caret-position="960">
           <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -972,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,50 +764,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="216" column="14" lean-forward="false" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
+        <state relative-caret-position="348">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        <state relative-caret-position="2400">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/user.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -76,7 +76,7 @@ module.exports = function (app, models) {
   }
 
   function checkLoggedIn(req, res) {
-    res.send(req.isAuthenticated() ? req.user : undefined);
+    res.send(req.isAuthenticated() ? req.user : {loggedIn: false});
   }
 
   function register(req, res) {

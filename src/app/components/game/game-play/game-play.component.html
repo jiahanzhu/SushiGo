@@ -24,7 +24,11 @@
 
 
 <div class="container myBody">
-    <embed src="../../../../assets/music/bgm_ddz.mp3" loop="true" width="0" height="0" autostart="true">
+    <audio controls autoplay hidden loop>
+        <source src="../../../../assets/music/bgm_game.mp3" type="audio/mpeg">
+        audio unsupported !!
+    </audio>
+    <!--<embed src="../../../../assets/music/bgm_game.mp3" loop="true" width="0" height="0" autostart="true">-->
     <p>Alice</p>
     <div class="row">
         <div class="col-xs-6">
@@ -179,32 +183,32 @@
         <div class="col-xs-6">
             <div class="row">
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][0])" src="{{showCards(decks[3][0])[0]}}" alt="{{showCards(decks[3][0])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][0])" src="{{showCards(decks[3][0])[0]}}" alt="{{showCards(decks[3][0])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][1])" src="{{showCards(decks[3][1])[0]}}" alt="{{showCards(decks[3][1])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][1])" src="{{showCards(decks[3][1])[0]}}" alt="{{showCards(decks[3][1])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][2])" src="{{showCards(decks[3][2])[0]}}" alt="{{showCards(decks[3][2])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][2])" src="{{showCards(decks[3][2])[0]}}" alt="{{showCards(decks[3][2])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][3])" src="{{showCards(decks[3][3])[0]}}" alt="{{showCards(decks[3][3])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][3])" src="{{showCards(decks[3][3])[0]}}" alt="{{showCards(decks[3][3])[1]}}">
                 </div>
             </div>
         </div>
         <div class="col-xs-6">
             <div class="row">
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][4])" src="{{showCards(decks[3][4])[0]}}" alt="{{showCards(decks[3][4])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][4])" src="{{showCards(decks[3][4])[0]}}" alt="{{showCards(decks[3][4])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][5])" src="{{showCards(decks[3][5])[0]}}" alt="{{showCards(decks[3][5])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][5])" src="{{showCards(decks[3][5])[0]}}" alt="{{showCards(decks[3][5])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][6])" src="{{showCards(decks[3][6])[0]}}" alt="{{showCards(decks[3][6])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][6])" src="{{showCards(decks[3][6])[0]}}" alt="{{showCards(decks[3][6])[1]}}">
                 </div>
                 <div class="col-xs-3 card-display">
-                    <img class="card-img-top" (click)="getCard(decks[3][7])" src="{{showCards(decks[3][7])[0]}}" alt="{{showCards(decks[3][7])[1]}}">
+                    <img class="cards-on-hand" (click)="getCard(decks[3][7])" src="{{showCards(decks[3][7])[0]}}" alt="{{showCards(decks[3][7])[1]}}">
                 </div>
             </div>
         </div>
