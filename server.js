@@ -4,6 +4,7 @@ var express = require('express');
 //initialize app as an express application
 var app = express();
 
+
 var passport      = require('passport');
 var cookieParser  = require('cookie-parser');
 var session       = require('express-session');
@@ -30,16 +31,15 @@ app.use(function(req, res) {
     res.sendFile(__dirname + '/dist/index.html');
 });
 
-app.listen(app.get('port'), function() {
+var server = app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
 });
 
-// // server.js
-// const express = require('express');
-// const app = express();
-// // Run the app by serving the static files
-// // in the dist directory
-// app.use(express.static(__dirname + '/dist'));
-// // Start the app by listening on the default
-// // Heroku port
-// app.listen(process.env.PORT || 8080);
+// var io = require('socket.io').listen(server);
+// io.sockets.on('connection', function (socket) {
+//     console.log('a user connected');
+//     socket.on('disconnect', function(){
+//         console.log('a user disconnected');
+//     });
+// });
+

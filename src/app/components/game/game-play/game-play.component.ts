@@ -40,29 +40,29 @@ export class GamePlayComponent implements OnInit {
 
     showCards(index) {
         if (index < 5) {
-            return ['../../../../assets/img/sushigo_egg.png', 'Egg'];
+            return ['../../../../assets/img/cards/sushigo_egg.png', 'Egg'];
         } else if (index < 15) {
-            return ['../../../../assets/img/sushigo_salmon.png', 'Salmon'];
+            return ['../../../../assets/img/cards/sushigo_salmon.png', 'Salmon'];
         } else if (index < 20) {
-            return ['../../../../assets/img/sushigo_squid.png', 'Squid'];
+            return ['../../../../assets/img/cards/sushigo_squid.png', 'Squid'];
         } else if (index < 26) {
-            return ['../../../../assets/img/sushigo_maki1.png', 'Maki I'];
+            return ['../../../../assets/img/cards/sushigo_maki_1.png', 'Maki I'];
         } else if (index < 38) {
-            return ['../../../../assets/img/sushigo_maki2.png', 'Maki II'];
+            return ['../../../../assets/img/cards/sushigo_maki_2.png', 'Maki II'];
         } else if (index < 46) {
-            return ['../../../../assets/img/sushigo_maki3.png', 'Maki III'];
+            return ['../../../../assets/img/cards/sushigo_maki_3.png', 'Maki III'];
         } else if (index < 60) {
-            return ['../../../../assets/img/sushigo_dumpling.jpg', 'Dumpling'];
+            return ['../../../../assets/img/cards/sushigo_dumpling.png', 'Dumpling'];
         } else if (index < 74) {
-            return ['../../../../assets/img/sushigo_tempura.jpg', 'Tempura'];
+            return ['../../../../assets/img/cards/sushigo_tempura.png', 'Tempura'];
         } else if (index < 88) {
-            return ['../../../../assets/img/sushigo_sashimi.jpg', 'Sashimi'];
+            return ['../../../../assets/img/cards/sushigo_sashimi.png', 'Sashimi'];
         } else if (index < 94) {
-            return ['../../../../assets/img/sushigo_wasabi.jpg', 'Wasabi'];
+            return ['../../../../assets/img/cards/sushigo_wasabi.png', 'Wasabi'];
         } else if (index < 98) {
-            return ['../../../../assets/img/sushigo_chopsticks.jpg', 'Chopsticks'];
+            return ['../../../../assets/img/cards/sushigo_chopsticks.png', 'Chopsticks'];
         } else if (index < 108) {
-            return ['../../../../assets/img/sushigo_pudding.jpg', 'Pudding'];
+            return ['../../../../assets/img/cards/sushigo_pudding.png', 'Pudding'];
         } else {
             return ['...', index];
         }
