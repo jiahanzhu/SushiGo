@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {User} from '../models/user.model.client';
-import * as io from 'socket.io-client';
 
 // injecting service into module
 @Injectable()

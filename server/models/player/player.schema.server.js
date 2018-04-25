@@ -3,7 +3,9 @@ module.exports = function(mongoose){
 
     var playerSchema = new Schema({
         _user : {type: Schema.Types.ObjectId, ref: 'User'},
+        player_id : Number,
         // _game : {type: Schema.Types.ObjectId, ref: 'Game'},
+        isHuman : {type: Boolean, default: true},
         playedCards : [{type: Schema.Types.ObjectId, ref: 'Card'}],
         handCards : [{type: Schema.Types.ObjectId, ref: 'Card'}],
         score: {type: Number, default: 0}

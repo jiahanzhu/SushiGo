@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     { path: 'user/:username/profile', component: ProfileComponent },
     { path: 'how-to-play', component: HowToPlayComponent },
     { path: 'user/:username/game', component: GameNewComponent },
-    { path: 'user/:username/game/:gameId', component: GamePlayComponent },
+    { path: 'room/:roomId', component: GamePlayComponent },
     { path: 'user/:username/game/:gameId/stats', component: GameStatsComponent },
     { path: '**', component: LoginComponent }
 ];

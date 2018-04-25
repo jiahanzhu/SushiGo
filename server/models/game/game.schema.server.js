@@ -9,7 +9,8 @@ module.exports = function(mongoose){
             type: Number,
             enum: [1,2,3,4,5,6,7,8]},
         round : {type: Number, enum: [1,2,3]},
-        has_ended: Boolean
+        status: {type: String, enum: ['Prep', 'Playing', 'Ended']},
+        room: {type: Schema.Types.ObjectId, ref: 'Room'}
     }, {collection: 'game', usePushEach: true});
 
     return gameSchema;

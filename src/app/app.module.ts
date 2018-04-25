@@ -9,10 +9,13 @@ import { ProfileComponent } from './components/user/profile/profile.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {UserService} from './services/user.service.client';
+import {GameService} from './services/game.service.client';
+import {RoomService} from './services/room.service.client';
+import {PlayerService} from './services/player.service.client';
+import {CardService} from './services/card.service.client';
 import {HttpClientModule} from '@angular/common/http';
 import { GameNewComponent } from './components/game/game-new/game-new.component';
 import { GamePlayComponent } from './components/game/game-play/game-play.component';
-import {GameService} from './services/game.service.client';
 import { GameStatsComponent } from './components/game/game-stats/game-stats.component';
 import { HomepageComponent } from './components/user/homepage/homepage.component';
 import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.component';
@@ -36,7 +39,7 @@ import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.co
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [UserService, GameService],
+  providers: [UserService, GameService, RoomService, PlayerService, CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

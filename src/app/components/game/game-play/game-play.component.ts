@@ -14,6 +14,7 @@ import * as io from 'socket.io-client';
 export class GamePlayComponent implements OnInit {
     user: User;
     username: string;
+    roomId: string;
     game: Game = new Game(Math.floor(Math.random() * 100), this.user);
     decks = this.game.decks;
     cards = this.game.cards;
@@ -32,12 +33,13 @@ export class GamePlayComponent implements OnInit {
         });
         this.activatedRoute.params.subscribe(
             (params: any) => {
-                this.username = params['username'];
+                this.roomId = params['roomId'];
             }
         );
         this.userService.checkLoggedIn().subscribe(
             response => {
                 this.user = response;
+                this.username = this.user.username;
             },
             err => {
                 this.router.navigate(['/login']);
