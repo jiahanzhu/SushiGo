@@ -281,12 +281,16 @@ var GameNewComponent = /** @class */ (function () {
             console.log('Room created!');
             console.log(new_room);
             var players = [new __WEBPACK_IMPORTED_MODULE_4__models_player_model_client__["a" /* Player */](0, new_room.id, _this.username, true)];
+            console.log('client players: ');
+            console.log(players);
             var i;
             for (i = 1; i < num_p; i++) {
                 var robot = 'robot_' + i;
                 var player = new __WEBPACK_IMPORTED_MODULE_4__models_player_model_client__["a" /* Player */](i, new_room.id, robot, false);
                 players.push(player);
             }
+            console.log('client players: ');
+            console.log(players);
             _this.roomService.generatePlayers(new_room.id, players).subscribe(function (response) {
                 console.log('Players added!');
                 console.log(res);
