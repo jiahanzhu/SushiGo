@@ -229,8 +229,9 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_game_service_client__ = __webpack_require__("../../../../../src/app/services/game.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_game_model_client__ = __webpack_require__("../../../../../src/app/models/game.model.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_user_service_client__ = __webpack_require__("../../../../../src/app/services/user.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_room_service_client__ = __webpack_require__("../../../../../src/app/services/room.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_player_model_client__ = __webpack_require__("../../../../../src/app/models/player.model.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_user_service_client__ = __webpack_require__("../../../../../src/app/services/user.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_room_service_client__ = __webpack_require__("../../../../../src/app/services/room.service.client.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -240,6 +241,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -278,7 +280,18 @@ var GameNewComponent = /** @class */ (function () {
             var new_room = res;
             console.log('Room created!');
             console.log(new_room);
-            _this.router.navigate(['/room', new_room.id]);
+            var players = [new __WEBPACK_IMPORTED_MODULE_4__models_player_model_client__["a" /* Player */](0, new_room.id, _this.username, true)];
+            var i;
+            for (i = 1; i < num_p; i++) {
+                var robot = 'robot_' + i;
+                var player = new __WEBPACK_IMPORTED_MODULE_4__models_player_model_client__["a" /* Player */](i, new_room.id, robot, false);
+                players.push(player);
+            }
+            _this.roomService.generatePlayers(new_room.id, players).subscribe(function (response) {
+                console.log('Players added!');
+                console.log(res);
+                _this.router.navigate(['/room', new_room.id]);
+            });
         });
         // this.gameService.updateGame(this.game.id, this.game).subscribe(
         //     res => this.router.navigate(['/user', this.username, '/game', this.game.id]),
@@ -291,8 +304,8 @@ var GameNewComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/components/game/game-new/game-new.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/game/game-new/game-new.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_user_service_client__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_5__services_room_service_client__["a" /* RoomService */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__services_user_service_client__["a" /* UserService */],
+            __WEBPACK_IMPORTED_MODULE_6__services_room_service_client__["a" /* RoomService */],
             __WEBPACK_IMPORTED_MODULE_2__services_game_service_client__["a" /* GameService */],
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
@@ -339,8 +352,9 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_game_service_client__ = __webpack_require__("../../../../../src/app/services/game.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_game_model_client__ = __webpack_require__("../../../../../src/app/models/game.model.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_user_service_client__ = __webpack_require__("../../../../../src/app/services/user.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_socket_io_client__ = __webpack_require__("../../../../socket.io-client/lib/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_socket_io_client__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_room_service_client__ = __webpack_require__("../../../../../src/app/services/room.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_socket_io_client__ = __webpack_require__("../../../../socket.io-client/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_socket_io_client__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -356,32 +370,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var GamePlayComponent = /** @class */ (function () {
-    function GamePlayComponent(userService, gameService, activatedRoute, router) {
+    function GamePlayComponent(userService, gameService, roomService, activatedRoute, router) {
+        var _this = this;
         this.userService = userService;
         this.gameService = gameService;
+        this.roomService = roomService;
         this.activatedRoute = activatedRoute;
         this.router = router;
         this.game = new __WEBPACK_IMPORTED_MODULE_3__models_game_model_client__["a" /* Game */](Math.floor(Math.random() * 100), this.user);
         this.decks = this.game.decks;
         this.cards = this.game.cards;
         this.points = this.game.points;
+        this.userService.checkLoggedIn().subscribe(function (response) {
+            _this.user = response;
+            _this.username = _this.user.username;
+        }, function (err) {
+            _this.router.navigate(['/login']);
+        });
     }
     GamePlayComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.socket = __WEBPACK_IMPORTED_MODULE_5_socket_io_client__();
+        this.socket = __WEBPACK_IMPORTED_MODULE_6_socket_io_client__();
         this.socket.on('hello', function (data) {
             console.log('socket received greeting from server:');
             console.log(data);
         });
         this.activatedRoute.params.subscribe(function (params) {
             _this.roomId = params['roomId'];
-        });
-        this.userService.checkLoggedIn().subscribe(function (response) {
-            _this.user = response;
-            _this.username = _this.user.username;
-        }, function (err) {
-            _this.router.navigate(['/login']);
+            _this.roomService.findRoomById(_this.roomId).subscribe(function (res) {
+                _this.room = res;
+                console.log('Entered new room:');
+                console.log(_this.room);
+            });
         });
     };
     GamePlayComponent.prototype.showCards = function (index) {
@@ -572,6 +594,7 @@ var GamePlayComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_user_service_client__["a" /* UserService */],
             __WEBPACK_IMPORTED_MODULE_2__services_game_service_client__["a" /* GameService */],
+            __WEBPACK_IMPORTED_MODULE_5__services_room_service_client__["a" /* RoomService */],
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
     ], GamePlayComponent);
@@ -1151,6 +1174,28 @@ var Game = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/models/player.model.client.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Player; });
+var Player = /** @class */ (function () {
+    function Player(playerId, roomId, username, isHuman, playedCards, handCards, score) {
+        this.playerId = playerId;
+        this.roomId = roomId;
+        this.username = username;
+        this.isHuman = isHuman;
+        this.playedCards = playedCards;
+        this.handCards = handCards;
+        this.score = score;
+    }
+    return Player;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/models/user.model.client.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1334,6 +1379,9 @@ var RoomService = /** @class */ (function () {
         this.http = http;
         this.api = {
             'createRoom': this.createRoom,
+            'findRoomById': this.findRoomById,
+            'addPlayer': this.addPlayer,
+            'generatePlayers': this.generatePlayers
         };
     }
     RoomService.prototype.createRoom = function (room) {
@@ -1343,6 +1391,16 @@ var RoomService = /** @class */ (function () {
         return this.http.post(url, room);
     };
     RoomService.prototype.findRoomById = function (roomId) {
+        var url = '/api/room/' + roomId;
+        return this.http.get(url);
+    };
+    RoomService.prototype.addPlayer = function (player) {
+        var url = '/api/room/' + player.roomId + '/add-player';
+        return this.http.put(url, player);
+    };
+    RoomService.prototype.generatePlayers = function (roomId, players) {
+        var url = '/api/room/' + roomId;
+        return this.http.put(url, players);
     };
     RoomService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),

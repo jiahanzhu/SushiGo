@@ -2,8 +2,9 @@ module.exports = function(mongoose){
     var Schema = mongoose.Schema;
 
     var playerSchema = new Schema({
-        _user : {type: Schema.Types.ObjectId, ref: 'User'},
-        player_id : Number,
+        username : String,
+        playerId : Number,
+        roomId : String,
         // _game : {type: Schema.Types.ObjectId, ref: 'Game'},
         isHuman : {type: Boolean, default: true},
         playedCards : [{type: Schema.Types.ObjectId, ref: 'Card'}],
