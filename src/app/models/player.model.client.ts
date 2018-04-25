@@ -4,7 +4,7 @@ export class Player {
                 public roomId: string,
                 public username: string,
                 public isHuman: boolean,
-                public playedCards?: Card[],
-                public handCards?: Card[],
+                public playedCards?: number[],
+                public handCards?: number[],
                 public score?: number) {}
 }

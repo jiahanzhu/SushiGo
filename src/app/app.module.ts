@@ -19,6 +19,8 @@ import { GamePlayComponent } from './components/game/game-play/game-play.compone
 import { GameStatsComponent } from './components/game/game-stats/game-stats.component';
 import { HomepageComponent } from './components/user/homepage/homepage.component';
 import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.component';
+import {SharedService} from './services/shared.service.client';
+import { GameReadyComponent } from './components/game/game-ready/game-ready.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.co
     GamePlayComponent,
     GameStatsComponent,
     HomepageComponent,
-    HowToPlayComponent
+    HowToPlayComponent,
+    GameReadyComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { HowToPlayComponent } from './components/game/how-to-play/how-to-play.co
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [UserService, GameService, RoomService, PlayerService, CardService],
+  providers: [UserService, GameService, RoomService, PlayerService, CardService, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

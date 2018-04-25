@@ -9,7 +9,7 @@ var server = app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
 });
 
-var io = require('socket.io').listen(server);
+// var io = require('socket.io').listen(server);
 
 
 var passport      = require('passport');
@@ -39,14 +39,14 @@ app.use(function(req, res) {
 });
 
 
-
-io.on('connection', function (socket) {
-    socket.emit('hello', { greeting: 'hello world!' });
-    console.log( 'User ' + socket.id + ' connected!' );
-    socket.on('disconnect', function() {
-        console.log('User ' + this.id + ' disconnected!');
-    });
-    socket.on('my other event', function (data) {
-        console.log(data);
-    });
-});
+//
+// io.on('connection', function (socket) {
+//     socket.emit('hello', { greeting: 'hello world!' });
+//     console.log( 'User ' + socket.id + ' connected!' );
+//     socket.on('disconnect', function() {
+//         console.log('User ' + this.id + ' disconnected!');
+//     });
+//     socket.on('my other event', function (data) {
+//         console.log(data);
+//     });
+// });

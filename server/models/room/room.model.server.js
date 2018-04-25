@@ -25,19 +25,27 @@ module.exports = function(mongoose, playModel) {
 
     function getRoomsNumber(callback) {
         roomModel.find().exec(function (err, results) {
-            let count = results.length;
             if(err){
                 console.log(err);
                 callback(err);
             }
             else{
+                let count = results.length;
                 return callback(null, count);
             }
         });
     }
 
-    function findRoomById(roomId) {
-        return roomModel.findOne({id : roomId})
+    function findRoomById(roomId, callback) {
+        roomModel.findOne({id : roomId}, function (err, res) {
+            if(err){
+                console.log(err);
+                callback(err);
+            }
+            else{
+                return callback(null, res);
+            }
+        })
     }
     function addPlayer(roomId, player, callback) {
         roomModel.findOne({id : roomId}, function (err, room) {

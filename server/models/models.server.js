@@ -20,8 +20,8 @@ module.exports = function() {
     var userModel = require("./user/user.model.server.js")(mongoose);
     var playerModel = require("./player/player.model.server.js")(mongoose, userModel);
     var roomModel = require("./room/room.model.server.js")(mongoose, playerModel);
-    var gameModel = require("./game/game.model.server.js")(mongoose, roomModel);
     var cardModel = require("./card/card.model.server.js")(mongoose);
+    var gameModel = require("./game/game.model.server.js")(mongoose, cardModel);
 
 
     var models = {

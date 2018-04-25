@@ -22,7 +22,7 @@ module.exports = function (app, models) {
                         .roomModel
                         .createRoom(room, function (err, room) {
                             if(!err){
-                                console.log('room.service.server.js: room create: ');
+                                console.log('room.service.server.js: room created: ');
                                 console.log(room);
                                 res.send(room);
                             }
@@ -35,20 +35,13 @@ module.exports = function (app, models) {
         const roomId = req.params['roomId'];
         models
             .roomModel
-            .findRoomById(roomId)
-            .then(
-                function (room) {
-                    if (room) {
-                        res.json(room);
-                    } else {
-                        room = null;
-                        res.send(room);
-                    }
-                },
-                function (error) {
-                    res.sendStatus(400).send(error);
+            .findRoomById(roomId, function (err, room) {
+                if(err){
+                    res.send(err);
+                } else{
+                    res.send(room);
                 }
-            );
+            });
     }
 
     function addPlayer(req, res) {
@@ -79,9 +72,13 @@ module.exports = function (app, models) {
                         .roomModel
                         .addPlayers(roomId, response, function (err, room) {
                             if(!err){
-                                console.log('room.service.server.js: room after adding players:');
+                                console.log('room.service.server.js 75: room after adding players:');
                                 console.log(room);
                                 res.send(room);
+                            }
+                            else{
+                                console.log('room.service.server.js 80: error occurred');
+                                res.sendStatus(400).send(err);
                             }
                         })
                 }

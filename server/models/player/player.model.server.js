@@ -3,7 +3,9 @@ module.exports = function(mongoose, userModel) {
     var playerModel = mongoose.model('Player', playerSchema);
     var api = {
         'createPlayers': createPlayers,
-        'createPlayer': createPlayer
+        'createPlayer': createPlayer,
+        'findPlayersByRoomId': findPlayersByRoomId
+        // 'findPlayerId': findPlayerId
     };
 
     return api;
@@ -28,5 +30,30 @@ module.exports = function(mongoose, userModel) {
             }
         })
     }
+
+    function findPlayersByRoomId(roomId, callback) {
+        playerModel.find({roomId: roomId}, function (err, res) {
+            if(err){
+                callback(err);
+            }
+            else{
+                return callback(null, res);
+            }
+        });
+    }
+
+    // function findPlayerId(roomId, username, callback) {
+    //     console.log(roomId);
+    //     console.log(username);
+    //     playerModel.find({roomId: roomId}, function (err, res) {
+    //         if(!err){
+    //             console.log('Players in room ' + roomId +' found!');
+    //             return callback(null, res);
+    //         }
+    //         else{
+    //             console.log('findPlayerId went wrong!!')
+    //         }
+    //     });
+    // }
 
 };

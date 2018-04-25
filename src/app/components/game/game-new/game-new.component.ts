@@ -17,7 +17,8 @@ import {Card} from '../../../models/card.model.client';
 export class GameNewComponent implements OnInit {
     user: User;
     username: string;
-    game: Game = new Game(Math.floor(Math.random() * 100), this.user);
+    // game: Game = new Game(Math.floor(Math.random() * 100), this.user);
+    game;
     room: Room;
     constructor(private userService: UserService,
                 private roomService: RoomService,
@@ -50,15 +51,16 @@ export class GameNewComponent implements OnInit {
             const new_room = res;
             console.log('Room created!');
             console.log(new_room);
-            let players: Player[] = [new Player(0, new_room.id, this.username, true)];
+            const players: Player[] = [];
             console.log('client players: ');
             console.log(players);
             let i: number;
-            for (i = 1; i < num_p; i++) {
+            for (i = 0; i < num_p - 1; i++) {
                 const robot = 'robot_' + i;
                 const player = new Player(i, new_room.id, robot, false);
                 players.push(player);
             }
+            players.push(new Player(num_p - 1, new_room.id, this.username, true));
             console.log('client players: ');
             console.log(players);
             this.roomService.generatePlayers(new_room.id, players).subscribe(response => {

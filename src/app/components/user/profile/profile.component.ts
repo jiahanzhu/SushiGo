@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {UserService} from '../../../services/user.service.client';
+import {SharedService} from '../../../services/shared.service.client';
 import {User} from '../../../models/user.model.client';
 
 @Component({
@@ -20,6 +21,7 @@ export class ProfileComponent implements OnInit {
     errorMsg = 'Update failed!';
 
     constructor(private userService: UserService,
+                private sharedService: SharedService,
                 private activatedRoute: ActivatedRoute,
                 private router: Router) {
     }
@@ -64,5 +66,6 @@ export class ProfileComponent implements OnInit {
         this.userService.logout().subscribe(
             res => this.router.navigate(['/login'])
         );
+        const deleted = this.sharedService.deleteUser();
     }
 }

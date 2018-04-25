@@ -1,0 +1,11 @@
+img {max-width: 100%;}
+
+
+.game-button:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+/*.game-start {*/
+/*top: 60%;*/
+/*}*/

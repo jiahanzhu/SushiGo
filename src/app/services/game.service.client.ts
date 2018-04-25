@@ -10,12 +10,22 @@ export class GameService {
     api = {
 //    'getNextId': this.getNextId,
         'createGame': this.createGame,
-        'findAllGamesForUser': this.findAllGamesForUser,
         'findGameById': this.findGameById,
-        'updateGame': this.updateGame,
-        'removeGame': this.removeGame
+        'getNextHand': this.getNextHand
+        // 'findAllGamesForUser': this.findAllGamesForUser,
+        // 'updateGame': this.updateGame,
+        // 'removeGame': this.removeGame
     };
 
+    createGame(roomId, game) {
+        const url = 'api/room/' + roomId + '/game';
+        return this.http.post(url, game);
+    }
+
+    getNextHand(gameId, activity) {
+        const url = 'api/game/' + gameId;
+        return this.http.put<Game>(url, activity);
+    }
     // getMaxId() {
     //   function getMaxId(maxId, currentId) {
     //     let current = parseInt(currentId._id);
@@ -27,28 +37,28 @@ export class GameService {
     //   }
     //   return games.reduce(getMaxId, 0).toString();
     // }
-    createGame(userId: string, game) {
-        const url = '/api/user/' + userId + '/game';
-        return this.http.post<Game>(url, game);
-    }
-
-    findAllGamesForUser(userId: string) {
-        const url = '/api/user/' + userId + '/game';
-        return this.http.get<Game[]>(url);
-    }
-
-    findGameById(gameId: string) {
+    // createGame(userId: string, game) {
+    //     const url = '/api/user/' + userId + '/game';
+    //     return this.http.post<Game>(url, game);
+    // }
+    //
+    // findAllGamesForUser(userId: string) {
+    //     const url = '/api/user/' + userId + '/game';
+    //     return this.http.get<Game[]>(url);
+    // }
+    //
+    findGameById(gameId: number) {
         const url = '/api/game/' + gameId;
         return this.http.get<Game>(url);
     }
-
-    updateGame(gameId: string, game) {
-        const url = '/api/game/' + gameId;
-        return this.http.put<Game>(url, game);
-    }
-
-    removeGame(gameId: string) {
-        const url = '/api/game/' + gameId;
-        return this.http.delete<Game>(url);
-    }
+    //
+    // updateGame(gameId: string, game) {
+    //     const url = '/api/game/' + gameId;
+    //     return this.http.put<Game>(url, game);
+    // }
+    //
+    // removeGame(gameId: string) {
+    //     const url = '/api/game/' + gameId;
+    //     return this.http.delete<Game>(url);
+    // }
 }

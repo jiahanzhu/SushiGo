@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default navbar-fixed-top zjh-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" [routerLink]="['/user', username]">Sushi Go!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://gamewright.com/product/Sushi-Go">GAME INTRO</a></li>
+                <li><a href="https://github.ccs.neu.edu/phoebe0607/sushigo">ABOUT</a></li>
+                <li><a routerLink="/how-to-play">HOW TO PLAY</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-brand" [routerLink]="['/user', username, 'profile']">{{username}}</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right disabled knight-icon">
+                <li><a class="glyphicon glyphicon-knight"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container myBody">
+    <audio controls autoplay hidden loop>
+        <source src="../../../../assets/music/bgm_game.mp3" type="audio/mpeg">
+        audio unsupported !!
+    </audio>
+    <div class="game-start">
+        <div align="center">
+            <img src="../../../../assets/img/blank.png" width="20%">
+        </div>
+        <div align="center">
+            <img class="game-button" (click)="startGame()" src="../../../../assets/img/button-start.png" width="30%">
+        </div>
+        <div align="center">
+            <img src="../../../../assets/img/blank.png" width="1%">
+        </div>
+        <div align="center">
+            <img src="../../../../assets/img/roll_0.gif" width="20%">
+            <img src="../../../../assets/img/roll_2.gif" width="50%">
+            <img src="../../../../assets/img/roll_1.gif" width="20%">
+        </div>
+    </div>
+    <!--<embed src="../../../../assets/music/bgm_game.mp3" loop="true" width="0" height="0" autostart="true">-->
+
+
+</div>
+
+
+
+

@@ -38,16 +38,16 @@ export class GameStatsComponent implements OnInit {
               this.router.navigate(['/login']);
           }
       );
-      this.gameService.findGameById(this.gameId).subscribe(
-          response => {
-            this.game = response;
-            this.cards = this.game.cards;
-            this.points = this.game.points;
-          },
-          err => {
-            this.router.navigate(['/login']);
-          }
-      );
+      // this.gameService.findGameById(this.gameId).subscribe(
+      //     response => {
+      //       this.game = response;
+      //       this.cards = this.game.cards;
+      //       this.points = this.game.points;
+      //     },
+      //     err => {
+      //       this.router.navigate(['/login']);
+      //     }
+      // );
       if (Math.max.apply(null, this.points) === this.points[3]) {
           this.message = 'You win!';
       } else {
