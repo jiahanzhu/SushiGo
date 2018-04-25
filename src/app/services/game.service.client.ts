@@ -4,7 +4,8 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class GameService {
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {
+    }
 
     api = {
 //    'getNextId': this.getNextId,

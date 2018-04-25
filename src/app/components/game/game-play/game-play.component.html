@@ -28,237 +28,259 @@
         <source src="../../../../assets/music/bgm_game.mp3" type="audio/mpeg">
         audio unsupported !!
     </audio>
+    <div *ngIf="!started" class="game-start">
+        <div align="center">
+            <img src="../../../../assets/img/blank.png" width="45%">
+        </div>
+        <div align="center">
+            <img class="game-button" (click)="startGame()" src="../../../../assets/img/button-start.png" width="45%">
+        </div>
+        <div align="center">
+            <img src="../../../../assets/img/blank.png" width="20%">
+        </div>
+        <div align="center">
+            <img src="../../../../assets/img/roll_0.gif" width="20%">
+            <img src="../../../../assets/img/roll_2.gif" width="50%">
+            <img src="../../../../assets/img/roll_1.gif" width="20%">
+        </div>
+    </div>
     <!--<embed src="../../../../assets/music/bgm_game.mp3" loop="true" width="0" height="0" autostart="true">-->
-    <p>Alice</p>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][0])[0]}}" alt="{{showCards(cards[0][0])[1]}}">
+    <div *ngIf="started">
+        <p>Alice</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][0])[0]}}" alt="{{showCards(cards[0][0])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][1])[0]}}" alt="{{showCards(cards[0][1])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][2])[0]}}" alt="{{showCards(cards[0][2])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][3])[0]}}" alt="{{showCards(cards[0][3])[1]}}">
+                    </div>
                 </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][1])[0]}}" alt="{{showCards(cards[0][1])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][2])[0]}}" alt="{{showCards(cards[0][2])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][3])[0]}}" alt="{{showCards(cards[0][3])[1]}}">
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][4])[0]}}" alt="{{showCards(cards[0][4])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][5])[0]}}" alt="{{showCards(cards[0][5])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][6])[0]}}" alt="{{showCards(cards[0][6])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[0][7])[0]}}" alt="{{showCards(cards[0][7])[1]}}">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-6">
+
+        <br/>
+        <p>Bob</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][0])[0]}}" alt="{{showCards(cards[1][0])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][1])[0]}}" alt="{{showCards(cards[1][1])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][2])[0]}}" alt="{{showCards(cards[1][2])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][3])[0]}}" alt="{{showCards(cards[1][3])[1]}}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][4])[0]}}" alt="{{showCards(cards[1][4])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][5])[0]}}" alt="{{showCards(cards[1][5])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][6])[0]}}" alt="{{showCards(cards[1][6])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[1][7])[0]}}" alt="{{showCards(cards[1][7])[1]}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <p>Charlie</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][0])[0]}}" alt="{{showCards(cards[2][0])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][1])[0]}}" alt="{{showCards(cards[2][1])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][2])[0]}}" alt="{{showCards(cards[2][2])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][3])[0]}}" alt="{{showCards(cards[2][3])[1]}}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][4])[0]}}" alt="{{showCards(cards[2][4])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][5])[0]}}" alt="{{showCards(cards[2][5])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][6])[0]}}" alt="{{showCards(cards[2][6])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img-top" src="{{showCards(cards[2][7])[0]}}" alt="{{showCards(cards[2][7])[1]}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <p>{{username}}</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][0])[0]}}" alt="{{showCards(cards[3][0])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][1])[0]}}" alt="{{showCards(cards[3][1])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][2])[0]}}" alt="{{showCards(cards[3][2])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][3])[0]}}" alt="{{showCards(cards[3][3])[1]}}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][4])[0]}}" alt="{{showCards(cards[3][4])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][5])[0]}}" alt="{{showCards(cards[3][5])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][6])[0]}}" alt="{{showCards(cards[3][6])[1]}}">
+                    </div>
+                    <div class="col-xs-3 card-display">
+                        <img class="card-img" src="{{showCards(cards[3][7])[0]}}" alt="{{showCards(cards[3][7])[1]}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Please select one from below</p>
             <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][4])[0]}}" alt="{{showCards(cards[0][4])[1]}}">
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][0])" src="{{showCards(decks[3][0])[0]}}" alt="{{showCards(decks[3][0])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][1])" src="{{showCards(decks[3][1])[0]}}" alt="{{showCards(decks[3][1])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][2])" src="{{showCards(decks[3][2])[0]}}" alt="{{showCards(decks[3][2])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][3])" src="{{showCards(decks[3][3])[0]}}" alt="{{showCards(decks[3][3])[1]}}">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][5])[0]}}" alt="{{showCards(cards[0][5])[1]}}">
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][4])" src="{{showCards(decks[3][4])[0]}}" alt="{{showCards(decks[3][4])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][5])" src="{{showCards(decks[3][5])[0]}}" alt="{{showCards(decks[3][5])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][6])" src="{{showCards(decks[3][6])[0]}}" alt="{{showCards(decks[3][6])[1]}}">
+                        </div>
+                        <div class="col-xs-3 card-display">
+                            <img class="cards-on-hand" (click)="getCard(decks[3][7])" src="{{showCards(decks[3][7])[0]}}" alt="{{showCards(decks[3][7])[1]}}">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][6])[0]}}" alt="{{showCards(cards[0][6])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[0][7])[0]}}" alt="{{showCards(cards[0][7])[1]}}">
+            </div>
+
+            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#total" (click)="total(this.game.cards)">
+                Finish
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade"
+             id="total"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="totalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-center" id="totalLabel">{{message}}</h3>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Player</th>
+                                <th scope="col">Points</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Alice</th>
+                                <td>{{game.points[0]}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bob</th>
+                                <td>{{points[1]}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Charlie</th>
+                                <td>{{points[2]}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{{username}}</th>
+                                <td>{{points[3]}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <br/>
-    <p>Bob</p>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][0])[0]}}" alt="{{showCards(cards[1][0])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][1])[0]}}" alt="{{showCards(cards[1][1])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][2])[0]}}" alt="{{showCards(cards[1][2])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][3])[0]}}" alt="{{showCards(cards[1][3])[1]}}">
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][4])[0]}}" alt="{{showCards(cards[1][4])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][5])[0]}}" alt="{{showCards(cards[1][5])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][6])[0]}}" alt="{{showCards(cards[1][6])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[1][7])[0]}}" alt="{{showCards(cards[1][7])[1]}}">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br/>
-    <p>Charlie</p>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][0])[0]}}" alt="{{showCards(cards[2][0])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][1])[0]}}" alt="{{showCards(cards[2][1])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][2])[0]}}" alt="{{showCards(cards[2][2])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][3])[0]}}" alt="{{showCards(cards[2][3])[1]}}">
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][4])[0]}}" alt="{{showCards(cards[2][4])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][5])[0]}}" alt="{{showCards(cards[2][5])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][6])[0]}}" alt="{{showCards(cards[2][6])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img-top" src="{{showCards(cards[2][7])[0]}}" alt="{{showCards(cards[2][7])[1]}}">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br/>
-    <p>{{username}}</p>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][0])[0]}}" alt="{{showCards(cards[3][0])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][1])[0]}}" alt="{{showCards(cards[3][1])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][2])[0]}}" alt="{{showCards(cards[3][2])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][3])[0]}}" alt="{{showCards(cards[3][3])[1]}}">
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][4])[0]}}" alt="{{showCards(cards[3][4])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][5])[0]}}" alt="{{showCards(cards[3][5])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][6])[0]}}" alt="{{showCards(cards[3][6])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="card-img" src="{{showCards(cards[3][7])[0]}}" alt="{{showCards(cards[3][7])[1]}}">
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
-<div class="container">
-    <p>Please select one from below</p>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][0])" src="{{showCards(decks[3][0])[0]}}" alt="{{showCards(decks[3][0])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][1])" src="{{showCards(decks[3][1])[0]}}" alt="{{showCards(decks[3][1])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][2])" src="{{showCards(decks[3][2])[0]}}" alt="{{showCards(decks[3][2])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][3])" src="{{showCards(decks[3][3])[0]}}" alt="{{showCards(decks[3][3])[1]}}">
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][4])" src="{{showCards(decks[3][4])[0]}}" alt="{{showCards(decks[3][4])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][5])" src="{{showCards(decks[3][5])[0]}}" alt="{{showCards(decks[3][5])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][6])" src="{{showCards(decks[3][6])[0]}}" alt="{{showCards(decks[3][6])[1]}}">
-                </div>
-                <div class="col-xs-3 card-display">
-                    <img class="cards-on-hand" (click)="getCard(decks[3][7])" src="{{showCards(decks[3][7])[0]}}" alt="{{showCards(decks[3][7])[1]}}">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#total" (click)="total(this.game.cards)">
-        Finish
-    </button>
-</div>
-<!-- Modal -->
-<div class="modal fade"
-     id="total"
-     tabindex="-1"
-     role="dialog"
-     aria-labelledby="totalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title text-center" id="totalLabel">{{message}}</h3>
-            </div>
-            <div class="modal-body">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Player</th>
-                        <th scope="col">Points</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">Alice</th>
-                        <td>{{game.points[0]}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Bob</th>
-                        <td>{{points[1]}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Charlie</th>
-                        <td>{{points[2]}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">{{username}}</th>
-                        <td>{{points[3]}}</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
+
 

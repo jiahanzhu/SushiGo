@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../../../models/user.model.client';
 import {ActivatedRoute, Router} from '@angular/router';
-import {GameService} from '../../../services/game.service.client';
-import {Game} from '../../../models/game.model.client';
+import {User} from '../../../models/user.model.client';
 import {Player} from '../../../models/player.model.client';
-import {UserService} from '../../../services/user.service.client';
 import {Room} from '../../../models/room.model.client';
+import {Game} from '../../../models/game.model.client';
+import {UserService} from '../../../services/user.service.client';
 import {RoomService} from '../../../services/room.service.client';
+import {GameService} from '../../../services/game.service.client';
+import {CardService} from '../../../services/card.service.client';
 import * as io from 'socket.io-client';
 import {Card} from '../../../models/card.model.client';
 
@@ -27,9 +28,11 @@ export class GamePlayComponent implements OnInit {
     points = this.game.points;
     message: string;
     socket;
+    started: boolean;
     constructor(private userService: UserService,
                 private gameService: GameService,
                 private roomService: RoomService,
+                private cardService: CardService,
                 private activatedRoute: ActivatedRoute,
                 private router: Router) {
         this.userService.checkLoggedIn().subscribe(
@@ -41,8 +44,11 @@ export class GamePlayComponent implements OnInit {
                 this.router.navigate(['/login']);
             }
         );
+        this.started = false;
     }
     ngOnInit() {
+        console.log('game: ');
+        console.log(this.game);
         this.socket = io();
         this.socket.on('hello', function(data) {
             console.log('socket received greeting from server:');
@@ -58,6 +64,11 @@ export class GamePlayComponent implements OnInit {
                 });
             }
         );
+
+    }
+
+    startGame() {
+        this.started = true;
 
     }
 
