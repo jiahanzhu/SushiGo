@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c653746-387a-45c8-b447-fc9160091386" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/dist/inline.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/dist/main.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/server/models/card/card.model.server.js" afterPath="$PROJECT_DIR$/server/models/card/card.model.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/card/card.schema.server.js" afterPath="$PROJECT_DIR$/server/models/card/card.schema.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/game/game.model.server.js" afterPath="$PROJECT_DIR$/server/models/game/game.model.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/player/player.model.server.js" afterPath="$PROJECT_DIR$/server/models/player/player.model.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/room/room.model.server.js" afterPath="$PROJECT_DIR$/server/models/room/room.model.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/services/card.service.server.js" afterPath="$PROJECT_DIR$/server/services/card.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/services/game.service.server.js" afterPath="$PROJECT_DIR$/server/services/game.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/services/player.service.server.js" afterPath="$PROJECT_DIR$/server/services/player.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/server/services/room.service.server.js" afterPath="$PROJECT_DIR$/server/services/room.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.css" afterPath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts" afterPath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/card.model.client.ts" afterPath="$PROJECT_DIR$/src/app/models/card.model.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/card.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/card.service.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/game.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,13 +71,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-play.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game-play.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+            <state relative-caret-position="-767">
+              <caret line="75" column="33" lean-forward="false" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding>
-                <element signature="e#8988#9491#0" expanded="false" />
+                <element signature="e#9074#9577#0" expanded="false" />
                 <element signature="n#!!block;n#getCardById#0;n#GamePlayComponent#0" expanded="false" />
               </folding>
             </state>
@@ -139,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-new.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game-new.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
@@ -179,6 +154,7 @@
       <find>length</find>
       <find>hand</find>
       <find>this.game.</find>
+      <find>players</find>
     </findStrings>
     <replaceStrings>
       <replace>game</replace>
@@ -234,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/app/services/card.service.client.ts" />
         <option value="$PROJECT_DIR$/server/services/card.service.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.css" />
@@ -243,6 +218,7 @@
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
       </list>
     </option>
   </component>
@@ -553,12 +529,12 @@
       <workItem from="1524379881969" duration="14656000" />
       <workItem from="1524516273137" duration="32655000" />
       <workItem from="1524598233411" duration="32224000" />
-      <workItem from="1524640393437" duration="67929000" />
+      <workItem from="1524640393437" duration="68360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218397000" />
+    <option name="totallyTimeSpent" value="218828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -959,30 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
-          <folding>
-            <element signature="e#8988#9491#0" expanded="false" />
-            <element signature="n#!!block;n#getCardById#0;n#GamePlayComponent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="99" column="61" lean-forward="false" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
-          <folding>
-            <element signature="n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#audio#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1021,6 +973,30 @@
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#newPvEGame#0;n#GameNewComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="99" column="61" lean-forward="false" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
+          <folding>
+            <element signature="n#nav#0;n#!!top" expanded="false" />
+            <element signature="n#audio#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-767">
+          <caret line="75" column="33" lean-forward="false" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+          <folding>
+            <element signature="e#9074#9577#0" expanded="false" />
+            <element signature="n#!!block;n#getCardById#0;n#GamePlayComponent#0" expanded="false" />
           </folding>
         </state>
       </provider>

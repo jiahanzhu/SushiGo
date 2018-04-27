@@ -422,6 +422,7 @@ var GamePlayComponent = /** @class */ (function () {
                         _this.players = res2;
                         console.log('players in the game: ');
                         console.log(_this.players);
+                        _this.players.sort(function (a, b) { return a.playerId - b.playerId; });
                         for (var _i = 0, _a = _this.players; _i < _a.length; _i++) {
                             var p = _a[_i];
                             if (p.username === _this.username) {

@@ -67,6 +67,7 @@ export class GamePlayComponent implements OnInit {
                                 this.players = res2;
                                 console.log('players in the game: ');
                                 console.log(this.players);
+                                this.players.sort((a, b) => a.playerId - b.playerId);
                                 for (let p of this.players) {
                                     if (p.username === this.username) {
                                         this.myPlayerId = p.playerId;
