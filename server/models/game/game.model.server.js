@@ -101,10 +101,22 @@ module.exports = function(mongoose, cardModel) {
             game.decks[i] = game.decks[i - 1];
         }
         game.decks[0] = temp;
+        const game_to_send = new gameModel({
+            id: res.id,
+            num_players: res.num_players,
+            players: res.players,
+            mode: res.mode,
+            recipe: res.recipe,
+            round: res.round,
+            status: res.status,
+            hand: res.decks[playerId],
+            cards: res.cards,
+            scores: res.scores,
+            roomId: res.roomId});
         console.log('game.model.server.js 87 : next hand:');
-        console.log(game);
+        console.log(game_to_send);
         console.log('\n');
-        return callback(null, game);
+        return callback(null, game_to_send);
     }
 
 
