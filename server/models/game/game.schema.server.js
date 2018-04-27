@@ -12,6 +12,7 @@ module.exports = function(mongoose){
         round : {type: Number, enum: [1,2,3]},
         status: {type: String, enum: ['Prep', 'Playing', 'Ended']},
         decks: [[Number]],
+        hand: [Number],
         cards: [[Number]],
         scores: [Number],
         roomId: Number

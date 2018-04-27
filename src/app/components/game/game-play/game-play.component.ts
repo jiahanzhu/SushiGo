@@ -11,7 +11,6 @@ import {GameService} from '../../../services/game.service.client';
 import {CardService} from '../../../services/card.service.client';
 // import * as io from 'socket.io-client';
 import {Card} from '../../../models/card.model.client';
-import has = Reflect.has;
 
 @Component({
     selector: 'app-game-play',
@@ -55,12 +54,13 @@ export class GamePlayComponent implements OnInit {
                         this.gameId = params['gameId'];
                         console.log('gameId');
                         console.log(this.gameId);
-                        this.gameService.findGameById(this.gameId).subscribe(res => {
+                        this.gameService.findGameById(this.gameId, this.myPlayerId).subscribe(res => {
                             this.game = res;
                             console.log('Entered new game: ');
                             console.log(this.game);
                             this.cards = this.game.cards;
-                            this.decks = this.game.decks;
+                            // this.decks = this.game.decks;
+                            this.myHand = this.game.hand;
                             this.num = this.game.num_players;
                             this.roomId = this.game.roomId;
                             this.playerService.findPlayersByRoomId(this.roomId).subscribe(res2 => {
@@ -74,7 +74,7 @@ export class GamePlayComponent implements OnInit {
                                         console.log('my player id: ' + this.myPlayerId);
                                     }
                                 }
-                                this.myHand = this.decks[this.myPlayerId];
+                                // this.myHand = this.decks[this.myPlayerId];
                             });
                         });
                     }
@@ -112,8 +112,9 @@ export class GamePlayComponent implements OnInit {
         console.log(activity);
         this.gameService.getNextHand(this.gameId, activity).subscribe(res => {
             this.game = res;
-            this.decks = this.game.decks;
-            this.myHand = this.decks[this.myPlayerId];
+            // this.decks = this.game.decks;
+            // this.myHand = this.decks[this.myPlayerId];
+            this.myHand = this.game.hand;
             console.log('myHand: ');
             console.log(this.myHand);
             this.cards = this.game.cards;
@@ -285,7 +286,6 @@ export class GamePlayComponent implements OnInit {
             this.message = 'You lose!';
         }
         this.showResults = 'block';
-        console.log('showResults: ' + this.showResults);
     }
 
     getCardById(index) {

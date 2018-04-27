@@ -51,5 +51,6 @@ export class Game {
                 public status: string,
                 public roomId: number,
                 public decks: number[][],
+                public hand: number[],
                 public cards: number[][]) {}
 }

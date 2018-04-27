@@ -1,13 +1,14 @@
 module.exports = function (app, models) {
 
-    app.post('/api/room/:roomId/game', createGame);
+    app.post('/api/room/:roomId/player/:playerId', createGame);
 
-    app.get('/api/game/:gameId', findGameById);
+    app.get('/api/game/:gameId/player/:playerId', findGameById);
 
     app.put('/api/game/:gameId', getNextHand);
 
     function createGame(req, res) {
         const roomId = req.params['roomId'];
+        const playerId = req.params['playerId'];
         let game = req.body;
         models
             .gameModel
@@ -24,13 +25,13 @@ module.exports = function (app, models) {
                                 // console.log(game);
                                 models
                                     .gameModel
-                                    .getDecks(room.num_players, game, function (err, updated_game) {
+                                    .getDecks(room.num_players, game, function (err, game_with_decks) {
                                         if(!err) {
-                                            updated_game.cards = [];
-                                            updated_game.scores = [];
+                                            game_with_decks.cards = [];
+                                            game_with_decks.scores = [];
                                             for (let i = 0; i < updated_game.num_players; i++) {
-                                                updated_game.cards[i] = [];
-                                                updated_game.scores[i] = 0;
+                                                game_with_decks.cards[i] = [];
+                                                game_with_decks.scores[i] = 0;
                                             }
                                             //
                                             // console.log('game.cards: ');
@@ -39,11 +40,26 @@ module.exports = function (app, models) {
                                             // console.log(updated_game.decks);
                                             models
                                                 .gameModel
-                                                .createGame(updated_game, function (err, result) {
+                                                .createGame(game_with_decks, function (err, new_game) {
                                                     if (!err) {
-                                                        // console.log('game.service.server.js 39: game created: ');
-                                                        // console.log(result);
-                                                        res.send(result);
+                                                        console.log('game.service.server.js function [createGame]: game created: ');
+                                                        console.log(new_game);
+                                                        models
+                                                            .gameModel
+                                                            .findGameById(new_game.id, playerId)
+                                                            .then(
+                                                                function (game_with_hand) {
+                                                                    if (game_with_hand) {
+                                                                        res.json(game_with_hand);
+                                                                    } else {
+                                                                        game = null;
+                                                                        res.send(game_with_hand);
+                                                                    }
+                                                                },
+                                                                function (error) {
+                                                                    res.sendStatus(400).send(error);
+                                                                }
+                                                            )
                                                     }
                                                 });
                                         }
@@ -56,9 +72,10 @@ module.exports = function (app, models) {
 
     function findGameById(req, res) {
         const gameId = req.params['gameId'];
+        const playerId = req.params['playerId'];
         models
             .gameModel
-            .findGameById(gameId)
+            .findGameById(gameId, playerId)
             .then(
                 function (game) {
                     if (game) {

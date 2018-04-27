@@ -13,8 +13,8 @@ export class GameService {
         'getNextHand': this.getNextHand
     };
 
-    createGame(roomId, game) {
-        const url = 'api/room/' + roomId + '/game';
+    createGame(roomId, playerId, game) {
+        const url = 'api/room/' + roomId + '/player/' + playerId;
         return this.http.post(url, game);
     }
 
@@ -24,8 +24,8 @@ export class GameService {
         console.log(activity);
         return this.http.put(url, activity);
     }
-    findGameById(gameId: number) {
-        const url = '/api/game/' + gameId;
+    findGameById(gameId: number, playerId: number) {
+        const url = '/api/game/' + gameId + '/player/' + playerId;
         return this.http.get<Game>(url);
     }
 }

@@ -399,7 +399,7 @@ var GamePlayComponent = /** @class */ (function () {
         this.decks = [[], [], [], []];
         this.cards = [[], [], [], []];
         this.scores = [];
-        this.pudding = [0, 0, 0, 0];
+        this.pudding = [];
         this.numbers = [];
         this.userService.checkLoggedIn().subscribe(function (response) {
             _this.user = response;
@@ -420,9 +420,9 @@ var GamePlayComponent = /** @class */ (function () {
                     _this.roomId = _this.game.roomId;
                     _this.playerService.findPlayersByRoomId(_this.roomId).subscribe(function (res2) {
                         _this.players = res2;
+                        _this.players.sort(function (a, b) { return a.playerId - b.playerId; });
                         console.log('players in the game: ');
                         console.log(_this.players);
-                        _this.players.sort(function (a, b) { return a.playerId - b.playerId; });
                         for (var _i = 0, _a = _this.players; _i < _a.length; _i++) {
                             var p = _a[_i];
                             if (p.username === _this.username) {
@@ -478,41 +478,43 @@ var GamePlayComponent = /** @class */ (function () {
         });
     };
     GamePlayComponent.prototype.total = function (cards) {
-        var maki = [], dumpling = [], tempura = [], sashimi = [];
+        var maki = [], dumpling = [], tempura = [], sashimi = [], wasabi = [];
         for (var i = 0; i < this.players.length; i++) {
+            console.log('Player number ' + i + this.players[i].username);
             maki[i] = 0;
             dumpling[i] = 0;
             tempura[i] = 0;
             sashimi[i] = 0;
+            wasabi[i] = 0;
+            this.pudding[i] = 0;
             var pts = 0;
-            var hasWasabi = false;
             for (var j = 0; j < this.cards[0].length; j++) {
                 var card = cards[i][j];
                 var cardType = this.getCardById(card);
                 switch (cardType) {
                     case 'Egg': {
                         var point = 1;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
                     }
                     case 'Salmon': {
                         var point = 2;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
                     }
                     case 'Squid': {
                         var point = 3;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
@@ -545,7 +547,7 @@ var GamePlayComponent = /** @class */ (function () {
                         break;
                     }
                     case 'Wasabi': {
-                        hasWasabi = true;
+                        wasabi[i] += 1;
                         break;
                     }
                     case 'Pudding': {

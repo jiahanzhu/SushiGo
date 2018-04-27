@@ -95,20 +95,14 @@ export class GameReadyComponent implements OnInit {
         };
         console.log('new game:');
         console.log(this.game);
-        this.gameService.createGame(this.roomId, this.game).subscribe(res => {
+        this.gameService.createGame(this.roomId, this.myPlayerId, this.game).subscribe(res => {
+            // Add id, players, decks, cards and scores in the server side
+            // Returns game without decks, but with hand
             console.log('game started:');
             console.log(res);
             this.game = res;
             console.log('this.game:');
             console.log(this.game);
-            this.decks = this.game.decks;
-            this.hand = this.decks[this.decks.length - 1];
-            this.scores = this.game.scores;
-
-            console.log('decks:');
-            console.log(this.decks);
-            console.log('cards:');
-            console.log(this.cards);
             this.router.navigate(['/game', String(this.game.id), 'player', String(this.myPlayerId)]);
         });
     }

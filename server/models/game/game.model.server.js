@@ -18,8 +18,8 @@ module.exports = function(mongoose, cardModel) {
                 callback(err);
             }
             else{
-                // console.log('game.model.server.js 21 : game created: ');
-                // console.log(game);
+                console.log('game.model.server.js function [createGame]: game created: ');
+                console.log(game);
                 return callback(null, game);
             }
         });
@@ -40,8 +40,25 @@ module.exports = function(mongoose, cardModel) {
         });
     }
 
-    function findGameById(gameId) {
-        return gameModel.findOne({id : gameId});
+    function findGameById(gameId, playerId) {
+        gameModel.findOne({id : gameId}, function (err, res) {
+            if(!err) {
+                const game = new gameModel({
+                    id: res.id,
+                    num_players: res.num_players,
+                    players: res.players,
+                    mode: res.mode,
+                    recipe: res.recipe,
+                    round: res.round,
+                    status: res.status,
+                    hand: res.decks[playerId],
+                    cards: res.cards,
+                    scores: res.scores,
+                    roomId: res.roomId});
+                return game;
+
+            }
+        });
     }
 
     function getDecks(num, game, callback) {
@@ -64,7 +81,7 @@ module.exports = function(mongoose, cardModel) {
         // console.log(game.decks);
         return callback(null, game);
     }
-    
+
     function getNextHand(gameId, playerId, card_index, input_game, callback) {
 
         console.log('game.model.server.js 70 : input game');
