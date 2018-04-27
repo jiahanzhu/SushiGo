@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1c653746-387a-45c8-b447-fc9160091386" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/dist/inline.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/game.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/dist/main.bundle.js.map" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" afterPath="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,103 +25,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="room.service.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/room.service.server.js">
+      <file leaf-file-name="game-play.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/game.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/player.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="room.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/room.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shared.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/shared.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/user.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.service.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/game.service.server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="90">
+              <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
               <folding>
-                <element signature="e#2767#3284#0" expanded="false" />
+                <element signature="n#audio#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card.service.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/card.service.server.js">
+      <file leaf-file-name="game-new.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="158">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/card.service.client.ts">
+      <file leaf-file-name="homepage.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="how-to-play.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-stats.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-ready.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,11 +171,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
         <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
         <option value="$PROJECT_DIR$/server/services/card.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
@@ -203,18 +208,20 @@
         <option value="$PROJECT_DIR$/src/app/services/card.service.client.ts" />
         <option value="$PROJECT_DIR$/server/services/card.service.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/services/game.service.client.ts" />
         <option value="$PROJECT_DIR$/server/services/user.service.server.js" />
+        <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html" />
       </list>
     </option>
   </component>
@@ -288,7 +295,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -303,7 +310,144 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="game-new" type="cbb8eebc:String" user="game-new" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="game-play" type="cbb8eebc:String" user="game-play" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="game-ready" type="cbb8eebc:String" user="game-ready" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="game-stats" type="cbb8eebc:String" user="game-stats" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="how-to-play" type="cbb8eebc:String" user="how-to-play" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+              <item name="homepage" type="cbb8eebc:String" user="homepage" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+              <item name="login" type="cbb8eebc:String" user="login" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+              <item name="profile" type="cbb8eebc:String" user="profile" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+              <item name="register" type="cbb8eebc:String" user="register" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sushigo" type="cbb8eebc:String" user="sushigo" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="services" type="cbb8eebc:String" user="services" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -525,26 +669,28 @@
       <workItem from="1524379881969" duration="14656000" />
       <workItem from="1524516273137" duration="32655000" />
       <workItem from="1524598233411" duration="32224000" />
-      <workItem from="1524640393437" duration="70623000" />
+      <workItem from="1524640393437" duration="72785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221091000" />
+    <option name="totallyTimeSpent" value="223253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22128259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33736396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22128259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33736396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -569,114 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/enter-room/enter-room.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/enter-room/enter-room.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#58#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/models.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/models/user.model.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/user/user.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/models/game.model.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/game/game.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="80" column="31" lean-forward="false" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/card/card.schema.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -710,14 +748,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -781,30 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="33" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -819,19 +825,6 @@
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#newPvEGame#0;n#GameNewComponent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="99" column="61" lean-forward="false" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
-          <folding>
-            <element signature="n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#audio#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -987,10 +980,705 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/server/services</OriginalElement>
+          <nodes>
+            <node x="0.0" y="146.0">$PROJECT_DIR$/node_modules/bcrypt-nodejs/bCrypt.js</node>
+            <node x="256.0" y="0.0">$PROJECT_DIR$/node_modules/passport/lib/index.js</node>
+            <node x="381.0" y="249.0">$PROJECT_DIR$/node_modules/passport-local/lib/index.js#Strategy#194;</node>
+            <node x="220.0" y="113.0">$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;" target="$PROJECT_DIR$/node_modules/passport/lib/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;" target="$PROJECT_DIR$/node_modules/bcrypt-nodejs/bCrypt.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;" target="$PROJECT_DIR$/node_modules/passport-local/lib/index.js#Strategy#194;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-13.0" y="63.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/server/app.js</OriginalElement>
+          <nodes>
+            <node x="193.0" y="155.0">$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;</node>
+            <node x="16.0" y="85.0">$PROJECT_DIR$/server/services/card.service.server.js</node>
+            <node x="0.0" y="357.0">$PROJECT_DIR$/server/services/game.service.server.js</node>
+            <node x="207.0" y="446.0">$PROJECT_DIR$/server/models/models.server.js</node>
+            <node x="203.0" y="0.0">$PROJECT_DIR$/server/services/player.service.server.js</node>
+            <node x="402.0" y="84.0">$PROJECT_DIR$/server/services/room.service.server.js</node>
+            <node x="401.0" y="374.0">$PROJECT_DIR$/server/services/user.service.server.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/services/user.service.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/models/models.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/services/player.service.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/services/card.service.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/services/room.service.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;" target="$PROJECT_DIR$/server/services/game.service.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-1.0" y="90.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/server/services/user.service.server.js</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/server/models</OriginalElement>
+          <nodes>
+            <node x="308.0" y="564.0">$PROJECT_DIR$/server/models/card/card.model.server.js#cardSchema#46;</node>
+            <node x="404.0" y="709.0">$PROJECT_DIR$/server/models/card/card.schema.server.js</node>
+            <node x="310.0" y="167.0">$PROJECT_DIR$/server/models/game/game.model.server.js#gameSchema#57;</node>
+            <node x="171.0" y="97.0">$PROJECT_DIR$/server/models/game/game.schema.server.js</node>
+            <node x="242.0" y="288.0">$PROJECT_DIR$/node_modules/mongoose/index.js</node>
+            <node x="762.0" y="245.0">$PROJECT_DIR$/node_modules/mongoose-findorcreate/index.js</node>
+            <node x="431.0" y="302.0">$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;</node>
+            <node x="550.0" y="153.0">$PROJECT_DIR$/server/models/player/player.model.server.js#playerSchema#57;</node>
+            <node x="546.0" y="0.0">$PROJECT_DIR$/server/models/player/player.schema.server.js</node>
+            <node x="159.0" y="424.0">$PROJECT_DIR$/server/models/room/room.model.server.js#roomSchema#57;</node>
+            <node x="0.0" y="516.0">$PROJECT_DIR$/server/models/room/room.schema.server.js</node>
+            <node x="657.0" y="352.0">$PROJECT_DIR$/server/models/user/user.model.server.js#findOrCreate#170;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/user/user.model.server.js#userSchema#45;</node>
+            <node x="754.0" y="512.0">$PROJECT_DIR$/server/models/user/user.schema.server.js</node>
+            <node x="583.0" y="545.0">$PROJECT_DIR$/node_modules/@types/q/index.d.ts#Promise#16338;</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/server/models/room/room.model.server.js#roomSchema#57;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/player/player.model.server.js#playerSchema#57;" target="$PROJECT_DIR$/server/models/player/player.schema.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/user/user.model.server.js#findOrCreate#170;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/user/user.model.server.js#userSchema#45;" target="$PROJECT_DIR$/server/models/user/user.schema.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/room/room.model.server.js#roomSchema#57;" target="$PROJECT_DIR$/server/models/room/room.schema.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/game/game.model.server.js#gameSchema#57;" target="$PROJECT_DIR$/server/models/game/game.schema.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/server/models/game/game.model.server.js#gameSchema#57;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/server/models/card/card.model.server.js#cardSchema#46;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/node_modules/@types/q/index.d.ts#Promise#16338;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/server/models/player/player.model.server.js#playerSchema#57;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/card/card.model.server.js#cardSchema#46;" target="$PROJECT_DIR$/server/models/card/card.schema.server.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/server/models/user/user.model.server.js#findOrCreate#170;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/user/user.model.server.js#userSchema#45;">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;" target="$PROJECT_DIR$/node_modules/mongoose/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/server/models/user/user.model.server.js#findOrCreate#170;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/user/user.model.server.js#userSchema#45;" target="$PROJECT_DIR$/node_modules/mongoose-findorcreate/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="183.0" y="221.5" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/node_modules/@types/q/index.d.ts#Promise#16338;</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/app/services</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/card.model.client.ts#Card#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/card.service.client.ts#Card#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Game#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Injectable#8;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/http/src/client.d.ts#HttpClient#347;</node>
+            <node x="" y="">Injectable;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/game.model.client.ts#Game#194;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/game.service.client.ts#Game#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#HttpClient#58;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#Injectable#107;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/player.model.client.ts#Player#42;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/player.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Player#99;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/room.model.client.ts#Room#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/room.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Player#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Room#99;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/shared.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/shared.service.client.ts#Injectable#8;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/user.model.client.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/user.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#User#99;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8727477477477478" x="580.5" y="434.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/app/components/game</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Sashimi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Tempura.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Wasabi.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/async.d.ts#async#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/blank.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-back.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-start.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/card.model.client.ts#Card#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/card.service.client.ts#CardService#225;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/component_fixture.d.ts#ComponentFixture#302;</node>
+            <node x="" y="">Component;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#GameNewComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Card#544;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Game#182;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameNewComponent#593;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameService#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Player#294;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Room#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#RoomService#477;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#User#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#UserService#410;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#GamePlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GamePlayComponent#800;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#GameReadyComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameReadyComponent#774;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#GameStatsComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts#ActivatedRoute#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Game#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameService#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameStatsComponent#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Router#131;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#User#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#UserService#294;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/game.model.client.ts#Game#194;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/game.service.client.ts#GameService#142;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/game_mode.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/home.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#HowToPlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#HowToPlayComponent#52;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#OnInit#20;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1111;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/player.model.client.ts#Player#42;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/player.service.client.ts#PlayerService#179;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pve.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pvp.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_0.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_1.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_2.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/room.model.client.ts#Room#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/room.service.client.ts#RoomService#229;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts#Router#3934;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_state.d.ts#ActivatedRoute#1542;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules2.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules3.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules4.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules6.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts#TestBed#1089;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/user.model.client.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/user.service.client.ts#UserService#175;</node>
+            <node x="" y="">{{showCards(card)[0]}}</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.3330468414267297" x="1374.0" y="1153.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/app/components</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Dumpling.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/EggNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Maki.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/PlayNow.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Pudding.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Sashimi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/SquidNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Tempura.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Wasabi.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/async.d.ts#async#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/blank.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-back.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-start.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/card.model.client.ts#Card#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/card.service.client.ts#CardService#225;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/component_fixture.d.ts#ComponentFixture#302;</node>
+            <node x="" y="">Component;Injectable;ViewChild;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#GameNewComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Card#544;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Game#182;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameNewComponent#593;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameService#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Player#294;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Room#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#RoomService#477;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#User#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#UserService#410;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#GamePlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GamePlayComponent#800;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#GameReadyComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameReadyComponent#774;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#GameStatsComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts#ActivatedRoute#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Game#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameService#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameStatsComponent#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Router#131;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#User#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#UserService#294;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/game.model.client.ts#Game#194;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/game.service.client.ts#GameService#142;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/game_mode.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/home.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#HomepageComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#HomepageComponent#228;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#User#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#HowToPlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#HowToPlayComponent#52;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#OnInit#20;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1111;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#LoginComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#LoginComponent#346;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#NgForm#120;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Router#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#SharedService#226;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#User#297;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#UserService#159;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/logo.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.d.ts#NgForm#618;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/player.model.client.ts#Player#42;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/player.service.client.ts#PlayerService#179;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#ProfileComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#ProfileComponent#300;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#SharedService#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#User#251;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pve.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pvp.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#RegisterComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#NgForm#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#RegisterComponent#275;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Router#242;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#User#119;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#UserService#175;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_0.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_1.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_2.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/room.model.client.ts#Room#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/room.service.client.ts#RoomService#229;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts#Router#3934;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_state.d.ts#ActivatedRoute#1542;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules2.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules3.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules4.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/shared.service.client.ts#SharedService#125;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts#TestBed#1089;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/user.model.client.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/user.service.client.ts#UserService#175;</node>
+            <node x="" y="">{{showCards(card)[0]}}</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.249597423510467" x="1318.5" y="1542.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/app</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Dumpling.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/EggNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Maki.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/PlayNow.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Pudding.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Sashimi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/SquidNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Tempura.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Wasabi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.component.spec.ts#AppComponent#65;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.spec.ts#TestBed#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.spec.ts#async#18;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.component.ts#AppComponent#44;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.ts#Component#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.module.ts#AppComponent#111;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#BrowserModule#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#CardService#746;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#FormsModule#436;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameNewComponent#862;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GamePlayComponent#944;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameReadyComponent#1354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameService#562;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameStatsComponent#1029;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HomepageComponent#1117;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HowToPlayComponent#1200;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HttpClientModule#806;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#LoginComponent#159;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#NgModule#68;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#PlayerService#682;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#ProfileComponent#357;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#ReactiveFormsModule#449;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#RegisterComponent#233;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#RoomService#622;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#Routing#316;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#SharedService#1289;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#UserService#502;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.routing.ts#GameNewComponent#293;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GamePlayComponent#459;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GameReadyComponent#373;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GameStatsComponent#542;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#HomepageComponent#628;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#HowToPlayComponent#709;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#LoginComponent#62;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#ProfileComponent#215;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#RegisterComponent#134;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#RouterModule#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#Routes#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#Routing#1464;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/render3/assert.d.ts#assertNumber#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/async.d.ts#async#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/blank.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.d.ts#BrowserModule#795;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-back.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-start.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/card.model.client.ts#Card#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/card.service.client.ts#Card#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#CardService#225;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Game#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Injectable#8;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/http/src/client.d.ts#HttpClient#347;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/component_fixture.d.ts#ComponentFixture#302;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/config.d.ts#Routes#7840;</node>
+            <node x="" y="">Component;Injectable;NgModule;ViewChild;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.d.ts#FormsModule#0;/Users/Shawn/Jiahan/neu/cs5610/sushigo/node_modules/@angular/forms/src/form_providers.d.ts#ReactiveFormsModule#84;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#GameNewComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Card#544;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Game#182;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameNewComponent#593;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameService#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Player#294;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Room#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#RoomService#477;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#User#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#UserService#410;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#GamePlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GamePlayComponent#800;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#GameReadyComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameReadyComponent#774;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#GameStatsComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts#ActivatedRoute#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Game#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameService#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameStatsComponent#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Router#131;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#User#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#UserService#294;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/game.model.client.ts#Card#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Game#194;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Player#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Room#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#assertNumber#138;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/game.service.client.ts#Game#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#GameService#142;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#HttpClient#58;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#Injectable#107;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/game_mode.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/home.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#HomepageComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#HomepageComponent#228;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#User#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#HowToPlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#HowToPlayComponent#52;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#OnInit#20;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1111;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#LoginComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#LoginComponent#346;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#NgForm#120;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Router#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#SharedService#226;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#User#297;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#UserService#159;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/logo.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/http/src/module.d.ts#HttpClientModule#2583;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.d.ts#NgForm#618;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/player.model.client.ts#Card#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/player.model.client.ts#Player#42;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/player.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Player#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#PlayerService#179;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#ProfileComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#ProfileComponent#300;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#SharedService#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#User#251;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pve.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pvp.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#RegisterComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#NgForm#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#RegisterComponent#275;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Router#242;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#User#119;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#UserService#175;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_0.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_1.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_2.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/room.model.client.ts#Room#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/room.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Player#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Room#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#RoomService#229;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts#Router#3934;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_module.d.ts#RouterModule#1199;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_state.d.ts#ActivatedRoute#1542;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules2.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules3.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules4.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/shared.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/shared.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/shared.service.client.ts#SharedService#125;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts#TestBed#1089;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/user.model.client.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/user.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#User#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#UserService#175;</node>
+            <node x="" y="">{{showCards(card)[0]}}</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.25" x="1869.5" y="1540.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Dumpling.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/EggNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Maki.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/PlayNow.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Pudding.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Sashimi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/SquidNigiri.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Tempura.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/sushis/Wasabi.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.component.spec.ts#AppComponent#65;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.spec.ts#TestBed#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.spec.ts#async#18;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.component.ts#AppComponent#44;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.component.ts#Component#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.module.ts#AppComponent#111;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#AppModule#1434;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#BrowserModule#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#CardService#746;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#FormsModule#436;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameNewComponent#862;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GamePlayComponent#944;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameReadyComponent#1354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameService#562;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#GameStatsComponent#1029;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HomepageComponent#1117;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HowToPlayComponent#1200;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#HttpClientModule#806;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#LoginComponent#159;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#NgModule#68;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#PlayerService#682;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#ProfileComponent#357;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#ReactiveFormsModule#449;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#RegisterComponent#233;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#RoomService#622;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#Routing#316;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#SharedService#1289;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.module.ts#UserService#502;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/app.routing.ts#GameNewComponent#293;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GamePlayComponent#459;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GameReadyComponent#373;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#GameStatsComponent#542;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#HomepageComponent#628;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#HowToPlayComponent#709;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#LoginComponent#62;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#ProfileComponent#215;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#RegisterComponent#134;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#RouterModule#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#Routes#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/app.routing.ts#Routing#1464;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/application_ref.d.ts#enableProdMode#708;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/render3/assert.d.ts#assertNumber#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/async.d.ts#async#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/blank.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.d.ts#BrowserModule#795;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-back.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/button-start.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/card.model.client.ts#Card#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/card.service.client.ts#Card#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#CardService#225;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Game#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/card.service.client.ts#Injectable#8;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/http/src/client.d.ts#HttpClient#347;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/component_fixture.d.ts#ComponentFixture#302;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/config.d.ts#Routes#7840;</node>
+            <node x="" y="">Component;Injectable;NgModule;ViewChild;</node>
+            <node x="" y="">$PROJECT_DIR$/src/environments/environment.ts#environment#348;</node>
+            <node x="" y="">$PROJECT_DIR$/src/favicon.ico</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.d.ts#FormsModule#0;/Users/Shawn/Jiahan/neu/cs5610/sushigo/node_modules/@angular/forms/src/form_providers.d.ts#ReactiveFormsModule#84;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#GameNewComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Card#544;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Game#182;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameNewComponent#593;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#GameService#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Player#294;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Room#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#RoomService#477;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#User#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-new/game-new.component.ts#UserService#410;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#GamePlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GamePlayComponent#800;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-play/game-play.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#GameReadyComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.ts#ActivatedRoute#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Card#725;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#CardService#615;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Game#287;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameReadyComponent#774;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#GameService#548;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Player#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#PlayerService#410;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Room#231;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#RoomService#481;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#Router#75;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#User#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-ready/game-ready.component.ts#UserService#343;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#GameStatsComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.ts#ActivatedRoute#115;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Game#238;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameService#171;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#GameStatsComponent#354;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#OnInit#20;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#Router#131;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#User#59;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/game-stats/game-stats.component.ts#UserService#294;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/game.model.client.ts#Card#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Game#194;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Player#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#Room#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/game.model.client.ts#assertNumber#138;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/game.service.client.ts#Game#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#GameService#142;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#HttpClient#58;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/game.service.client.ts#Injectable#107;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/game_mode.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/home.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#HomepageComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#HomepageComponent#228;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#User#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/homepage/homepage.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#HowToPlayComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.ts#Component#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#HowToPlayComponent#52;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/game/how-to-play/how-to-play.component.ts#OnInit#20;</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.html</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1111;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.html</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#LoginComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/login/login.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#LoginComponent#346;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#NgForm#120;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#Router#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#SharedService#226;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#User#297;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#UserService#159;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/login/login.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/logo.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/main.ts#AppModule#134;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/main.ts#enableProdMode#9;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/main.ts#environment#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/main.ts#platformBrowserDynamic#57;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/http/src/module.d.ts#HttpClientModule#2583;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.d.ts#NgForm#618;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser-dynamic/src/platform-browser-dynamic.d.ts#platformBrowserDynamic#322;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/player.model.client.ts#Card#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/models/player.model.client.ts#Player#42;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/player.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#Player#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/player.service.client.ts#PlayerService#179;</node>
+            <node x="" y="">$PROJECT_DIR$/src/polyfills.ts#reflect.js#1766;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/polyfills.ts#zone.js/dist/zone#2215;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#ProfileComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts#ActivatedRoute#57;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#OnInit#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#ProfileComponent#300;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#Router#73;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#SharedService#180;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#User#251;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/profile/profile.component.ts#UserService#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pve.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/pvp.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/core-js/es7/reflect.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.spec.ts#ComponentFixture#16;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#RegisterComponent#84;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#TestBed#34;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/components/user/register/register.component.ts#Component#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Injectable#19;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#NgForm#80;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#OnInit#31;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#RegisterComponent#275;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#Router#242;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#User#119;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#UserService#175;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/components/user/register/register.component.ts#ViewChild#39;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_0.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_1.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/roll_2.gif</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/room.model.client.ts#Room#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/room.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Player#149;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#Room#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/room.service.client.ts#RoomService#229;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts#Router#3934;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_module.d.ts#RouterModule#1199;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_state.d.ts#ActivatedRoute#1542;</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules2.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules3.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules4.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/assets/img/guide/rules6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/shared.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/shared.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/shared.service.client.ts#SharedService#125;</node>
+            <node x="" y="">$PROJECT_DIR$/src/test.ts#BrowserDynamicTestingModule#198;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/test.ts#getTestBed#144;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/test.ts#platformBrowserDynamicTesting#229;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/test.ts#zone.js/dist/zone-testing#99;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts#TestBed#1089;/Users/Shawn/Jiahan/neu/cs5610/sushigo/node_modules/@angular/core/testing/src/test_bed.d.ts#getTestBed#7830;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser-dynamic/testing/src/testing.d.ts#BrowserDynamicTestingModule#441;/Users/Shawn/Jiahan/neu/cs5610/sushigo/node_modules/@angular/platform-browser-dynamic/testing/src/testing.d.ts#platformBrowserDynamicTesting#346;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/models/user.model.client.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/src/app/services/user.service.client.ts#HttpClient#50;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#Injectable#8;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#User#99;/Users/Shawn/Jiahan/neu/cs5610/sushigo/src/app/services/user.service.client.ts#UserService#175;</node>
+            <node x="" y="">https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js</node>
+            <node x="" y="">https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js</node>
+            <node x="" y="">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css</node>
+            <node x="" y="">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</node>
+            <node x="" y="">zone.js/dist/zone</node>
+            <node x="" y="">zone.js/dist/zone-testing</node>
+            <node x="" y="">{{showCards(card)[0]}}</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.20945945945945946" x="1896.0" y="1840.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/Shawn/Jiahan/neu/cs5610/sushigo/server">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/server</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/server/app.js#card.service.server.js#345;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#game.service.server.js#282;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#models#38;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#player.service.server.js#217;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#room.service.server.js#154;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/app.js#user.service.server.js#91;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/bcrypt-nodejs/bCrypt.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/card/card.model.server.js#cardSchema#46;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/card/card.schema.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/services/card.service.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/game/game.model.server.js#gameSchema#57;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/game/game.schema.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/services/game.service.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/passport/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/passport-local/lib/index.js#Strategy#194;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongoose/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongoose-findorcreate/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/models.server.js#Promise#564;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#cardModel#836;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#gameModel#906;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#mongoose#469;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#playerModel#666;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#roomModel#753;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/models.server.js#userModel#596;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/player/player.model.server.js#playerSchema#57;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/player/player.schema.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/services/player.service.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/room/room.model.server.js#roomSchema#57;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/room/room.schema.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/services/room.service.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/user/user.model.server.js#findOrCreate#170;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/models/user/user.model.server.js#userSchema#45;</node>
+            <node x="" y="">$PROJECT_DIR$/server/models/user/user.schema.server.js</node>
+            <node x="" y="">$PROJECT_DIR$/server/services/user.service.server.js#LocalStrategy#56;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#bcrypt#96;/Users/Shawn/Jiahan/neu/cs5610/sushigo/server/services/user.service.server.js#passport#4;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/q/index.d.ts#Promise#16338;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6150793650793651" x="562.258064516129" y="560.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="180">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/homepage/homepage.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/how-to-play/how-to-play.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-stats/game-stats.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-ready/game-ready.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-play/game-play.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding>
+            <element signature="n#audio#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/game/game-new/game-new.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
