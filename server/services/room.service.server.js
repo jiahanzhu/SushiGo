@@ -22,9 +22,24 @@ module.exports = function (app, models) {
                         .roomModel
                         .createRoom(room, function (err, room) {
                             if(!err){
-                                console.log('room.service.server.js: room created: ');
-                                console.log(room);
-                                res.send(room);
+                                // console.log('room.service.server.js: room created: \n');
+                                // console.log(room);
+                                models
+                                    .cardModel
+                                    .getCardsNumber(function (err, num) {
+                                        if(!err){
+                                            if(num < 108){
+                                                models
+                                                    .cardModel
+                                                    .createDeck(function (err) {
+                                                        if(!err){
+                                                            console.log('deck created!');
+                                                        }
+                                                    })
+                                            }
+                                            res.send(room);
+                                        }
+                                    })
                             }
                         });
                 }
@@ -51,8 +66,8 @@ module.exports = function (app, models) {
             .roomModel
             .addPlayer(roomId, player, function (err, room) {
                 if(!err){
-                    console.log('room.service.server.js: room after adding player:');
-                    console.log(room);
+                    // console.log('room.service.server.js: room after adding player:\n');
+                    // console.log(room);
                     res.send(room);
                 }
             });
@@ -66,18 +81,18 @@ module.exports = function (app, models) {
             .createPlayers(players, function (err, response) {
                 if(err) res.send(err);
                 else{
-                    console.log('room.service.server.js: players added:');
-                    console.log(response);
+                    // console.log('room.service.server.js: players added:\n');
+                    // console.log(response);
                     models
                         .roomModel
                         .addPlayers(roomId, response, function (err, room) {
                             if(!err){
-                                console.log('room.service.server.js 75: room after adding players:');
-                                console.log(room);
+                                // console.log('room.service.server.js 75: room after adding players:\n');
+                                // console.log(room);
                                 res.send(room);
                             }
                             else{
-                                console.log('room.service.server.js 80: error occurred');
+                                console.log('room.service.server.js 80: error occurred\n');
                                 res.sendStatus(400).send(err);
                             }
                         })

@@ -28,7 +28,6 @@ module.exports = function (app, models) {
                 }
             })
     }
-
     function getCardById(req, res) {
         const cardId = req.params['cardId'];
         models

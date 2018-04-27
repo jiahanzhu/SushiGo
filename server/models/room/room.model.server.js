@@ -59,13 +59,13 @@ module.exports = function(mongoose, playModel) {
     function addPlayers(roomId, players, callback) {
         roomModel.findOne({id : roomId}, function (err, room) {
             players.forEach(function (player) {
-                console.log('room.model.server.js: player to be added to room:');
+                console.log('room.model.server.js: player to be added to room:\n');
                 console.log(player);
                 room.players.push(player._id);
             })
             room.save(function (err) {
                 if(!err) {
-                    console.log('room.model.server.js: room:');
+                    console.log('room.model.server.js: room:\n');
                     console.log(room);
                     return callback(null, room);
                 }

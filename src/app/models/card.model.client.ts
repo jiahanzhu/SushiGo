@@ -1,8 +1,8 @@
 export class Card {
     id: number;
-    type: string;
+    cardType: string;
     constructor(id, type) {
         this.id = id;
-        this.type = type;
+        this.cardType = type;
     }
 }

@@ -113,5 +113,9 @@ export class GameReadyComponent implements OnInit {
         });
     }
 
+    backToNew() {
+        this.router.navigate(['/user', this.username, 'game']);
+    }
+
 
 }

@@ -24,7 +24,9 @@ export class GameService {
 
     getNextHand(gameId, activity) {
         const url = 'api/game/' + gameId;
-        return this.http.put<Game>(url, activity);
+        console.log('game.service.client.ts: activity');
+        console.log(activity);
+        return this.http.put(url, activity);
     }
     // getMaxId() {
     //   function getMaxId(maxId, currentId) {

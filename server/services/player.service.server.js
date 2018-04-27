@@ -9,8 +9,8 @@ module.exports = function (app, models) {
             .playerModel
             .findPlayersByRoomId(roomId, function (err, players) {
                 if(!err){
-                    console.log('players in room ' + roomId +": ");
-                    console.log(players);
+                    // console.log('players in room ' + roomId +": \n");
+                    // console.log(players);
                     res.send(players);
                 }else{
                     res.sendStatus(400).send(err);

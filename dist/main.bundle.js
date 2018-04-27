@@ -211,7 +211,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".sushi-icon:hover {\n    cursor: pointer;\n}\n\n/*.parent {*/\n\n/*position: relative;*/\n\n/*}*/\n\n/*.child {*/\n\n/*position: absolute;*/\n\n/*top: 50%;*/\n\n/*left: 50%;*/\n\n/*transform: translate(-50%, -50%);*/\n\n/*}*/\n\n.modal-dialog {\n    top: 30%;\n}", ""]);
+exports.push([module.i, ".sushi-icon:hover {\n    cursor: pointer;\n}\n\n/*.parent {*/\n\n/*position: relative;*/\n\n/*}*/\n\n/*.child {*/\n\n/*position: absolute;*/\n\n/*top: 50%;*/\n\n/*left: 50%;*/\n\n/*transform: translate(-50%, -50%);*/\n\n/*}*/\n\n.modal-dialog {\n    top: 30%;\n}\n\n.player-num-btn {\n    margin: 2px 0;\n}", ""]);
 
 // exports
 
@@ -224,7 +224,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/game/game-new/game-new.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n<div class=\"container-fluid myBody parent\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_menu.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n    <!--<embed src=\"../../../../assets/music/bgm_menu.mp3\" loop=\"true\" width=\"0\" height=\"0\" autostart=\"true\">-->\n    <div align=\"center\">\n        <img src=\"../../../../assets/img/game_mode.png\"/>\n    </div>\n    <div class=\"row\">\n\n        <div class=\"col-sm-6\">\n            <div class=\"card text-center\">\n                <div align=\"center\">\n                    <img class=\"sushi-icon\" src=\"../../../../assets/img/sushis/Wasabi.png\" width=\"53%\" alt=\"Card image cap\" data-toggle=\"modal\" data-target=\"#gamestart\">\n                </div>\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/pve.png\" width=\"40%\"/>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div class=\"card text-center\">\n                <div align=\"center\">\n                    <img class=\"sushi-icon\" src=\"../../../../assets/img/sushis/Tempura.png\" width=\"50%\" alt=\"Card image cap\">\n                </div>\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/pvp.png\" width=\"40%\"/>\n                </div>\n                <!--<div class=\"card-block\">-->\n                <!--<br/>-->\n                <!--<button type=\"button\"-->\n                <!--class=\"btn btn-lg btn-warning\"-->\n                <!--data-toggle=\"popover\"-->\n                <!--data-placement=\"left\"-->\n                <!--title=\"Uh-oh!\"-->\n                <!--data-content=\"We're still working on PvP. Please try later!\">-->\n                <!--PvP-->\n                <!--</button>-->\n                <!--</div>-->\n                <!--</div>-->\n            </div>\n        </div>\n\n    </div>\n    <div class=\"card-block\" align=\"center\">\n        <div class=\"modal fade\"\n             id=\"gamestart\"\n             tabindex=\"-1\"\n             role=\"dialog\"\n             aria-labelledby=\"gamestartLabel\"\n             aria-hidden=\"true\">\n            <div class=\"modal-dialog modal-sm\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <h5 class=\"modal-title\" id=\"gamestartLabel\">Please select the number of players</h5>\n                    </div>\n                    <div class=\"modal-body\">\n                        <!--<div class=\"input-group input-number-group\">-->\n                        <!---->\n                        <!--<div class=\"input-group-button\">-->\n                        <!--<span class=\"input-number-decrement\">-</span>-->\n                        <!--</div>-->\n                        <!--<input class=\"input-number\" type=\"number\" value=\"4\" min=\"2\" max=\"5\">-->\n                        <!--<div class=\"input-group-button\">-->\n                        <!--<span class=\"input-number-increment\">+</span>-->\n                        <!--</div>-->\n                        <!--</div>-->\n                        <!--<div class=\"form-group\">-->\n                        <!--<input class=\"form-control\" type=\"number\" value=\"4\" min=\"2\" max=\"5\">-->\n                        <!--</div>-->\n\n                        <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(2)\">2</button>\n                        <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(3)\">3</button>\n                        <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(4)\">4</button>\n                        <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(5)\">5</button>\n\n                    </div>\n                    <!--<div class=\"modal-footer\" align=\"center\">-->\n                    <!--<button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Cancel</button>-->\n                    <!--<button type=\"button\" class=\"btn btn-success\" data-dismiss=\"modal\" (click)=\"newGame()\">Start</button>-->\n                    <!--</div>-->\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav navbar-collapse collapse\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n\n        </div>\n    </div>\n</nav>\n<div class=\"container-fluid myBody parent\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_menu.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n    <!--<embed src=\"../../../../assets/music/bgm_menu.mp3\" loop=\"true\" width=\"0\" height=\"0\" autostart=\"true\">-->\n    <div align=\"center\">\n        <img src=\"../../../../assets/img/game_mode.png\"/>\n    </div>\n    <div class=\"row\">\n\n        <div class=\"col-xs-5\">\n            <div class=\"card text-center\">\n                <div align=\"center\">\n                    <img class=\"sushi-icon\" width=\"53%\" src=\"../../../../assets/img/sushis/Wasabi.png\"\n                         alt=\"Card image cap\" data-toggle=\"modal\" data-target=\"#gamestart\">\n                </div>\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/pve.png\" width=\"40%\"/>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-xs-2\">\n            <div class=\"card text-center\">\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/blank.png\" width=\"70%\">\n                </div>\n                <div align=\"center\">\n                    <img class=\"sushi-icon\" width=\"100%\"\n                         src=\"../../../../assets/img/sushis/Sashimi.png\"\n                         (click)=\"backToHome()\">\n                </div>\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/home.png\" width=\"90%\"/>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-xs-5\">\n            <div class=\"card text-center\">\n                <img src=\"../../../../assets/img/blank.png\" width=\"10%\">\n                <div align=\"center\">\n                    <img class=\"sushi-icon\" width=\"50%\"\n                         src=\"../../../../assets/img/sushis/Tempura.png\" alt=\"Card image cap\"\n                         data-toggle=\"modal\" data-target=\"#pvp\">\n                </div>\n                <div align=\"center\">\n                    <img src=\"../../../../assets/img/pvp.png\" width=\"40%\"/>\n                </div>\n                <!--<div class=\"card-block\">-->\n                <!--<br/>-->\n                <!--<button type=\"button\"-->\n                <!--class=\"btn btn-lg btn-warning\"-->\n                <!--data-toggle=\"popover\"-->\n                <!--data-placement=\"left\"-->\n                <!--title=\"Uh-oh!\"-->\n                <!--data-content=\"We're still working on PvP. Please try later!\">-->\n                <!--PvP-->\n                <!--</button>-->\n                <!--</div>-->\n                <!--</div>-->\n            </div>\n        </div>\n\n    </div>\n    <div class=\"card-block\" align=\"center\">\n        <div class=\"modal fade\"\n             id=\"gamestart\"\n             tabindex=\"-1\"\n             role=\"dialog\"\n             aria-labelledby=\"gamestartLabel\"\n             aria-hidden=\"true\">\n            <div class=\"modal-dialog modal-sm\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <h5 class=\"modal-title\" id=\"gamestartLabel\">Please select the number of players</h5>\n                    </div>\n                    <div class=\"modal-body\">\n                        <div align=\"center\" class=\"player-num-btn\">\n                            <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(2)\">2   Players</button>\n                        </div>\n                        <div align=\"center\" class=\"player-num-btn\">\n                            <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(3)\">3 Players</button>\n                        </div>\n                        <div align=\"center\" class=\"player-num-btn\">\n                            <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(4)\">4  Players</button>\n                        </div>\n                        <div align=\"center\" class=\"player-num-btn\">\n                            <button type=\"button\" class=\"btn btn-warning .btn-lg\" data-dismiss=\"modal\" (click)=\"newPvEGame(5)\">5  Players</button>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"card-block\" align=\"center\">\n        <div class=\"modal fade\"\n             id=\"pvp\"\n             tabindex=\"-1\"\n             role=\"dialog\"\n             aria-labelledby=\"pvpLabel\"\n             aria-hidden=\"true\">\n            <div class=\"modal-dialog modal-sm\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-body\">\n\n                        <h4>PvP Mode Coming Soon!</h4>\n\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -308,6 +308,9 @@ var GameNewComponent = /** @class */ (function () {
         //     err => console.log('error add website')
         // );
     };
+    GameNewComponent.prototype.backToHome = function () {
+        this.router.navigate(['/user', this.username]);
+    };
     GameNewComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-game-new',
@@ -335,7 +338,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "img {max-width: 100%;}\n\n.card-display {\n    padding: 0;\n}\n\n.cards-on-hand:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n.game-button:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n/*.game-start {*/\n\n/*top: 60%;*/\n\n/*}*/", ""]);
+exports.push([module.i, "/*img {max-width: 100%;}*/\n\n.card-display {\n    padding: 0;\n}\n\n.cards-on-hand:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n.game-button:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n.game-text-a {\n    font-family: \"Comic Sans MS\", cursive, sans-serif;\n    /*font-size: 2.5em;*/\n    font-variant: normal;\n    font-weight: bold;\n    color: #a25e49;\n    padding-top: 6%;\n    padding-bottom: 6%;\n    padding-right: 20px;\n    text-align: center;\n}\n\n.game-text-b {\n    font-family: \"Comic Sans MS\", cursive, sans-serif;\n    /*font-size: 2.5em;*/\n    font-variant: normal;\n    color: #a25e49;\n    /*padding: 6% 0;*/\n    /*text-align: center;*/\n}\n\n.game-play-body {\n    margin-left: 30px;\n    margin-right: 30px;\n}\n\n", ""]);
 
 // exports
 
@@ -348,7 +351,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/game/game-play/game-play.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"container myBody\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_game.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n\n    <!--<embed src=\"../../../../assets/music/bgm_game.mp3\" loop=\"true\" width=\"0\" height=\"0\" autostart=\"true\">-->\n\n    <div  *ngIf=\"cards\">\n        <br/>\n        <p>Alice</p>\n        <div class=\"row\">\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        {{cards[0][0]}}\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][0])[0]}}\" alt=\"{{showCards(cards[0][0])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][1])[0]}}\" alt=\"{{showCards(cards[0][1])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][2])[0]}}\" alt=\"{{showCards(cards[0][2])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][3])[0]}}\" alt=\"{{showCards(cards[0][3])[1]}}\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][4])[0]}}\" alt=\"{{showCards(cards[0][4])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][5])[0]}}\" alt=\"{{showCards(cards[0][5])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][6])[0]}}\" alt=\"{{showCards(cards[0][6])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[0][7])[0]}}\" alt=\"{{showCards(cards[0][7])[1]}}\">\n                    </div>\n                </div>\n            </div>\n        </div>\n        <br/>\n        <p>Bob</p>\n        <div class=\"row\">\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][0])[0]}}\" alt=\"{{showCards(cards[1][0])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][1])[0]}}\" alt=\"{{showCards(cards[1][1])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][2])[0]}}\" alt=\"{{showCards(cards[1][2])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][3])[0]}}\" alt=\"{{showCards(cards[1][3])[1]}}\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][4])[0]}}\" alt=\"{{showCards(cards[1][4])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][5])[0]}}\" alt=\"{{showCards(cards[1][5])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][6])[0]}}\" alt=\"{{showCards(cards[1][6])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[1][7])[0]}}\" alt=\"{{showCards(cards[1][7])[1]}}\">\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <br/>\n        <p>Charlie</p>\n        <div class=\"row\">\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][0])[0]}}\" alt=\"{{showCards(cards[2][0])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][1])[0]}}\" alt=\"{{showCards(cards[2][1])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][2])[0]}}\" alt=\"{{showCards(cards[2][2])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][3])[0]}}\" alt=\"{{showCards(cards[2][3])[1]}}\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][4])[0]}}\" alt=\"{{showCards(cards[2][4])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][5])[0]}}\" alt=\"{{showCards(cards[2][5])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][6])[0]}}\" alt=\"{{showCards(cards[2][6])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img-top\" src=\"{{showCards(cards[2][7])[0]}}\" alt=\"{{showCards(cards[2][7])[1]}}\">\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <br/>\n        <p>{{username}}</p>\n        <div class=\"row\">\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][0])[0]}}\" alt=\"{{showCards(cards[3][0])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][1])[0]}}\" alt=\"{{showCards(cards[3][1])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][2])[0]}}\" alt=\"{{showCards(cards[3][2])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][3])[0]}}\" alt=\"{{showCards(cards[3][3])[1]}}\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][4])[0]}}\" alt=\"{{showCards(cards[3][4])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][5])[0]}}\" alt=\"{{showCards(cards[3][5])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][6])[0]}}\" alt=\"{{showCards(cards[3][6])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"card-img\" src=\"{{showCards(cards[3][7])[0]}}\" alt=\"{{showCards(cards[3][7])[1]}}\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"container\" *ngIf=\"decks\">\n        <p>Please select one from below</p>\n        <div class=\"row\">\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][0])\" src=\"{{showCards(decks[3][0])[0]}}\" alt=\"{{showCards(decks[3][0])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][1])\" src=\"{{showCards(decks[3][1])[0]}}\" alt=\"{{showCards(decks[3][1])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][2])\" src=\"{{showCards(decks[3][2])[0]}}\" alt=\"{{showCards(decks[3][2])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][3])\" src=\"{{showCards(decks[3][3])[0]}}\" alt=\"{{showCards(decks[3][3])[1]}}\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xs-6\">\n                <div class=\"row\">\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][4])\" src=\"{{showCards(decks[3][4])[0]}}\" alt=\"{{showCards(decks[3][4])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][5])\" src=\"{{showCards(decks[3][5])[0]}}\" alt=\"{{showCards(decks[3][5])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][6])\" src=\"{{showCards(decks[3][6])[0]}}\" alt=\"{{showCards(decks[3][6])[1]}}\">\n                    </div>\n                    <div class=\"col-xs-3 card-display\">\n                        <img class=\"cards-on-hand\" (click)=\"getNextHand(decks[3][7])\" src=\"{{showCards(decks[3][7])[0]}}\" alt=\"{{showCards(decks[3][7])[1]}}\">\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <button type=\"button\" class=\"btn btn-lg btn-warning\" data-toggle=\"modal\" data-target=\"#total\" (click)=\"total(this.game.cards)\">\n            Finish\n        </button>\n    </div>\n    <!-- Modal -->\n    <div class=\"modal fade\"\n         *ngIf=\"game && scores\"\n         id=\"total\"\n         tabindex=\"-1\"\n         role=\"dialog\"\n         aria-labelledby=\"totalLabel\"\n         aria-hidden=\"true\">\n        <div class=\"modal-dialog modal-sm\" role=\"document\">\n            <div class=\"modal-content\">\n                <div class=\"modal-header\">\n                    <h3 class=\"modal-title text-center\" id=\"totalLabel\">{{message}}</h3>\n                </div>\n                <div class=\"modal-body\">\n                    <table class=\"table\">\n                        <thead>\n                        <tr>\n                            <th scope=\"col\">Player</th>\n                            <th scope=\"col\">Points</th>\n                        </tr>\n                        </thead>\n                        <tbody>\n                        <tr>\n                            <th scope=\"row\">Alice</th>\n                            <td>{{game.scores[0]}}</td>\n                        </tr>\n                        <tr>\n                            <th scope=\"row\">Bob</th>\n                            <td>{{scores[1]}}</td>\n                        </tr>\n                        <tr>\n                            <th scope=\"row\">Charlie</th>\n                            <td>{{scores[2]}}</td>\n                        </tr>\n                        <tr>\n                            <th scope=\"row\">{{username}}</th>\n                            <td>{{scores[3]}}</td>\n                        </tr>\n                        </tbody>\n                    </table>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n\n\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"container-fluid myBody game-play-body\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_game.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n\n    <div  *ngIf=\"players\">\n        <div *ngFor=\"let player of players\">\n            <div class=\"row\">\n                <div class=\"col-xs-1 game-text-a\">\n                    {{player.username}}\n                </div>\n                <div class=\"col-xs-11\">\n                    <div>\n                        <img *ngFor=\"let card of player.playedCards;\"\n                             width=\"10%\" height=\"10%\"\n                             class=\"card-display\"\n                             src=\"{{showCards(card)[0]}}\"\n                             alt=\"{{showCards(card)[1]}}\">\n                    </div>\n                </div>\n\n            </div>\n        </div>\n    </div>\n\n    <div *ngIf=\"myHand && myHand.length > 0\">\n        <h3 class=\"game-text-b\">Please select a card from below</h3>\n        <div class=\"row\">\n            <div class=\"col-xs-1 game-text-a\">\n                Your Hand\n            </div>\n            <div class=\"col-xs-11\">\n                <div>\n                    <img *ngFor=\"let card of myHand; let i = index\"\n                         width=\"10%\" height=\"10%\"\n                         class=\"cards-on-hand card-display\"\n                         (click)=\"getNextHand(i)\"\n                         src=\"{{showCards(card)[0]}}\"\n                         alt=\"{{showCards(card)[1]}}\">\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"backdrop\" [ngStyle]=\"{'display': showResults}\">\n        <div class=\"modal\"\n             tabindex=\"-1\"\n             role=\"dialog\"\n             [ngStyle]=\"{'display': showResults}\">\n            <div class=\"modal-dialog modal-dialog-centered modal-sm\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <h3 class=\"modal-title text-center\" id=\"totalLabel\">{{message}}</h3>\n                    </div>\n                    <div class=\"modal-body\">\n                        <table class=\"table\" align=\"center\">\n                            <thead>\n                            <tr align=\"center\">\n                                <th scope=\"col\" align=\"center\">Rank</th>\n                                <th scope=\"col\" align=\"center\">Player</th>\n                                <th scope=\"col\" align=\"center\">Points</th>\n                            </tr>\n                            </thead>\n                            <tbody>\n                            <tr *ngFor=\"let player of ranks; let i = index\">\n                                <td>{{i+1}}</td>\n                                <td scope=\"row\">{{player.username}}</td>\n                                <td>{{player.score}}</td>\n                            </tr>\n                            </tbody>\n                        </table>\n                    </div>\n                    <div class=\"modal-footer\">\n                        <button type=\"button\" align=\"center\" class=\"btn btn-warning\" (click) = \"startNewGame()\">Start New Game</button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -390,33 +393,44 @@ var GamePlayComponent = /** @class */ (function () {
         this.cardService = cardService;
         this.activatedRoute = activatedRoute;
         this.router = router;
+        this.ranks = [];
+        this.showResults = 'none';
         // game: Game = new Game(Math.floor(Math.random() * 100), this.user);
         this.decks = [[], [], [], []];
         this.cards = [[], [], [], []];
-        this.realCards = [];
+        this.scores = [];
+        this.pudding = [0, 0, 0, 0];
         this.numbers = [];
         this.userService.checkLoggedIn().subscribe(function (response) {
             _this.user = response;
             _this.username = _this.user.username;
             console.log('Username: ' + _this.username);
             _this.activatedRoute.params.subscribe(function (params) {
+                _this.myPlayerId = params['playerId'];
                 _this.gameId = params['gameId'];
                 console.log('gameId');
                 console.log(_this.gameId);
                 _this.gameService.findGameById(_this.gameId).subscribe(function (res) {
                     _this.game = res;
-                    console.log('Entered new game:');
+                    console.log('Entered new game: ');
                     console.log(_this.game);
                     _this.cards = _this.game.cards;
                     _this.decks = _this.game.decks;
                     _this.num = _this.game.num_players;
-                    console.log('cards:');
-                    console.log(_this.cards);
-                    for (var i = 0; i < _this.game.num_players; ++i) {
-                        _this.numbers.push(i);
-                    }
-                    console.log('numbers[]:');
-                    console.log(_this.numbers);
+                    _this.roomId = _this.game.roomId;
+                    _this.playerService.findPlayersByRoomId(_this.roomId).subscribe(function (res2) {
+                        _this.players = res2;
+                        console.log('players in the game: ');
+                        console.log(_this.players);
+                        for (var _i = 0, _a = _this.players; _i < _a.length; _i++) {
+                            var p = _a[_i];
+                            if (p.username === _this.username) {
+                                _this.myPlayerId = p.playerId;
+                                console.log('my player id: ' + _this.myPlayerId);
+                            }
+                        }
+                        _this.myHand = _this.decks[_this.myPlayerId];
+                    });
                 });
             });
         }, function (err) {
@@ -431,133 +445,120 @@ var GamePlayComponent = /** @class */ (function () {
         // });
     };
     GamePlayComponent.prototype.showCards = function (index) {
-        if (0 < index && index < 5) {
-            return ['../../../../assets/img/cards/Egg.png', 'Egg'];
-        }
-        else if (index < 15) {
-            return ['../../../../assets/img/cards/Salmon.png', 'Salmon'];
-        }
-        else if (index < 20) {
-            return ['../../../../assets/img/cards/Squid.png', 'Squid'];
-        }
-        else if (index < 26) {
-            return ['../../../../assets/img/cards/Maki_1.png', 'Maki I'];
-        }
-        else if (index < 38) {
-            return ['../../../../assets/img/cards/Maki_2.png', 'Maki II'];
-        }
-        else if (index < 46) {
-            return ['../../../../assets/img/cards/Maki_3.png', 'Maki III'];
-        }
-        else if (index < 60) {
-            return ['../../../../assets/img/cards/Dumpling.png', 'Dumpling'];
-        }
-        else if (index < 74) {
-            return ['../../../../assets/img/cards/Tempura.png', 'Tempura'];
-        }
-        else if (index < 88) {
-            return ['../../../../assets/img/cards/Sashimi.png', 'Sashimi'];
-        }
-        else if (index < 94) {
-            return ['../../../../assets/img/cards/Wasabi.png', 'Wasabi'];
-        }
-        else if (index < 98) {
-            return ['../../../../assets/img/cards/Chopsticks.png', 'Chopsticks'];
-        }
-        else if (index < 108) {
-            return ['../../../../assets/img/cards/Pudding.png', 'Pudding'];
-        }
-        else {
+        var cardType = this.getCardById(index);
+        if (cardType === '...') {
             return ['...', index];
         }
+        else {
+            var src = '../../../../assets/img/cards/' + cardType + '.png';
+            return [src, cardType];
+        }
     };
-    // showCards(index) {
-    //     if (0 < index && index < 5) {
-    //         return '../../../../assets/img/cards/Egg.png';
-    //     } else if (index < 15) {
-    //         return '../../../../assets/img/cards/Salmon.png';
-    //     } else if (index < 20) {
-    //         return '../../../../assets/img/cards/Squid.png';
-    //     } else if (index < 26) {
-    //         return '../../../../assets/img/cards/Maki_1.png';
-    //     } else if (index < 38) {
-    //         return '../../../../assets/img/cards/Maki_2.png';
-    //     } else if (index < 46) {
-    //         return '../../../../assets/img/cards/Maki_3.png';
-    //     } else if (index < 60) {
-    //         return '../../../../assets/img/cards/Dumpling.png';
-    //     } else if (index < 74) {
-    //         return '../../../../assets/img/cards/Tempura.png';
-    //     } else if (index < 88) {
-    //         return '../../../../assets/img/cards/Sashimi.png';
-    //     } else if (index < 94) {
-    //         return '../../../../assets/img/cards/Wasabi.png';
-    //     } else if (index < 98) {
-    //         return '../../../../assets/img/cards/Chopsticks.png';
-    //     } else if (index < 108) {
-    //         return '../../../../assets/img/cards/Pudding.png';
-    //     } else {
-    //         return '...';
-    //     }
-    // }
     GamePlayComponent.prototype.getNextHand = function (num) {
         var _this = this;
         var activity = { playerId: this.myPlayerId, card_index: num, game: this.game };
+        console.log('getNextHand');
+        console.log(activity);
         this.gameService.getNextHand(this.gameId, activity).subscribe(function (res) {
             _this.game = res;
             _this.decks = _this.game.decks;
-            _this.hand = _this.decks[_this.decks.length - 1];
+            _this.myHand = _this.decks[_this.myPlayerId];
+            console.log('myHand: ');
+            console.log(_this.myHand);
             _this.cards = _this.game.cards;
+            for (var i in _this.players) {
+                if (true) {
+                    _this.players[i].playedCards = _this.cards[i];
+                }
+            }
+            if (_this.myHand.length === 0) {
+                _this.total(_this.cards);
+            }
         });
     };
     GamePlayComponent.prototype.total = function (cards) {
-        for (var i = 0; i < 4; i++) {
+        var maki = [], dumpling = [], tempura = [], sashimi = [];
+        for (var i = 0; i < this.players.length; i++) {
+            maki[i] = 0;
+            dumpling[i] = 0;
+            tempura[i] = 0;
+            sashimi[i] = 0;
             var pts = 0;
-            for (var j = 0; j < 8; j++) {
+            var hasWasabi = false;
+            for (var j = 0; j < this.cards[0].length; j++) {
                 var card = cards[i][j];
-                if (card < 5) {
-                    pts++;
+                var cardType = this.getCardById(card);
+                switch (cardType) {
+                    case 'Egg': {
+                        var point = 1;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Salmon': {
+                        var point = 2;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Squid': {
+                        var point = 3;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Maki_1': {
+                        maki[i] += 1;
+                        break;
+                    }
+                    case 'Maki_2': {
+                        maki[i] += 2;
+                        break;
+                    }
+                    case 'Maki_3': {
+                        maki[i] += 3;
+                        break;
+                    }
+                    case 'Tempura': {
+                        tempura[i] += 1;
+                        break;
+                    }
+                    case 'Sashimi': {
+                        sashimi[i] += 1;
+                        break;
+                    }
+                    case 'Dumpling': {
+                        dumpling[i] += 1;
+                        break;
+                    }
+                    case 'Chopsticks': {
+                        break;
+                    }
+                    case 'Wasabi': {
+                        hasWasabi = true;
+                        break;
+                    }
+                    case 'Pudding': {
+                        this.pudding[i] += 1;
+                        break;
+                    }
+                    default: {
+                        break;
+                    }
                 }
-                else if (card < 15) {
-                    pts += 2;
-                }
-                else if (card < 20) {
-                    pts += 3;
-                }
-                else if (card < 26) {
-                    this.game.maki[i]++;
-                }
-                else if (card < 38) {
-                    this.game.maki[i] += 2;
-                }
-                else if (card < 46) {
-                    this.game.maki[i] += 3;
-                }
-                else if (card < 60) {
-                    this.game.dumpling[i]++;
-                }
-                else if (card < 74) {
-                    this.game.tempura[i]++;
-                }
-                else if (card < 88) {
-                    this.game.sashimi[i]++;
-                }
-                else if (card < 94) {
-                    pts += 2;
-                }
-                else if (card < 98) {
-                    continue;
-                }
-                else if (card < 108) {
-                    this.game.pudding[i]++;
-                }
-                else {
-                    continue;
-                }
-                console.log('Card: ' + card);
+                console.log('Card: ' + cardType);
                 console.log('Current score: ' + pts);
             }
-            switch (this.game.dumpling[i]) {
+            switch (dumpling[i]) {
                 case 0:
                     break;
                 case 1:
@@ -575,61 +576,106 @@ var GamePlayComponent = /** @class */ (function () {
                 default:
                     pts += 15;
             }
-            console.log('Dumplings: ' + this.game.dumpling[i]);
-            console.log('Current score: ' + pts);
-            if (this.game.tempura[i] === 2) {
-                pts += 5;
-            }
-            console.log('Tempuras: ' + this.game.tempura[i]);
-            console.log('Current score: ' + pts);
-            if (this.game.sashimi[i] === 3) {
-                pts += 10;
-            }
-            console.log('Sashimis: ' + this.game.sashimi[i]);
-            console.log('Current score: ' + pts);
-            this.game.scores[i] = pts;
+            console.log('Dumplings: ' + dumpling[i] + '   Current score: ' + pts);
+            pts += Math.floor(tempura[i] / 2) * 5;
+            console.log('Tempuras: ' + tempura[i] + '   Current score: ' + pts);
+            pts += Math.floor(sashimi[i] / 3) * 10;
+            console.log('Sashimis: ' + sashimi[i] + '   Current score: ' + pts);
+            this.scores[i] = pts;
         }
         var maki1 = 0, maki2 = 0, puddingmax = 0, puddingmin = 10;
-        for (var i = 0; i < 4; i++) {
-            var maki = this.game.maki[i], pudding = this.game.pudding[i];
-            if (maki > maki1) {
+        for (var i = 0; i < this.players.length; i++) {
+            var makis_num = maki[i], puddings_num = this.pudding[i];
+            if (makis_num > maki1) {
                 maki2 = maki1;
-                maki1 = maki;
+                maki1 = makis_num;
             }
-            else if (maki > maki2 && maki < maki1) {
-                maki2 = maki;
+            else if (makis_num > maki2 && makis_num < maki1) {
+                maki2 = makis_num;
             }
-            if (pudding > puddingmax) {
-                puddingmax = pudding;
+            if (puddings_num > puddingmax) {
+                puddingmax = puddings_num;
             }
-            if (pudding < puddingmin) {
-                puddingmin = pudding;
+            if (puddings_num < puddingmin) {
+                puddingmin = puddings_num;
             }
         }
-        for (var i = 0; i < 4; i++) {
-            if (this.game.maki[i] === maki1) {
-                this.game.scores[i] += 6;
+        for (var i = 0; i < this.players.length; i++) {
+            if (maki[i] === maki1) {
+                this.scores[i] += 6;
             }
-            if (this.game.maki[i] === maki2) {
-                this.game.scores[i] += 3;
+            if (maki[i] === maki2) {
+                this.scores[i] += 3;
             }
-            if (this.game.pudding[i] === puddingmax) {
-                this.game.scores[i] += 6;
+            if (this.pudding[i] === puddingmax) {
+                this.scores[i] += 6;
             }
-            if (this.game.pudding[i] === puddingmin) {
-                this.game.scores[i] -= 6;
+            if (this.pudding[i] === puddingmin) {
+                this.scores[i] -= 6;
             }
-            console.log('Maki: ' + this.game.maki[i]);
-            console.log('Current score: ' + this.game.scores[i]);
-            console.log('Pudding: ' + this.game.pudding[i]);
-            console.log('Current score: ' + this.game.scores[i]);
+            console.log('Maki: ' + maki[i]);
+            console.log('Current score: ' + this.scores[i]);
+            console.log('Pudding: ' + this.pudding[i]);
+            console.log('Current score: ' + this.scores[i]);
+            this.players[i].score = this.scores[i];
+            this.ranks[i] = { player: i, username: this.players[i].username, score: this.scores[i] };
         }
-        if (Math.max.apply(null, this.game.scores) === this.game.scores[3]) {
+        this.ranks.sort(function (a, b) { return b.score - a.score; });
+        if (Math.max.apply(null, this.scores) === this.scores[this.myPlayerId]) {
             this.message = 'You win!';
         }
         else {
             this.message = 'You lose!';
         }
+        this.showResults = 'block';
+        console.log('showResults: ' + this.showResults);
+    };
+    GamePlayComponent.prototype.getCardById = function (index) {
+        if (0 < index && index < 5) {
+            return 'Egg';
+        }
+        else if (index < 15) {
+            return 'Salmon';
+        }
+        else if (index < 20) {
+            return 'Squid';
+        }
+        else if (index < 26) {
+            return 'Maki_1';
+        }
+        else if (index < 38) {
+            return 'Maki_2';
+        }
+        else if (index < 46) {
+            return 'Maki_3';
+        }
+        else if (index < 60) {
+            return 'Dumpling';
+        }
+        else if (index < 74) {
+            return 'Tempura';
+        }
+        else if (index < 88) {
+            return 'Sashimi';
+        }
+        else if (index < 94) {
+            return 'Wasabi';
+        }
+        else if (index < 98) {
+            return 'Chopsticks';
+        }
+        else if (index < 108) {
+            return 'Pudding';
+        }
+        else {
+            return '...';
+        }
+    };
+    GamePlayComponent.prototype.closeResults = function () {
+        this.showResults = 'none';
+    };
+    GamePlayComponent.prototype.startNewGame = function () {
+        this.router.navigate(['/room', this.roomId]);
     };
     GamePlayComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -660,7 +706,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "img {max-width: 100%;}\n\n\n.game-button:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n\n/*.game-start {*/\n\n\n/*top: 60%;*/\n\n\n/*}*/", ""]);
+exports.push([module.i, "\n\n\n.game-button:hover {\n    -webkit-transform: scale(1.1, 1.1);\n            transform: scale(1.1, 1.1);\n    cursor: pointer;\n}\n\n/*.game-start {*/\n\n/*top: 60%;*/\n\n/*}*/", ""]);
 
 // exports
 
@@ -673,7 +719,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/game/game-ready/game-ready.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"container myBody\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_game.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n    <div class=\"game-start\">\n        <div align=\"center\">\n            <img src=\"../../../../assets/img/blank.png\" width=\"20%\">\n        </div>\n        <div align=\"center\">\n            <img class=\"game-button\" (click)=\"startGame()\" src=\"../../../../assets/img/button-start.png\" width=\"30%\">\n        </div>\n        <div align=\"center\">\n            <img src=\"../../../../assets/img/blank.png\" width=\"1%\">\n        </div>\n        <div align=\"center\">\n            <img src=\"../../../../assets/img/roll_0.gif\" width=\"20%\">\n            <img src=\"../../../../assets/img/roll_2.gif\" width=\"50%\">\n            <img src=\"../../../../assets/img/roll_1.gif\" width=\"20%\">\n        </div>\n    </div>\n    <!--<embed src=\"../../../../assets/music/bgm_game.mp3\" loop=\"true\" width=\"0\" height=\"0\" autostart=\"true\">-->\n\n\n</div>\n\n\n\n\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/user', username]\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a class=\"navbar-brand\" [routerLink]=\"['/user', username, 'profile']\">{{username}}</a>\n                </li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right disabled knight-icon\">\n                <li><a class=\"glyphicon glyphicon-knight\"></a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"container myBody\">\n    <audio controls autoplay hidden loop>\n        <source src=\"../../../../assets/music/bgm_game.mp3\" type=\"audio/mpeg\">\n        audio unsupported !!\n    </audio>\n    <div class=\"game-start\">\n        <div align=\"center\">\n            <img src=\"../../../../assets/img/blank.png\" width=\"10%\">\n        </div>\n        <div align=\"center\">\n            <img class=\"game-button\" (click)=\"startGame()\" src=\"../../../../assets/img/button-start.png\" width=\"30%\">\n        </div>\n        <div align=\"center\">\n            <img class=\"game-button\" (click)=\"backToNew()\" src=\"../../../../assets/img/button-back.png\" width=\"23%\">\n        </div>\n        <div align=\"center\">\n            <img src=\"../../../../assets/img/roll_0.gif\" width=\"20%\">\n            <img src=\"../../../../assets/img/roll_2.gif\" width=\"50%\">\n            <img src=\"../../../../assets/img/roll_1.gif\" width=\"20%\">\n        </div>\n    </div>\n    <!--<embed src=\"../../../../assets/music/bgm_game.mp3\" loop=\"true\" width=\"0\" height=\"0\" autostart=\"true\">-->\n\n\n</div>\n\n\n\n\n"
 
 /***/ }),
 
@@ -779,6 +825,9 @@ var GameReadyComponent = /** @class */ (function () {
             console.log(_this.cards);
             _this.router.navigate(['/game', String(_this.game.id), 'player', String(_this.myPlayerId)]);
         });
+    };
+    GameReadyComponent.prototype.backToNew = function () {
+        this.router.navigate(['/user', this.username, 'game']);
     };
     GameReadyComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1073,7 +1122,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/user/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/login']\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <form (ngSubmit)=\"login()\" #f=\"ngForm\" class=\"navbar-form navbar-right\">\n                <input placeholder=\"username\"\n                       name=\"username\"\n                       type=\"text\"\n                       class=\"form-control\"\n                       [(ngModel)]=\"username\" required #name=\"ngModel\"/>\n\n                <input placeholder=\"password\"\n                       name=\"password\"\n                       type=\"password\"\n                       class=\"form-control\"\n                       [(ngModel)]=\"password\" required #pass=\"ngModel\"/>\n\n                <button type=\"submit\"\n                        class=\"btn btn-success\"\n                        [disabled]=\"f.invalid\">\n                    Sign in\n                </button>\n\n                <button routerLink=\"/register\"\n                        class=\"btn btn-primary\">\n                    Register\n                </button>\n            </form>\n        </div>\n    </div>\n</nav>\n\n<div class=\"row myBody\">\n    <div align=\"center\" class=\"col-xs-1\">\n    </div>\n    <div align=\"center\" class=\"col-xs-2\">\n        <img src=\"../../../../assets/img/sushis/Tempura.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/EggNigiri.png\" width=\"90%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Dumpling.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Maki.png\" width=\"75%\" class=\"sushi-icon\" />\n        <!--<img src=\"../../../../assets/img/sushis/Chopsticks.png\" width=\"70%\" class=\"images\" />-->\n    </div>\n    <div class=\"col-xs-6\">\n        <img src=\"../../../../assets/img/logo.png\" width=\"100%\" class=\"logo\" />\n    </div>\n    <div align=\"center\" class=\"col-xs-2\">\n        <img src=\"../../../../assets/img/sushis/Wasabi.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Pudding.png\" width=\"75%\" class=\"sushi-icon\" />\n        <!--<img src=\"../../../../assets/img/sushis/SalmonNigiri.png\" width=\"70%\" class=\"images\" />-->\n        <img src=\"../../../../assets/img/sushis/Sashimi.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/SquidNigiri.png\" width=\"75%\" class=\"sushi-icon\" />\n    </div>\n    <div align=\"center\" class=\"col-xs-1\">\n    </div>\n\n</div>"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top zjh-nav\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand active\" [routerLink]=\"['/login']\">Sushi Go!</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"https://gamewright.com/product/Sushi-Go\">GAME INTRO</a></li>\n                <li><a href=\"https://github.ccs.neu.edu/phoebe0607/sushigo\">ABOUT</a></li>\n                <li><a routerLink=\"/how-to-play\">HOW TO PLAY</a></li>\n            </ul>\n\n            <form (ngSubmit)=\"login()\" #f=\"ngForm\" class=\"navbar-form navbar-right\">\n                <input placeholder=\"username\"\n                       name=\"username\"\n                       type=\"text\"\n                       class=\"form-control\"\n                       [(ngModel)]=\"username\" required #name=\"ngModel\"/>\n\n                <input placeholder=\"password\"\n                       name=\"password\"\n                       type=\"password\"\n                       class=\"form-control\"\n                       [(ngModel)]=\"password\" required #pass=\"ngModel\"/>\n\n                <button type=\"submit\"\n                        class=\"btn btn-success\"\n                        [disabled]=\"f.invalid\">\n                    Sign in\n                </button>\n\n                <button routerLink=\"/register\"\n                        class=\"btn btn-primary\">\n                    Register\n                </button>\n            </form>\n        </div>\n\n    </div>\n</nav>\n\n<div class=\"row myBody\">\n    <div align=\"center\" class=\"col-xs-1\">\n    </div>\n    <div align=\"center\" class=\"col-xs-2\">\n        <img src=\"../../../../assets/img/sushis/Tempura.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/EggNigiri.png\" width=\"90%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Dumpling.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Maki.png\" width=\"75%\" class=\"sushi-icon\" />\n        <!--<img src=\"../../../../assets/img/sushis/Chopsticks.png\" width=\"70%\" class=\"images\" />-->\n    </div>\n    <div class=\"col-xs-6\">\n        <img src=\"../../../../assets/img/logo.png\" width=\"100%\" class=\"logo\" />\n    </div>\n    <div align=\"center\" class=\"col-xs-2\">\n        <img src=\"../../../../assets/img/sushis/Wasabi.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/Pudding.png\" width=\"75%\" class=\"sushi-icon\" />\n        <!--<img src=\"../../../../assets/img/sushis/SalmonNigiri.png\" width=\"70%\" class=\"images\" />-->\n        <img src=\"../../../../assets/img/sushis/Sashimi.png\" width=\"75%\" class=\"sushi-icon\" />\n        <img src=\"../../../../assets/img/sushis/SquidNigiri.png\" width=\"75%\" class=\"sushi-icon\" />\n    </div>\n    <div align=\"center\" class=\"col-xs-1\">\n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -1464,6 +1513,8 @@ var GameService = /** @class */ (function () {
     };
     GameService.prototype.getNextHand = function (gameId, activity) {
         var url = 'api/game/' + gameId;
+        console.log('game.service.client.ts: activity');
+        console.log(activity);
         return this.http.put(url, activity);
     };
     // getMaxId() {

@@ -16,7 +16,7 @@ module.exports = function(mongoose, userModel) {
                 console.log(err);
                 callback(err);
             }else{
-                console.log('player.model.server.js: Players added:');
+                console.log('player.model.server.js: Players added:\n');
                 console.log(list);
                 return callback(null, list);
             }
@@ -25,7 +25,7 @@ module.exports = function(mongoose, userModel) {
     function createPlayer(player) {
         playerModel.create(player, function (err, res) {
             if(!err){
-                console.log('player.model.server.js: Player added:');
+                console.log('player.model.server.js: Player added:\n');
                 console.log(res);
             }
         })

@@ -4,7 +4,7 @@ module.exports = function (app, models) {
 
     app.get('/api/game/:gameId', findGameById);
 
-    app.put('api/game/:gameId', getNextHand);
+    app.put('/api/game/:gameId', getNextHand);
 
     function createGame(req, res) {
         const roomId = req.params['roomId'];
@@ -20,8 +20,8 @@ module.exports = function (app, models) {
                         .findRoomById(roomId, function (err, room) {
                             if(!err){
                                 game.players = room.players;
-                                console.log('game.service.server.js 23: game to create: ');
-                                console.log(game);
+                                // console.log('game.service.server.js 23: game to create: ');
+                                // console.log(game);
                                 models
                                     .gameModel
                                     .getDecks(room.num_players, game, function (err, updated_game) {
@@ -32,17 +32,17 @@ module.exports = function (app, models) {
                                                 updated_game.cards[i] = [];
                                                 updated_game.scores[i] = 0;
                                             }
-
-                                            console.log('game.cards: ');
-                                            console.log(updated_game.cards);
-                                            console.log('game.decks: ');
-                                            console.log(updated_game.decks);
+                                            //
+                                            // console.log('game.cards: ');
+                                            // console.log(updated_game.cards);
+                                            // console.log('game.decks: ');
+                                            // console.log(updated_game.decks);
                                             models
                                                 .gameModel
                                                 .createGame(updated_game, function (err, result) {
                                                     if (!err) {
-                                                        console.log('game.service.server.js 39: game created: ');
-                                                        console.log(result);
+                                                        // console.log('game.service.server.js 39: game created: ');
+                                                        // console.log(result);
                                                         res.send(result);
                                                     }
                                                 });
@@ -76,16 +76,25 @@ module.exports = function (app, models) {
 
 
     function getNextHand(req, res) {
+        console.log('game.service.server.js 79: Enter getNextHand()\n');
         const gameId = req.params['gameId'];
         const activity = req.body;
         const playerId = activity.playerId;
         const card_index = activity.card_index;
         const game = activity.game;
+        console.log('game.service.server.js 84: getNextHand\n');
+        console.log(activity);
         models
             .gameModel
             .getNextHand(gameId, playerId, card_index, game, function (err, results) {
                 if(!err){
+                    console.log('game.service.server.js 88: getNextHand\n');
+                    console.log(results);
                     res.send(results);
+                }else{
+                    console.log('game.service.server.js 92: getNextHand\n');
+                    console.log(err);
+                    res.sendStatus(400).send(err);
                 }
             })
 

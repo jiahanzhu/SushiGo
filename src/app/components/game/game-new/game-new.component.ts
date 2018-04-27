@@ -75,4 +75,7 @@ export class GameNewComponent implements OnInit {
         //     err => console.log('error add website')
         // );
     }
+    backToHome() {
+        this.router.navigate(['/user', this.username])
+    }
 }

@@ -18,8 +18,8 @@ module.exports = function(mongoose, cardModel) {
                 callback(err);
             }
             else{
-                console.log('game.model.server.js 21 : game created: ');
-                console.log(game);
+                // console.log('game.model.server.js 21 : game created: ');
+                // console.log(game);
                 return callback(null, game);
             }
         });
@@ -33,8 +33,8 @@ module.exports = function(mongoose, cardModel) {
             }
             else{
                 let count = results.length;
-                console.log('game.model.server.js 36 : number of games: ');
-                console.log(count);
+                // console.log('game.model.server.js 36 : number of games: ');
+                // console.log(count);
                 return callback(null, count);
             }
         });
@@ -60,12 +60,16 @@ module.exports = function(mongoose, cardModel) {
             }
         }
 
-        console.log('game.model.server.js 63 : game.decks: ');
-        console.log(game.decks);
+        // console.log('game.model.server.js 63 : game.decks: ');
+        // console.log(game.decks);
         return callback(null, game);
     }
     
     function getNextHand(gameId, playerId, card_index, input_game, callback) {
+
+        console.log('game.model.server.js 70 : input game');
+        console.log(input_game);
+        console.log('\n');
         let game = input_game;
         const num = game.num_players;
         for(let i = 0; i < num - 1; ++i){
@@ -73,15 +77,16 @@ module.exports = function(mongoose, cardModel) {
             game.cards[i].push(card);
         }
         let val = game.decks[num - 1][card_index];
-        game.decks[3].splice(card_index, 1);
-        game.cards[3].push(val);
-        const temp = this.decks[num - 1];
+        game.decks[num - 1].splice(card_index, 1);
+        game.cards[num - 1].push(val);
+        const temp = game.decks[num - 1];
         for(let i = num - 1; i > 0; --i){
             game.decks[i] = game.decks[i - 1];
         }
         game.decks[0] = temp;
-        console.log('game.model.server.js 84 : next hand: ');
+        console.log('game.model.server.js 87 : next hand:');
         console.log(game);
+        console.log('\n');
         return callback(null, game);
     }
 

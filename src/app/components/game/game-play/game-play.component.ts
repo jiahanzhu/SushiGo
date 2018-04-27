@@ -11,6 +11,7 @@ import {GameService} from '../../../services/game.service.client';
 import {CardService} from '../../../services/card.service.client';
 // import * as io from 'socket.io-client';
 import {Card} from '../../../models/card.model.client';
+import has = Reflect.has;
 
 @Component({
     selector: 'app-game-play',
@@ -20,19 +21,20 @@ import {Card} from '../../../models/card.model.client';
 export class GamePlayComponent implements OnInit {
     user: User;
     username: string;
-    roomId: string;
+    roomId: number;
     gameId: number;
     players: Player[];
+    ranks = [];
     myPlayerId: number;
     game: any;
+    showResults = 'none';
     // game: Game = new Game(Math.floor(Math.random() * 100), this.user);
     decks: number[][] = [[], [], [], []];
-    hand: number[];
+    myHand: number[];
     cards: number[][] = [[], [], [], []];
-    realCards = [];
-    scores;
+    scores: number[] = [];
     message: string;
-    socket;
+    pudding: number[] = [0, 0, 0, 0];
     numbers = [];
     num: number;
     constructor(private userService: UserService,
@@ -49,23 +51,30 @@ export class GamePlayComponent implements OnInit {
                 console.log('Username: ' + this.username);
                 this.activatedRoute.params.subscribe(
                     (params: any) => {
+                        this.myPlayerId = params['playerId'];
                         this.gameId = params['gameId'];
                         console.log('gameId');
                         console.log(this.gameId);
                         this.gameService.findGameById(this.gameId).subscribe(res => {
                             this.game = res;
-                            console.log('Entered new game:');
+                            console.log('Entered new game: ');
                             console.log(this.game);
                             this.cards = this.game.cards;
                             this.decks = this.game.decks;
                             this.num = this.game.num_players;
-                            console.log('cards:');
-                            console.log(this.cards);
-                            for (let i = 0; i < this.game.num_players; ++i) {
-                                this.numbers.push(i);
-                            }
-                            console.log('numbers[]:');
-                            console.log(this.numbers);
+                            this.roomId = this.game.roomId;
+                            this.playerService.findPlayersByRoomId(this.roomId).subscribe(res2 => {
+                                this.players = res2;
+                                console.log('players in the game: ');
+                                console.log(this.players);
+                                for (let p of this.players) {
+                                    if (p.username === this.username) {
+                                        this.myPlayerId = p.playerId;
+                                        console.log('my player id: ' + this.myPlayerId);
+                                    }
+                                }
+                                this.myHand = this.decks[this.myPlayerId];
+                            });
                         });
                     }
                 );
@@ -87,112 +96,124 @@ export class GamePlayComponent implements OnInit {
 
 
     showCards(index) {
-        if (0 < index && index < 5) {
-            return ['../../../../assets/img/cards/Egg.png', 'Egg'];
-        } else if (index < 15) {
-            return ['../../../../assets/img/cards/Salmon.png', 'Salmon'];
-        } else if (index < 20) {
-            return ['../../../../assets/img/cards/Squid.png', 'Squid'];
-        } else if (index < 26) {
-            return ['../../../../assets/img/cards/Maki_1.png', 'Maki I'];
-        } else if (index < 38) {
-            return ['../../../../assets/img/cards/Maki_2.png', 'Maki II'];
-        } else if (index < 46) {
-            return ['../../../../assets/img/cards/Maki_3.png', 'Maki III'];
-        } else if (index < 60) {
-            return ['../../../../assets/img/cards/Dumpling.png', 'Dumpling'];
-        } else if (index < 74) {
-            return ['../../../../assets/img/cards/Tempura.png', 'Tempura'];
-        } else if (index < 88) {
-            return ['../../../../assets/img/cards/Sashimi.png', 'Sashimi'];
-        } else if (index < 94) {
-            return ['../../../../assets/img/cards/Wasabi.png', 'Wasabi'];
-        } else if (index < 98) {
-            return ['../../../../assets/img/cards/Chopsticks.png', 'Chopsticks'];
-        } else if (index < 108) {
-            return ['../../../../assets/img/cards/Pudding.png', 'Pudding'];
-        } else {
+        const cardType = this.getCardById(index);
+        if (cardType === '...') {
             return ['...', index];
+        } else {
+            const src = '../../../../assets/img/cards/' + cardType + '.png';
+            return [src, cardType];
         }
     }
 
-    // showCards(index) {
-    //     if (0 < index && index < 5) {
-    //         return '../../../../assets/img/cards/Egg.png';
-    //     } else if (index < 15) {
-    //         return '../../../../assets/img/cards/Salmon.png';
-    //     } else if (index < 20) {
-    //         return '../../../../assets/img/cards/Squid.png';
-    //     } else if (index < 26) {
-    //         return '../../../../assets/img/cards/Maki_1.png';
-    //     } else if (index < 38) {
-    //         return '../../../../assets/img/cards/Maki_2.png';
-    //     } else if (index < 46) {
-    //         return '../../../../assets/img/cards/Maki_3.png';
-    //     } else if (index < 60) {
-    //         return '../../../../assets/img/cards/Dumpling.png';
-    //     } else if (index < 74) {
-    //         return '../../../../assets/img/cards/Tempura.png';
-    //     } else if (index < 88) {
-    //         return '../../../../assets/img/cards/Sashimi.png';
-    //     } else if (index < 94) {
-    //         return '../../../../assets/img/cards/Wasabi.png';
-    //     } else if (index < 98) {
-    //         return '../../../../assets/img/cards/Chopsticks.png';
-    //     } else if (index < 108) {
-    //         return '../../../../assets/img/cards/Pudding.png';
-    //     } else {
-    //         return '...';
-    //     }
-    // }
-
     getNextHand(num) {
         const activity = {playerId: this.myPlayerId, card_index: num, game: this.game};
+        console.log('getNextHand');
+        console.log(activity);
         this.gameService.getNextHand(this.gameId, activity).subscribe(res => {
             this.game = res;
             this.decks = this.game.decks;
-            this.hand = this.decks[this.decks.length - 1];
+            this.myHand = this.decks[this.myPlayerId];
+            console.log('myHand: ');
+            console.log(this.myHand);
             this.cards = this.game.cards;
+            for (const i in this.players) {
+                if (true) {
+                    this.players[i].playedCards = this.cards[i];
+                }
+            }
+            if (this.myHand.length === 0) {
+                this.total(this.cards);
+            }
         });
     }
 
     total(cards) {
-        for (let i = 0; i < 4; i++) {
+        const maki: number[] = [],
+            dumpling: number[] = [],
+            tempura: number[] = [],
+            sashimi: number[] = [];
+        for (let i = 0; i < this.players.length; i++) {
+            maki[i] = 0;
+            dumpling[i] = 0;
+            tempura[i] = 0;
+            sashimi[i] = 0;
             let pts = 0;
-            for (let j = 0; j < 8; j++) {
+            let hasWasabi = false;
+            for (let j = 0; j < this.cards[0].length; j++) {
                 const card = cards[i][j];
-                if (card < 5) {
-                    pts++;
-                } else if (card < 15) {
-                    pts += 2;
-                } else if (card < 20) {
-                    pts += 3;
-                } else if (card < 26) {
-                    this.game.maki[i]++;
-                } else if (card < 38) {
-                    this.game.maki[i] += 2;
-                } else if (card < 46) {
-                    this.game.maki[i] += 3;
-                } else if (card < 60) {
-                    this.game.dumpling[i]++;
-                } else if (card < 74) {
-                    this.game.tempura[i]++;
-                } else if (card < 88) {
-                    this.game.sashimi[i]++;
-                } else if (card < 94) {
-                    pts += 2;
-                } else if (card < 98) {
-                    continue;
-                } else if (card < 108) {
-                    this.game.pudding[i]++;
-                } else {
-                    continue;
+                const cardType = this.getCardById(card);
+                switch (cardType) {
+                    case 'Egg': {
+                        let point = 1;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Salmon': {
+                        let point = 2;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Squid': {
+                        let point = 3;
+                        if (hasWasabi) {
+                            point *= 3;
+                            hasWasabi = false;
+                        }
+                        pts += point;
+                        break;
+                    }
+                    case 'Maki_1': {
+                        maki[i] += 1;
+                        break;
+                    }
+                    case 'Maki_2': {
+                        maki[i] += 2;
+                        break;
+                    }
+                    case 'Maki_3': {
+                        maki[i] += 3;
+                        break;
+                    }
+                    case 'Tempura': {
+                        tempura[i] += 1;
+                        break;
+                    }
+                    case 'Sashimi': {
+                        sashimi[i] += 1;
+                        break;
+                    }
+                    case 'Dumpling': {
+                        dumpling[i] += 1;
+                        break;
+                    }
+                    case 'Chopsticks': {
+                        break;
+                    }
+                    case 'Wasabi': {
+                        hasWasabi = true;
+                        break;
+                    }
+                    case 'Pudding': {
+                        this.pudding[i] += 1;
+                        break;
+                    }
+                    default: {
+                        break;
+                    }
                 }
 
-                console.log('Card: ' + card);
+                console.log('Card: ' + cardType);
                 console.log('Current score: ' + pts);
             }
-            switch (this.game.dumpling[i]) {
+            switch (dumpling[i]) {
                 case 0:
                     break;
                 case 1:
@@ -210,59 +231,94 @@ export class GamePlayComponent implements OnInit {
                 default:
                     pts += 15;
             }
-
-            console.log('Dumplings: ' + this.game.dumpling[i]);
-            console.log('Current score: ' + pts);
-            if (this.game.tempura[i] === 2) {
-                pts += 5;
-            }
-            console.log('Tempuras: ' + this.game.tempura[i]);
-            console.log('Current score: ' + pts);
-            if (this.game.sashimi[i] === 3) {
-                pts += 10;
-            }
-            console.log('Sashimis: ' + this.game.sashimi[i]);
-            console.log('Current score: ' + pts);
-            this.game.scores[i] = pts;
+            console.log('Dumplings: ' + dumpling[i] + '   Current score: ' + pts);
+            pts += Math.floor(tempura[i] / 2) * 5;
+            console.log('Tempuras: ' + tempura[i] + '   Current score: ' + pts);
+            pts += Math.floor(sashimi[i] / 3) * 10;
+            console.log('Sashimis: ' + sashimi[i] + '   Current score: ' + pts);
+            this.scores[i] = pts;
         }
         let maki1 = 0, maki2 = 0, puddingmax = 0, puddingmin = 10;
-        for (let i = 0; i < 4; i++) {
-            const maki = this.game.maki[i], pudding = this.game.pudding[i];
-            if (maki > maki1) {
+        for (let i = 0; i < this.players.length; i++) {
+            const makis_num = maki[i], puddings_num = this.pudding[i];
+            if (makis_num > maki1) {
                 maki2 = maki1;
-                maki1 = maki;
-            } else if (maki > maki2 && maki < maki1) {
-                maki2 = maki;
+                maki1 = makis_num;
+            } else if (makis_num > maki2 && makis_num < maki1) {
+                maki2 = makis_num;
             }
-            if (pudding > puddingmax) {
-                puddingmax = pudding;
+            if (puddings_num > puddingmax) {
+                puddingmax = puddings_num;
             }
-            if (pudding < puddingmin) {
-                puddingmin = pudding;
+            if (puddings_num < puddingmin) {
+                puddingmin = puddings_num;
             }
         }
-        for (let i = 0; i < 4; i++) {
-            if (this.game.maki[i] === maki1) {
-                this.game.scores[i] += 6;
+        for (let i = 0; i < this.players.length; i++) {
+            if (maki[i] === maki1) {
+                this.scores[i] += 6;
             }
-            if (this.game.maki[i] === maki2) {
-                this.game.scores[i] += 3;
+            if (maki[i] === maki2) {
+                this.scores[i] += 3;
             }
-            if (this.game.pudding[i] === puddingmax) {
-                this.game.scores[i] += 6;
+            if (this.pudding[i] === puddingmax) {
+                this.scores[i] += 6;
             }
-            if (this.game.pudding[i] === puddingmin) {
-                this.game.scores[i] -= 6;
+            if (this.pudding[i] === puddingmin) {
+                this.scores[i] -= 6;
             }
-            console.log('Maki: ' + this.game.maki[i]);
-            console.log('Current score: ' + this.game.scores[i]);
-            console.log('Pudding: ' + this.game.pudding[i]);
-            console.log('Current score: ' + this.game.scores[i]);
+            console.log('Maki: ' + maki[i]);
+            console.log('Current score: ' + this.scores[i]);
+            console.log('Pudding: ' + this.pudding[i]);
+            console.log('Current score: ' + this.scores[i]);
+            this.players[i].score = this.scores[i];
+            this.ranks[i] = {player: i, username: this.players[i].username, score: this.scores[i]};
         }
-        if (Math.max.apply(null, this.game.scores) === this.game.scores[3]) {
+        this.ranks.sort((a, b) => b.score - a.score);
+        if (Math.max.apply(null, this.scores) === this.scores[this.myPlayerId]) {
             this.message = 'You win!';
         } else {
             this.message = 'You lose!';
         }
+        this.showResults = 'block';
+        console.log('showResults: ' + this.showResults);
+    }
+
+    getCardById(index) {
+        if (0 < index && index < 5) {
+            return 'Egg';
+        } else if (index < 15) {
+            return 'Salmon';
+        } else if (index < 20) {
+            return 'Squid';
+        } else if (index < 26) {
+            return 'Maki_1';
+        } else if (index < 38) {
+            return 'Maki_2';
+        } else if (index < 46) {
+            return 'Maki_3';
+        } else if (index < 60) {
+            return 'Dumpling';
+        } else if (index < 74) {
+            return 'Tempura';
+        } else if (index < 88) {
+            return 'Sashimi';
+        } else if (index < 94) {
+            return 'Wasabi';
+        } else if (index < 98) {
+            return 'Chopsticks';
+        } else if (index < 108) {
+            return 'Pudding';
+        } else {
+            return '...';
+        }
+    }
+    closeResults () {
+        this.showResults = 'none';
+    }
+
+    startNewGame() {
+        this.router.navigate(['/room', this.roomId]);
     }
 }
+
