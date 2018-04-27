@@ -34,7 +34,7 @@ export class GamePlayComponent implements OnInit {
     cards: number[][] = [[], [], [], []];
     scores: number[] = [];
     message: string;
-    pudding: number[] = [0, 0, 0, 0];
+    pudding: number[] = [];
     numbers = [];
     num: number;
     constructor(private userService: UserService,
@@ -65,9 +65,9 @@ export class GamePlayComponent implements OnInit {
                             this.roomId = this.game.roomId;
                             this.playerService.findPlayersByRoomId(this.roomId).subscribe(res2 => {
                                 this.players = res2;
+                                this.players.sort((a, b) => a.playerId - b.playerId);
                                 console.log('players in the game: ');
                                 console.log(this.players);
-                                this.players.sort((a, b) => a.playerId - b.playerId);
                                 for (let p of this.players) {
                                     if (p.username === this.username) {
                                         this.myPlayerId = p.playerId;
@@ -132,41 +132,44 @@ export class GamePlayComponent implements OnInit {
         const maki: number[] = [],
             dumpling: number[] = [],
             tempura: number[] = [],
-            sashimi: number[] = [];
+            sashimi: number[] = [],
+            wasabi: number[] = [];
         for (let i = 0; i < this.players.length; i++) {
+            console.log('Player number ' + i + this.players[i].username);
             maki[i] = 0;
             dumpling[i] = 0;
             tempura[i] = 0;
             sashimi[i] = 0;
+            wasabi[i] = 0;
+            this.pudding[i] = 0;
             let pts = 0;
-            let hasWasabi = false;
             for (let j = 0; j < this.cards[0].length; j++) {
                 const card = cards[i][j];
                 const cardType = this.getCardById(card);
                 switch (cardType) {
                     case 'Egg': {
                         let point = 1;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
                     }
                     case 'Salmon': {
                         let point = 2;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
                     }
                     case 'Squid': {
                         let point = 3;
-                        if (hasWasabi) {
+                        if (wasabi[i] > 0) {
                             point *= 3;
-                            hasWasabi = false;
+                            wasabi[i] -= 1;
                         }
                         pts += point;
                         break;
@@ -199,7 +202,7 @@ export class GamePlayComponent implements OnInit {
                         break;
                     }
                     case 'Wasabi': {
-                        hasWasabi = true;
+                        wasabi[i] += 1;
                         break;
                     }
                     case 'Pudding': {
