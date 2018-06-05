@@ -6,6 +6,9 @@
 ## Intended Users
 Sushi Go lovers, or anyone new to the cutest board game.
 
+## Click the link to play the game!
+https://sushi-go.herokuapp.com/
+
 ## Tech Stacks
 * MongoDB
 * Express.js
@@ -15,9 +18,6 @@ Sushi Go lovers, or anyone new to the cutest board game.
 * HTML
 * JavaScript
 * Bootstrap
-
-## Heroku App link
-https://sushi-go.herokuapp.com/
 
 ## Image sources
 https://fathergeek.com/sushi-go/  
